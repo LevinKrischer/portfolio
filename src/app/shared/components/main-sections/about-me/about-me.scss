@@ -1,0 +1,146 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  background-color: var(--color-primary);
+  color: var(--color-secondary)
+}
+
+.aboutMeContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+  width: 100%;
+  padding: 80px 64px;
+}
+
+.contentBoxLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+
+  img {
+    width: 100%;
+  }
+
+  .aboutIcon {
+    width: 40px;
+  }
+}
+
+.contentBoxRight {
+  width: 50%;
+}
+
+.aboutLocation {
+  margin-bottom: -8%;
+  z-index: 3;
+  rotate: -4deg;
+  width: 80%;
+
+  .aboutDesc {
+    rotate: -1deg;
+  }
+}
+
+.aboutWork {
+  z-index: 2;
+}
+
+.aboutRemote {
+  position: relative;
+  max-width: 80%;
+  margin-top: -5%;
+  rotate: 4deg;
+
+  .aboutDesc {
+    rotate: 3deg;
+  }
+}
+
+.aboutDesc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  max-width: 80%;
+
+  &Higher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 24px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    max-width: 80%;
+  }
+}
+
+.btnStandard {
+  font-family: 'BricolageGrotesque', sans-serif;
+  font-size: 1rem;
+  border: var(--color-secondary) solid 1px;
+  border-radius: 24px;
+  padding: 8px 16px;
+  margin: 0px 4px 4px;
+  color: var(--color-secondary);
+  background-color: transparent;
+  box-shadow: 4px 4px var(--color-secondary);
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0px 0px var(--color-secondary);
+    transform: translate(4px, 4px);
+    background-color: #f87a55;
+    cursor: pointer;
+  }
+}
+
+.headlineUnderline {
+  position:absolute;
+  bottom:-16px;
+  animation: rollOut 5s infinite;
+
+}
+
+@keyframes rollOut {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+
+  10% {
+    width: 50%;
+    opacity: 1;
+
+  }
+
+  80% {
+    width: 50%;
+
+  }
+
+  90% {
+width: 0;
+
+  }
+  100% {
+    width: 0;
+  }
+}

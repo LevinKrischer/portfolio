@@ -33,6 +33,10 @@ body {
   font-family: 'BricolageGrotesque', sans-serif;
 }
 
+h2 {
+  font-size: 64px;
+}
+
 .colorWhite {
   color: white;
 }
@@ -41,7 +45,29 @@ body {
   color: var(--color-secondary);
 }
 
+.font-bold {
+  font-weight: bold;
+}
+
+.f-size-20 {
+  font-size: 20px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
 .contentInner {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+.flex-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }

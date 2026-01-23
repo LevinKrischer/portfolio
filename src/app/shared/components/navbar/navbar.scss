@@ -99,7 +99,7 @@ input:checked+.slider:before {
 
 .linkDecoUnderline {
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
   left: 0;
   width: 0;
   transition: all 0.4s ease;
