@@ -1,0 +1,107 @@
+* {
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80px;
+}
+
+.headerLogo {
+  max-width: 60px;
+}
+
+.toggleSwitch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 8px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F87A55;
+  border: 1px solid white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3355FF;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider:before {
+  transform: translate(20px, -50%);
+
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.linkBox {
+  padding: 8px 16px;
+}
+
+.linkBox:hover {
+  .linkDecoCircle {
+    opacity: 1;
+  }
+
+  .linkDecoUnderline {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+.linkDecoCircle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  transition: all 0.4s ease;
+  opacity: 0;
+}
+
+.linkDecoUnderline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  transition: all 0.4s ease;
+  opacity: 0;
+}

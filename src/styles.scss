@@ -1,1 +1,46 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'BricolageGrotesque';
+  src: url('/assets/fonts/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf') format('woff2');
+  font-weight: 100 900;
+}
+
+@font-face {
+  font-family: 'Kalam';
+  src: url('/assets/fonts/Kalam-Regular.ttf') format('truetype');
+}
+
+:root {
+  --color-primary: white;
+  --color-secondary: black;
+  --color-high-st: #F7C518;
+  --color-high-nd: #3355FF;
+  --color-high-rd: #F87A55;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: inherit;
+  position: relative;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'BricolageGrotesque', sans-serif;
+}
+
+.colorWhite {
+  color: white;
+}
+
+.colorBlack {
+  color: var(--color-secondary);
+}
+
+.contentInner {
+  max-width: 1400px;
+  margin: 0 auto;
+}

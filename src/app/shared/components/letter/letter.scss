@@ -1,0 +1,24 @@
+.letter {
+  // display: inline-block;
+  // overflow: hidden;
+  transition: width 0.3s ease, height 0.3s ease;
+  vertical-align: bottom;
+  margin: 0 -2px
+}
+
+.letter img {
+  display: block;
+  max-height: 100px;
+  width: 100%;
+  height: auto;
+}
+
+.letter img:hover {
+  filter: brightness(0) saturate(100%) invert(61%) sepia(93%) saturate(405%) hue-rotate(6deg) brightness(108%) contrast(97%)
+}
+
+.sub:hover .letter img{
+  padding-top:100px;
+}
+
+
