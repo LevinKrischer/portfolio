@@ -6,6 +6,9 @@
   // gap: 32px;
   color: var(--color-primary);
   background-image: url('/assets/imgs/bg/03-skills-2300px.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-origin: border-box;
 }
 
 .skillsContent {
@@ -14,17 +17,16 @@
   justify-content: center;
   gap: 64px;
   width: 100%;
-  padding: 80px 64px;
+  padding: 140px 64px 80px 64px;
 }
 
 .skillsDetails {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   gap: 64px;
   width: 100%;
-  padding: 0px 64px 80px 64px;
+  padding: 0px 64px 220px 64px;
 }
 
 .headline {
@@ -56,7 +58,6 @@
   width:10%;
 }
 
-
 .skillsIcons {
   display: flex;
   flex-wrap: wrap;
@@ -66,8 +67,15 @@
   align-items: center;
   width:55%;
 
-  img  {
+  .icon  {
     width: 64px;
+    filter: grayscale(100);
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      filter: none;
+      transform: scale(0.8);
+    }
   }
 }
 
@@ -83,4 +91,6 @@
   text-align: center;
 }
 
-
+app-peel-off {
+  width: 20%;
+}

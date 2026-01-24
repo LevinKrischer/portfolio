@@ -1,9 +1,9 @@
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
-import { Navbar } from "../../navbar/navbar";
-import { LetterComponent } from '../../letter/letter';
-import { LETTERS } from '../../letter/letter.data';
-import { Button } from "../../button/button";
-import { SocialLinks } from "../../social-links/social-links";
+import { Navbar } from "../../elements/navbar/navbar";
+import { LetterComponent } from '../../elements/letter/letter';
+import { LETTERS } from '../../elements/letter/letter.data';
+import { Button } from "../../elements/button/button";
+import { SocialLinks } from "../../elements/social-links/social-links";
 
 @Component({
   selector: 'app-header',
