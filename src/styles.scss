@@ -15,6 +15,7 @@
   --color-high-st: #F7C518;
   --color-high-nd: #3355FF;
   --color-high-rd: #F87A55;
+  --max-width: 1230px;
 }
 
 * {
@@ -53,12 +54,32 @@ h2 {
   font-size: 20px;
 }
 
+.f-size-24 {
+  font-size: 24px;
+}
+
 .mt-40 {
   margin-top: 40px;
 }
 
 .mb-40 {
   margin-bottom: 40px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mt-80 {
+  margin-top: 80px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
 }
 
 .contentInner {
