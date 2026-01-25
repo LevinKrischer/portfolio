@@ -5,10 +5,11 @@ import { AboutMe } from "./shared/components/main-sections/about-me/about-me";
 import { Skills } from "./shared/components/main-sections/skills/skills";
 import { Projects } from './shared/components/main-sections/projects/projects';
 import { Thoughts } from "./shared/components/main-sections/thoughts/thoughts";
+import { ContactMe } from "./shared/components/main-sections/contact-me/contact-me";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, AboutMe, Skills, Projects, Thoughts],
+  imports: [RouterOutlet, Header, AboutMe, Skills, Projects, Thoughts, ContactMe],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
