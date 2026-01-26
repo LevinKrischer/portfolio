@@ -1,0 +1,18 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <label for="name">What's your name?</label>
+  <input id="name" type="text" formControlName="name" value="Standardwert" />
+
+  <label for="email">What's your email?</label>
+  <input id="email" type="email" formControlName="email" value="youremail@mail.de" />
+
+  <label for="message">How can I help you?</label>
+  <input id="message" type="text" formControlName="message" value="Hello Levin, I am interested in...">
+
+  <div class="consentBox">
+    <input class="checkbox" type="checkbox" id="consent" formControlName="consent" />
+    <div class="checkmark"></div>
+    <label class="consentText" for="consent">I've read the <a href="#">privacy policy</a> and agree to the processing of my data as
+      outlined.</label>
+  </div>
+  <button class="btnStandard" type="submit" [disabled]="!contactForm.valid">Send</button>
+</form>
