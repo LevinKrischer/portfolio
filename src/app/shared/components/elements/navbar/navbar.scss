@@ -105,3 +105,100 @@ input:checked+.slider:before {
   transition: all 0.4s ease;
   opacity: 0;
 }
+
+.linkBox:hover .animationContainerHeight {
+  animation: showHideFromTop 0.3s ease;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+.animationContainerHeight {
+  position: absolute;
+  left: 0;
+  top: -7%;
+  width: 100%;
+  transition: opacity 0.2s ease;
+  overflow: hidden;
+  align-self: flex-start;
+  opacity: 0;
+}
+
+.animatedImageHeight {
+  width: 100%;
+  object-fit: cover;
+}
+
+@keyframes showHideFromTop {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 120%;
+  }
+}
+
+.linkBox:hover .animationContainerWidth {
+
+  &A,
+  &B,
+  &C {
+    animation: showHideFromLeft 0.3s ease;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+
+}
+
+@keyframes showHideFromLeft {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.animationContainerWidth {
+
+  &A {
+    position: absolute;
+    bottom: -10%;
+    left: 0;
+    height: 25%;
+    width: 100%;
+    transition: opacity 0.2s ease;
+    overflow: hidden;
+    opacity: 0;
+
+  }
+
+  &B {
+    position: absolute;
+    bottom: -60%;
+    left: -10%;
+    height: 150%;
+    width: 100%;
+    transition: opacity 0.2s ease;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+  &C {
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    height: 160%;
+    width: 100%;
+    transition: opacity 0.2s ease;
+    overflow: hidden;
+    opacity: 0;
+  }
+
+}
+
+.animatedImageWidth {
+  height: 100%;
+  display: block;
+}
