@@ -164,21 +164,20 @@ input:checked+.slider:before {
 
   &A {
     position: absolute;
-    bottom: -10%;
+    bottom: -5%;
     left: 0;
-    height: 25%;
+    height: 100%;
     width: 100%;
     transition: opacity 0.2s ease;
     overflow: hidden;
     opacity: 0;
-
   }
 
   &B {
     position: absolute;
-    bottom: -60%;
-    left: -10%;
-    height: 150%;
+    bottom: -10%;
+    left: 0%;
+    height: 100%;
     width: 100%;
     transition: opacity 0.2s ease;
     overflow: hidden;
@@ -187,9 +186,9 @@ input:checked+.slider:before {
 
   &C {
     position: absolute;
-    bottom: -20%;
+    bottom: -15%;
     left: 0;
-    height: 160%;
+    height: 100%;
     width: 100%;
     transition: opacity 0.2s ease;
     overflow: hidden;
@@ -199,6 +198,13 @@ input:checked+.slider:before {
 }
 
 .animatedImageWidth {
-  height: 100%;
-  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 4px;
+
+  &B {
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+  }
 }

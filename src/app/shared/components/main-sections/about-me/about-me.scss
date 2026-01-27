@@ -116,8 +116,8 @@
 }
 
 .headlineUnderline {
-  position:absolute;
-  bottom:-16px;
+  position: absolute;
+  bottom: -16px;
   animation: rollOut 5s infinite;
 }
 
@@ -139,10 +139,40 @@
   }
 
   90% {
-width: 0;
+    width: 0;
 
   }
+
   100% {
     width: 0;
+  }
+}
+
+.animationContainerWidth {
+    animation: showHideFromLeft 5s ease infinite;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+    overflow: hidden;
+}
+
+@keyframes showHideFromLeft {
+  0% {
+    width: 0;
+  }
+
+  20% {
+    width: 100%;
+  }
+
+  70% {
+    width: 100%;
+  }
+
+  90% {
+    width: 0%;
+  }
+
+  100% {
+    width: 0%;
   }
 }
