@@ -25,7 +25,7 @@ export const LETTERS: Record<string, LetterConfig> = {
     lower: { src: 'assets/letters/Letter-n-small.svg', width: 75 }
   },
   t: {
-    upper: { src: 'assets/letters/Letter-T.svg', width: 74 },
+    upper: { src: 'assets/letters/Letter-T.svg', width: 85 },
     lower: { src: 'assets/letters/Letter-t-small.svg', width: 56 }
   },
   e: {

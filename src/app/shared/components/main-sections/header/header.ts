@@ -26,16 +26,16 @@ export class Header implements AfterViewInit {
 
   private updateScale() {
     const available = this.headlineRoot.nativeElement.clientWidth;
-    const total = this.calculateTotalWidth();
+    // const total = this.calculateTotalWidth();
 
-    this.scale = Math.min(1, available / total);
+    this.scale = Math.min(1, available);
   }
 
-  private calculateTotalWidth(): number {
-    const text = 'frontenddeveloper';
-    return text
-      .split('')
-      .map(c => LETTERS[c.toLowerCase()].upper.width)
-      .reduce((a, b) => a + b, 0);
-  }
+  // private calculateTotalWidth(): number {
+  //   const text = 'Frontend DEVELOPER';
+  //   return text
+  //     .split('')
+  //     .map(c => LETTERS[c.toLowerCase()].upper.width)
+  //     .reduce((a, b) => a + b, 0);
+  // }
 }
