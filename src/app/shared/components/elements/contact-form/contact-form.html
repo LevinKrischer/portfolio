@@ -1,5 +1,8 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+  <div class="firstLabel">
   <label for="name">What's your name?</label>
+  <img class="contactImgCircle" src="./assets/imgs/layout/contact-lk-fed.png" alt="">
+  </div>
   <input id="name" type="text" formControlName="name" value="Standardwert" />
 
   <label for="email">What's your email?</label>
