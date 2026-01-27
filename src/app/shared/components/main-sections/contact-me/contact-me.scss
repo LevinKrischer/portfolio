@@ -55,7 +55,7 @@
 .footer {
   display: flex;
   flex-direction: column;
-  gap:32px;
+  gap: 32px;
 }
 
 .footerLogo {
@@ -92,5 +92,92 @@
 
   100% {
     width: 0;
+  }
+}
+
+.linkBox {
+  padding: 8px 16px;
+}
+
+.linkBox:hover .animationContainerWidth {
+
+  &C {
+    animation: showHideFromLeftC 0.3s ease;
+    opacity: 1;
+    transition: opacity 0.2s ease;
+  }
+
+}
+
+@keyframes showHideFromLeftC {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.animationContainerWidth {
+
+  &C {
+    position: absolute;
+    bottom: 0%;
+    left: 16px;
+    height: 100%;
+    width: 100%;
+    transition: opacity 0.2s ease;
+    overflow: hidden;
+    opacity: 0;
+  }
+}
+
+.animatedImageWidthC {
+  position: absolute;
+  bottom: 0;
+  padding-left: 8px;
+}
+
+.footerLink {
+  background-color: transparent;
+  padding: 8px 16px;
+  border-radius: 24px;
+  transition: background-color 0.2s ease;
+}
+
+.footerLink:hover {
+  background-color: var(--color-high-nd);
+}
+
+.footerLinkIcon {
+  position: absolute;
+  top:-90%;
+  right: 0;
+  transform: translateX(-50px) rotate(0deg);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.footerLink:hover ~ .footerLinkIcon {
+  transform: translateX(0px) rotate(360deg);
+  opacity: 1;
+  animation: rollIn 0.4s;
+}
+
+@keyframes rollIn {
+  0% {
+    transform: translateX(-50px) rotate(0deg);
+    opacity: 0;
+  }
+
+  70% {
+    transform: translateX(10px) rotate(380deg);
+      opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0px) rotate(360deg);
+    opacity: 1;
   }
 }

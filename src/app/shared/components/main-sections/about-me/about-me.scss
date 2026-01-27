@@ -149,7 +149,7 @@
 }
 
 .animationContainerWidth {
-    animation: showHideFromLeft 5s ease infinite;
+    animation: showHideFromLeft 6s ease infinite;
     opacity: 1;
     transition: opacity 0.2s ease;
     overflow: hidden;
@@ -160,11 +160,11 @@
     width: 0;
   }
 
-  20% {
+  10% {
     width: 100%;
   }
 
-  70% {
+  80% {
     width: 100%;
   }
 

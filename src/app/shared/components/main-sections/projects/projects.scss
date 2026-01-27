@@ -79,3 +79,32 @@
   width: 100%;
   border-radius: 20px;
 }
+
+.animationContainerWidth {
+  animation: showHideFromLeft 6s ease infinite;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  overflow: hidden;
+}
+
+@keyframes showHideFromLeft {
+  0% {
+    width: 0;
+  }
+
+  10% {
+    width: 100%;
+  }
+
+  80% {
+    width: 100%;
+  }
+
+  90% {
+    width: 0%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}

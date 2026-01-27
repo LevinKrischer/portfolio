@@ -31,7 +31,9 @@
 
 .headlineFirstLine {
   display: flex;
-  gap: 16px;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: flex-end;
 
   .headlineArrow {
     position: absolute;
@@ -189,5 +191,41 @@
 
   &:hover .linkName {
     color: var(--color-primary);
+  }
+}
+
+.animationContainerWidth {
+  animation: showHideFromLeft 6s ease infinite;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  overflow: hidden;
+  height: 40px;
+}
+
+.animatedImageWidth {
+  position: absolute;
+  top:0;
+  right:0;
+}
+
+@keyframes showHideFromLeft {
+  0% {
+    width: 0;
+  }
+
+  10% {
+    width: 70%;
+  }
+
+  80% {
+    width: 70%;
+  }
+
+  90% {
+    width: 0%;
+  }
+
+  100% {
+    width: 0%;
   }
 }
