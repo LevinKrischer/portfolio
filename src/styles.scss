@@ -97,3 +97,43 @@ h2 {
   justify-content: flex-end;
   width: 100%;
 }
+
+.btnStandard {
+  font-family: 'BricolageGrotesque', sans-serif;
+  font-size: 1rem;
+  border: var(--color-secondary) solid 1px;
+  border-radius: 24px;
+  padding: 8px 16px;
+  margin: 0px 4px 4px;
+  color: var(--color-secondary);
+  background-color: transparent;
+  box-shadow: 4px 4px var(--color-secondary);
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0px 0px var(--color-secondary);
+    transform: translate(4px, 4px);
+    background-color: #f87a55;
+    cursor: pointer;
+  }
+}
+
+.btnStandardWhite {
+  font-family: 'BricolageGrotesque', sans-serif;
+  font-size: 1rem;
+  border: var(--color-primary) solid 1px;
+  border-radius: 24px;
+  padding: 8px 16px;
+  margin: 0px 4px 4px;
+  color: var(--color-primary);
+  background-color: transparent;
+  box-shadow: 4px 4px var(--color-primary);
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0px 0px var(--color-primary);
+    transform: translate(4px, 4px);
+    background-color: #f87a55;
+    cursor: pointer;
+  }
+}
