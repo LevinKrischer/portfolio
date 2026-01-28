@@ -71,16 +71,14 @@
 
 .profileImgFrameInner {
   position: absolute;
-  top: 5%;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
-  width: 86%;
-  filter: grayscale(100);
-  transition: filter 0.3s ease;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: opacity 0.3s ease;
+  opacity: 1;
 
   &:hover {
-    filter: grayscale(0);
+    opacity: 0;
   }
 }
 

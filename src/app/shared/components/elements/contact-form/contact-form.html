@@ -1,21 +1,34 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-  <div class="firstLabel">
+
+  <!-- NAME -->
   <label for="name">What's your name?</label>
-  <img class="contactImgCircle" src="./assets/imgs/layout/contact-lk-fed.png" alt="">
-  </div>
-  <input id="name" type="text" formControlName="name" value="Standardwert" />
+  <input id="name" type="text" formControlName="name" (focus)="clearField('name')" (blur)="validateField('name')"
+    [ngClass]="{ 'error': contactForm.get('name')?.touched && contactForm.get('name')?.invalid }"
+    [value]="getDisplayValue('name')" />
 
+  <!-- EMAIL -->
   <label for="email">What's your email?</label>
-  <input id="email" type="email" formControlName="email" value="youremail@mail.de" />
+  <input id="email" type="email" formControlName="email" (focus)="clearField('email')" (blur)="validateField('email')"
+    [ngClass]="{ 'error': contactForm.get('email')?.touched && contactForm.get('email')?.invalid }"
+    [value]="getDisplayValue('email')" />
 
+  <!-- MESSAGE -->
   <label for="message">How can I help you?</label>
-  <input id="message" type="text" formControlName="message" value="Hello Levin, I am interested in...">
+  <input id="message" type="text" formControlName="message" (focus)="clearField('message')"
+    (blur)="validateField('message')"
+    [ngClass]="{ 'error': contactForm.get('message')?.touched && contactForm.get('message')?.invalid }"
+    [value]="getDisplayValue('message')" />
 
+  <!-- CONSENT -->
   <div class="consentBox">
     <input class="checkbox" type="checkbox" id="consent" formControlName="consent" />
     <div class="checkmark"></div>
-    <label class="consentText" for="consent">I've read the <a href="#">privacy policy</a> and agree to the processing of my data as
-      outlined.</label>
+    <label class="consentText" for="consent">
+      I've read the <a href="#">privacy policy</a> and agree to the processing of my data.
+    </label>
   </div>
-  <button class="btnStandard" type="submit" [disabled]="!contactForm.valid">Send</button>
+
+  <button class="btnStandard" type="submit" [disabled]="!contactForm.valid">
+    Send
+  </button>
 </form>
