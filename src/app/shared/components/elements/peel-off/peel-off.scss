@@ -11,6 +11,10 @@
   }
 }
 
+.closedDesc>* {
+  cursor: default
+}
+
 .peelCoverDesc {
   position: absolute;
   top: 50%;
@@ -41,8 +45,8 @@
 .peel.slightlyOpened,
 .peel.closed {
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
   rotate: 8deg;
   opacity: 1;
@@ -77,4 +81,21 @@
   width: 30%;
 }
 
+.toBeHidden {
+  opacity: 0;
+  animation: hidePeel 0.5s;
+}
 
+@keyframes hidePeel {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.hidden {
+  display: none;
+}

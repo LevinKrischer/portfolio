@@ -1,5 +1,5 @@
 <div class="skillsPeel">
-  <div class="peel closed">
+  <div class="peel">
     <img class="peelImage" src="./assets/imgs/layout/peel-opened.png" alt="">
     <div class="peelCoverDesc">
       <p class="font-bold">Also, I'm interested in diving into:</p>
@@ -15,10 +15,10 @@
       </div>
     </div>
   </div>
-  <div class="peel slightlyOpened">
+  <div #peelClick class="peel slightlyOpened" >
     <img class="peelImage" src="./assets/imgs/layout/peel-slightly-opened.png" alt="">
   </div>
-  <div class="peel closed">
+  <div #peelLayer class="peel closed" (click)="hidePeel()">
     <img class="peelImage" src="./assets/imgs/layout/peel-closed.png" alt="">
     <div class="closedDesc">
       <img src="./assets/imgs/decorations/arrow.png" alt="" class="arrowOpen">
