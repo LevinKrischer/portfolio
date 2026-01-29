@@ -1,34 +1,42 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
-  <!-- NAME -->
   <label for="name">What's your name?</label>
   <input id="name" type="text" formControlName="name" (focus)="clearField('name')" (blur)="validateField('name')"
     [ngClass]="{ 'error': contactForm.get('name')?.touched && contactForm.get('name')?.invalid }"
     [value]="getDisplayValue('name')" />
 
-  <!-- EMAIL -->
   <label for="email">What's your email?</label>
   <input id="email" type="email" formControlName="email" (focus)="clearField('email')" (blur)="validateField('email')"
     [ngClass]="{ 'error': contactForm.get('email')?.touched && contactForm.get('email')?.invalid }"
     [value]="getDisplayValue('email')" />
 
-  <!-- MESSAGE -->
   <label for="message">How can I help you?</label>
   <input id="message" type="text" formControlName="message" (focus)="clearField('message')"
     (blur)="validateField('message')"
     [ngClass]="{ 'error': contactForm.get('message')?.touched && contactForm.get('message')?.invalid }"
     [value]="getDisplayValue('message')" />
 
-  <!-- CONSENT -->
   <div class="consentBox">
     <input class="checkbox" type="checkbox" id="consent" formControlName="consent" />
     <div class="checkmark"></div>
     <label class="consentText" for="consent">
       I've read the <a href="#">privacy policy</a> and agree to the processing of my data.
+      @if (showConsentError) {
+      <span class="consentError">
+        Please accept the privacy policy.
+      </span>
+      }
     </label>
   </div>
 
-  <button class="btnStandard" type="submit" [disabled]="!contactForm.valid">
-    Send
-  </button>
+  <!-- Neue Syntax für Fehlermeldung -->
+
+
+  <!-- Button in Wrapper, damit Klicks abgefangen werden -->
+  <div class="submitWrapper" (click)="onDisabledSubmitAttempt()">
+    <button class="btnStandard" type="submit" [disabled]="!contactForm.valid">
+      Send
+    </button>
+  </div>
+
 </form>

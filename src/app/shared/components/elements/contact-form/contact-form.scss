@@ -51,3 +51,17 @@ a {
 input.error {
   color: #FF3A00;
 }
+
+.consentError {
+  color: #FF3A00;
+  font-size: 14px;
+  margin-left: 24px;
+}
+
+.submitWrapper {
+  cursor: pointer;
+}
+
+.submitWrapper button:disabled {
+  pointer-events: none;
+}

@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { FormBuilder, FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { AbstractControl } from '@angular/forms';
 
 @Component({
   selector: 'app-contact-form',
@@ -11,6 +12,46 @@ import { CommonModule } from '@angular/common';
 })
 export class ContactForm {
   fb = inject(FormBuilder);
+  showConsentError = false;
+
+  onDisabledSubmitAttempt() {
+    const isDisabled = !this.contactForm.valid;
+
+    // Nur reagieren, wenn der Button disabled ist
+    if (isDisabled) {
+      // Alle Felder als touched markieren
+      Object.values(this.contactForm.controls).forEach(control => {
+        control.markAsTouched();
+      });
+
+      // Checkbox-Fehler anzeigen
+      const consent = this.contactForm.get('consent');
+      if (consent?.invalid) {
+        this.showConsentError = true;
+      }
+
+      return; // WICHTIG: Kein Submit hier
+    }
+
+    // Wenn der Button aktiv ist → NICHT submitten
+    // Angular übernimmt das über (ngSubmit)
+  }
+
+  isNotDefault(defaultValue: string) {
+    return (control: AbstractControl) => {
+      if (control.value === defaultValue) {
+        return { defaultValue: true };
+      }
+      return null;
+    };
+  }
+
+  ngOnInit() {
+    this.contactForm.get('consent')?.valueChanges.subscribe(() => {
+      this.showConsentError = false;
+    });
+  }
+
 
   // Fehlertexte pro Feld
   errorTexts: Record<string, string> = {
@@ -31,17 +72,21 @@ export class ContactForm {
     name: new FormControl(this.defaultValues['name'], [
       Validators.required,
       Validators.minLength(3),
+      this.isNotDefault(this.defaultValues['name'])
     ]),
     email: new FormControl(this.defaultValues['email'], [
       Validators.required,
       Validators.email,
+      this.isNotDefault(this.defaultValues['email'])
     ]),
     message: new FormControl(this.defaultValues['message'], [
       Validators.required,
       Validators.minLength(3),
+      this.isNotDefault(this.defaultValues['message'])
     ]),
     consent: new FormControl(false, [Validators.requiredTrue]),
   });
+
 
   // Feld leeren beim Fokus
   clearField(field: string) {
@@ -70,11 +115,20 @@ export class ContactForm {
     const control = this.contactForm.get(field);
     if (!control) return;
 
+    // Wenn leer → required Fehler
     if (!control.value) {
       control.markAsTouched();
       control.setErrors({ required: true });
+      return;
+    }
+
+    // Wenn Defaultwert → Fehler
+    if (control.value === this.defaultValues[field]) {
+      control.markAsTouched();
+      control.setErrors({ defaultValue: true });
     }
   }
+
 
   // Wert oder Fehlertext anzeigen
   getDisplayValue(field: string): string {
