@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
 import { MainPage } from './shared/pages/main-page/main-page';
-import { PrivacyPolicy } from './shared/pages/privacy-policy/privacy-policy';
 import { JoinProject } from './shared/pages/join-project/join-project';
 import { ElPolloLocoProject } from './shared/pages/el-pollo-loco-project/el-pollo-loco-project';
+import { LegalNotice } from './shared/pages/legal-notice/legal-notice';
 
 export const routes: Routes = [
   {
@@ -10,8 +10,8 @@ export const routes: Routes = [
     component: MainPage
   },
   {
-    path: 'privacy-policy',
-    component: PrivacyPolicy
+    path: 'legal-notice',
+    component: LegalNotice
   },
   {
     path: 'join-project',
