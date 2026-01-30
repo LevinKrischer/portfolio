@@ -1,0 +1,109 @@
+.content {
+  min-height: 100dvh;
+  background-color: #1d1d1d;
+  background-image: url('/assets/imgs/bg/project-bg.png');
+  background-size: cover;
+  background-position: left;
+}
+
+.projectContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  height: calc(100% - 100px);
+  padding: 32px 64px 64px 64px
+}
+
+.contentLeft {
+  width: 40%;
+  padding: 0 24px;
+}
+
+.contentRight {
+  width: 45%;
+  color: var(--color-primary);
+
+  .projectBreadcrumb {
+    width: 100%;
+  }
+}
+
+.animationContainerWidth {
+  animation: showHideFromLeft 6s ease infinite;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  overflow: hidden;
+
+}
+
+@keyframes showHideFromLeft {
+  0% {
+    width: 0;
+  }
+
+  10% {
+    width: 100%;
+  }
+
+  80% {
+    width: 100%;
+  }
+
+  90% {
+    width: 0%;
+  }
+
+  100% {
+    width: 0%;
+  }
+}
+
+.projectDesc {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px
+}
+
+.usedTechSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+
+}
+
+.usedTech {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+
+  img {
+    width: 20px;
+  }
+}
+
+.linkBtns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.backLink {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 24px 0 0 48px;
+  font-weight: 700;
+}
+
+.nextLink {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 48px 0px 0 0;
+  font-weight: 700;
+}
