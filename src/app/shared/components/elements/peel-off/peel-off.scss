@@ -1,3 +1,7 @@
+*:hover {
+  cursor: pointer;
+}
+
 .skillsPeel {
   width: 100%;
 }
@@ -9,10 +13,6 @@
   .peelImage {
     width: 100%;
   }
-}
-
-.closedDesc>* {
-  cursor: default
 }
 
 .peelCoverDesc {
@@ -98,4 +98,8 @@
 
 .hidden {
   display: none;
+}
+
+.opened *:hover {
+  cursor: default;
 }
