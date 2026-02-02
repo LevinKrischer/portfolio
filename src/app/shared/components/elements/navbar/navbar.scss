@@ -11,6 +11,28 @@
 
 .headerLogo {
   max-width: 60px;
+
+  &.layerBack {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  &.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 0;
+
+      &+.layerBack {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .toggleSwitch {
