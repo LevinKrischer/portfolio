@@ -40,6 +40,13 @@
   width: 50%;
 }
 
+.contentRight img {
+  width: 40%;
+  border-radius: 16px;
+  align-self: flex-end;
+  padding-bottom:0;
+}
+
 .headline {
   display: flex;
   flex-direction: column;
@@ -180,4 +187,9 @@
     transform: translateX(0px) rotate(360deg);
     opacity: 1;
   }
+}
+
+.devMedal {
+  margin-bottom: -20%;
+  min-width: 140px;
 }
