@@ -6,10 +6,6 @@
   flex-direction: column;
   gap: 16px;
   background-color: transparent;
-
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .contactFrame {
@@ -24,6 +20,10 @@
   overflow: hidden;
   transition: height 0.4s ease;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   a {
     display: flex;
     align-items: center;
@@ -31,16 +31,16 @@
   }
 
   &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 38px;
-      height: 0px;
-      border-radius: 50%;
-      background-color: var(--color-high-nd);
-      transition: height 0.4s ease;
-      z-index:-1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 38px;
+    height: 0px;
+    border-radius: 50%;
+    background-color: var(--color-high-nd);
+    transition: height 0.4s ease;
+    z-index: -1;
   }
 
   &:hover::after {
