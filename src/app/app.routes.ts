@@ -20,5 +20,9 @@ export const routes: Routes = [
   {
     path: 'el-pollo-loco-project',
     component: ElPolloLocoProject
+  },
+  {
+    path: 'el-pollo-loco-project',
+    component: ElPolloLocoProject
   }
 ];

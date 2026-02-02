@@ -24,6 +24,12 @@
   overflow: hidden;
   transition: height 0.4s ease;
 
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &::after {
       content: '';
       position: absolute;
