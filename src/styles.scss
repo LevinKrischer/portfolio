@@ -141,3 +141,9 @@ h2 {
     cursor: pointer;
   }
 }
+
+p, h2 {
+  &:hover {
+    cursor: default;
+  }
+}
