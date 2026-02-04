@@ -227,3 +227,23 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .headerContent {
+    height: calc(100% - 80px);
+    overflow: hidden;
+  }
+
+  .headerHeadline {
+    width: 90%;
+    gap: 16px;
+  }
+
+  .headerHeadlineBottom {
+    align-items: center;
+  }
+
+  .profileImgFrame {
+    width: 60%;
+  }
+}
