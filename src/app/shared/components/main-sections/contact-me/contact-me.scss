@@ -6,6 +6,8 @@
   background-position: top;
   background-size: cover;
   background-origin: border-box;
+  max-width: var(--max-side-width);
+  margin: 0 auto;
 }
 
 .contentInner {
@@ -44,7 +46,7 @@
   width: 40%;
   border-radius: 16px;
   align-self: flex-end;
-  padding-bottom:0;
+  padding-bottom: 0;
 }
 
 .headline {
@@ -159,14 +161,14 @@
 
 .footerLinkIcon {
   position: absolute;
-  top:-90%;
+  top: -90%;
   right: 0;
   transform: translateX(-50px) rotate(0deg);
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
 
-.footerLink:hover ~ .footerLinkIcon {
+.footerLink:hover~.footerLinkIcon {
   transform: translateX(0px) rotate(360deg);
   opacity: 1;
   animation: rollIn 0.4s;
@@ -180,7 +182,7 @@
 
   70% {
     transform: translateX(10px) rotate(380deg);
-      opacity: 1;
+    opacity: 1;
   }
 
   100% {
@@ -192,4 +194,28 @@
 .devMedal {
   margin-bottom: -20%;
   min-width: 140px;
+}
+
+@media (min-width: 2100px) {
+  .content {
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 1) 100%);
+      width: 1%;
+    }
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0%;
+      height: 100%;
+      background: linear-gradient(270deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 1) 100%);
+      width: 1%;
+    }
+  }
 }

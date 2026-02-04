@@ -3,6 +3,8 @@
   flex-direction: column;
   color: var(--color-secondary);
   background-color: var(--color-primary);
+  max-width: var(--max-side-width);
+  margin: 0 auto;
 }
 
 .contentInner {
@@ -94,8 +96,8 @@
       transition: opacity 0.3s ease-in-out;
 
       &:hover {
-          cursor: pointer;
-        }
+        cursor: pointer;
+      }
     }
 
     &:hover .projectImg {
@@ -182,5 +184,29 @@
 
   100% {
     width: 0%;
+  }
+}
+
+@media (min-width: 2100px) {
+  .content {
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(29, 29, 29, 1) 100%);
+      width: 1%;
+    }
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      left: 0%;
+      height: 100%;
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(29, 29, 29, 1) 100%);
+      width: 1%;
+    }
   }
 }

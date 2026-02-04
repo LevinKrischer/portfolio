@@ -11,11 +11,12 @@
 
 :root {
   --color-primary: white;
-  --color-secondary: black;
+  --color-secondary: #1d1d1d;
   --color-high-st: #F7C518;
   --color-high-nd: #3355FF;
   --color-high-rd: #F87A55;
-  --max-width: 1230px;
+  --max-width: 1440px;
+  --max-side-width: 2300px;
 }
 
 * {
@@ -32,6 +33,7 @@
 body {
   font-size: 18px;
   font-family: 'BricolageGrotesque', sans-serif;
+  background-color: var(--color-secondary);
 }
 
 h2 {
