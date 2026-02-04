@@ -156,6 +156,20 @@ h2 {
 }
 
 @media (max-width: 768px) {
+
+  h2 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+
+  .f-size-20 {
+    font-size: 18px;
+  }
+
+  .f-size-24 {
+    font-size: 20px;
+  }
+
   .mt-60 {
     margin-top: 32px;
   }
