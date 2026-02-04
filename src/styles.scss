@@ -144,8 +144,33 @@ h2 {
   }
 }
 
-p, h2 {
+p,
+h2 {
   &:hover {
     cursor: default;
+  }
+}
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mt-60 {
+    margin-top: 32px;
+  }
+
+  .mb-60 {
+    margin-bottom: 32px;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .btnStandard,
+  .btnStandardWhite {
+    width: 40%;
+    min-width: 180px;
   }
 }
