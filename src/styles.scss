@@ -151,14 +151,6 @@ h2 {
   }
 }
 
-.mobile {
-  display: none;
-}
-
-.noMobile {
-  display: block;
-}
-
 @media (max-width: 768px) {
 
   h2 {
@@ -182,17 +174,10 @@ h2 {
     margin-bottom: 32px;
   }
 
-  .mobile {
-    display: block;
-  }
-
   .btnStandard,
   .btnStandardWhite {
     width: 40%;
     min-width: 180px;
   }
 
-  .noMobile {
-    display: none;
-  }
 }
