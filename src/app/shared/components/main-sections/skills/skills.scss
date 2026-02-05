@@ -6,7 +6,7 @@
   color: var(--color-primary);
   background-image: url('/assets/imgs/bg/03-skills-2300px.jpg');
   background-position: bottom;
-  background-size: auto 100%;
+  background-size: cover;
   max-width: var(--max-side-width);
   margin: 0 auto;
 }
@@ -34,6 +34,20 @@
   flex-direction: column;
   align-items: flex-end;
   width: 30%;
+
+  h2 {
+    z-index: 1;
+  }
+}
+
+.headlineCircle {
+  position: absolute;
+  width: 120%;
+  height: 110%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
 }
 
 .skillsIntro {
@@ -149,7 +163,7 @@ app-peel-off {
   .skillsContent {
     flex-direction: column;
     gap: 48px;
-    padding: 32px;
+    padding: 64px 32px;
   }
 
   .headline {
@@ -183,7 +197,7 @@ app-peel-off {
 
 @media (max-width: 480px) {
   .skillsContent {
-    padding: 60px 16px 16px;
+    padding: 60px 16px;
   }
 
   app-peel-off {
