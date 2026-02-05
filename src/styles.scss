@@ -155,6 +155,10 @@ h2 {
   display: none;
 }
 
+.noMobile {
+  display: block;
+}
+
 @media (max-width: 768px) {
 
   h2 {
@@ -186,5 +190,9 @@ h2 {
   .btnStandardWhite {
     width: 40%;
     min-width: 180px;
+  }
+
+  .noMobile {
+    display: none;
   }
 }

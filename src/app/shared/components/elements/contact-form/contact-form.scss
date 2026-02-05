@@ -61,3 +61,27 @@ input.error {
 .submitWrapper button:disabled {
   pointer-events: none;
 }
+
+.submitArea {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+
+  .animationContainer {
+    width:50%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .submitWrapper {
+    min-width: 50%;
+
+    .btnStandard {
+      min-width: unset;
+      width: 100%;
+    }
+  }
+}

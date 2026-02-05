@@ -58,6 +58,11 @@
   }
 }
 
+.firstLine {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 /* --- Animation A (falls genutzt) --- */
 .animationContainer {
   width: 100%;
@@ -168,5 +173,21 @@
   100% {
     transform: translateX(0) rotate(360deg);
     opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .firstLine {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+  .footer p,
+  .footer a {
+    font-size: 16px;
   }
 }

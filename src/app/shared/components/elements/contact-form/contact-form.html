@@ -33,10 +33,16 @@
 
 
   <!-- Button in Wrapper, damit Klicks abgefangen werden -->
-  <div class="submitWrapper" (click)="onDisabledSubmitAttempt()">
-    <button class="btnStandard" type="submit" [disabled]="!contactForm.valid">
-      Send
-    </button>
+  <div class="submitArea">
+    <div class="animationContainer mobile">
+      <img class="animatedImage" src="./assets/imgs/decorations/line-with-arrow-right.svg" alt="">
+    </div>
+
+    <div class="submitWrapper" (click)="onDisabledSubmitAttempt()">
+      <button class="btnStandard" type="submit" [disabled]="!contactForm.valid">
+        Send
+      </button>
+    </div>
   </div>
 
 </form>
