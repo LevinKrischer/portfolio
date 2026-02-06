@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px;
+  padding: 0 32px;
   height: 80px;
   max-width: var(--max-width);
   margin: 0 auto;
@@ -231,5 +231,15 @@ input:checked+.slider:before {
     position: absolute;
     bottom: 0;
     left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .linkBox {
+    display: none;
+  }
+
+  .toggleSwitch {
+    display: none;
   }
 }

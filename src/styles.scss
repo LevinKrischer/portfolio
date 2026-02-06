@@ -36,6 +36,12 @@ body {
   background-color: var(--color-secondary);
 }
 
+h1 {
+  font-size: 128px;
+  line-height: 128px;
+  color: var(--color-primary);
+}
+
 h2 {
   font-size: 64px;
   line-height: 64px;
@@ -152,6 +158,11 @@ h2 {
 }
 
 @media (max-width: 768px) {
+
+  h1 {
+    font-size: clamp(52px, 15vw, 128px);
+    line-height: clamp(42px, 15vw, 128px);
+  }
 
   h2 {
     font-size: 48px;

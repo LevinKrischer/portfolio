@@ -1,5 +1,5 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
-import { LETTERS, LetterConfig } from './letter.data';
+import { Component, Input, signal, computed, ChangeDetectionStrategy } from '@angular/core';
+import { LETTERS } from './letter.data';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -7,55 +7,72 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './letter.html',
-  styleUrls: ['./letter.scss']
+  styleUrls: ['./letter.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class LetterComponent implements OnChanges {
-  @Input() char!: string;
-  @Input() scale = 1;
+export class LetterComponent {
 
-  currentOffset = 0;
-  currentSrc!: string;
-  currentWidth!: number;
-  private isInitialUpper = true;
+  // Inputs als Signals
+  private _char = signal<string>('');
+  private _scale = signal<number>(1);
 
-  private config: Record<string, LetterConfig> = LETTERS;
-
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes['char'] && this.char) {
-      const data = this.config[this.char];
-
-      if (!data) {
-        console.warn(`No letter config found for "${this.char}"`);
-        return;
-      }
-
-      const isUpper = this.char === this.char.toUpperCase() && this.char !== this.char.toLowerCase();
-      this.isInitialUpper = isUpper;
-
-      const initialVariant = isUpper ? data.upper : data.lower;
-      this.currentSrc = initialVariant.src;
-      this.currentWidth = initialVariant.width;
-
-      // 🔥 Nur das kleine p bekommt einen Offset
-      this.currentOffset = this.char === 'p' ? 12 : 0;
-    }
+  @Input() set char(value: string) {
+    this._char.set(value);
   }
 
-  onHover(isHover: boolean): void {
-    const data = this.config[this.char];
-    if (!data) return;
-
-    const showUpper = this.isInitialUpper ? !isHover : isHover;
-    const target = showUpper ? data.upper : data.lower;
-
-    this.currentSrc = target.src;
-    this.currentWidth = target.width;
-
-    // 🔥 Wenn wir auf das kleine p wechseln → Offset aktivieren
-    if (this.char === 'p') {
-      this.currentOffset = showUpper ? 0 : 12;
-    } else {
-      this.currentOffset = 0;
-    }
+  @Input() set scale(value: number) {
+    this._scale.set(value);
   }
+
+  // Hover-Signal
+  private _hover = signal<boolean>(false);
+
+  // Hover-Handler
+  onHover(isHover: boolean) {
+    this._hover.set(isHover);
+  }
+
+  // Letter-Daten
+  private config = LETTERS;
+
+  // Initialzustand: ist der Input-Buchstabe uppercase?
+  private isInitialUpper = computed(() => {
+    const c = this._char();
+    return c === c.toUpperCase() && c !== c.toLowerCase();
+  });
+
+  // Variante abhängig von Hover + Initialzustand
+  variant = computed(() => {
+    const c = this._char();
+    const data = this.config[c];
+    if (!data) return null;
+
+    const hover = this._hover();
+    const initialUpper = this.isInitialUpper();
+
+    // Logik aus deinem alten Code:
+    // Wenn initial Upper → bei Hover Lower
+    // Wenn initial Lower → bei Hover Upper
+    const showUpper = initialUpper ? !hover : hover;
+
+    return showUpper ? data.upper : data.lower;
+  });
+
+  currentSrc = computed(() => this.variant()?.src ?? '');
+  currentWidth = computed(() => this.variant()?.width ?? 0);
+
+  currentOffset = computed(() => {
+    const c = this._char();
+    const hover = this._hover();
+    const initialUpper = this.isInitialUpper();
+
+    // p hat Sonderoffset
+    if (c !== 'p') return 0;
+
+    const showUpper = initialUpper ? !hover : hover;
+    return showUpper ? 0 : 12;
+  });
+
+  char$ = computed(() => this._char());
+  scale$ = computed(() => this._scale());
 }

@@ -1,16 +1,15 @@
 .letter {
-  // display: inline-block;
-  // overflow: hidden;
-  transition: width 0.3s ease, height 0.3s ease;
-  vertical-align: bottom;
-  margin: 0 -2px
+  display: inline-block;
+  transition: width 0.25s ease,
+  transform 0.25s ease;
+  transform-origin: left center;
 }
 
 .letter img {
   display: block;
   max-height: 100px;
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 
 .letter img:hover {
@@ -19,6 +18,12 @@
 
 .sub:hover .letter img{
   padding-top:100px;
+}
+
+@media (max-width: 768px) {
+  .letter {
+    display: none;
+  }
 }
 
 

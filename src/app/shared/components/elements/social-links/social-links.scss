@@ -53,3 +53,10 @@
 .contactLink {
   transition: all 0.3s ease;
 }
+
+@media (max-width: 1100px){
+  .contactLinks {
+    bottom: 32px;
+    left: 32px;
+  }
+}
