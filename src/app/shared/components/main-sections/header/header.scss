@@ -114,7 +114,7 @@
   border: white solid 1px;
   border-radius: 24px;
   width: 128px;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 
   &:hover {
     width: 183px;
@@ -259,6 +259,9 @@
 
 @media (max-width: 768px) {
 
+  .content {
+    height:auto;
+  }
   .mobile {
     display: block;
   }
@@ -277,10 +280,10 @@
 
   .headerContent {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 64px;
-    height: calc(100% - 160px);
+    padding: 64px 0 128px 0;
     overflow: hidden;
   }
 
@@ -309,9 +312,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
 
-    img {
-      width: 50%;
+   img {
+      width: 100%;
       height: auto;
       rotate: 8deg;
     }
@@ -325,6 +329,16 @@
     position: relative;
     width: auto;
     height: 100%;
+
+    &:hover {
+        opacity: 1;
+      }
   }
 
+}
+
+@media (max-width: 480px) {
+  .profileImgMobile {
+    width: 70%;
+  }
 }
