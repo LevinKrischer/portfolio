@@ -5,11 +5,19 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0 32px;
+  justify-content: space-around;
   height: 80px;
-  max-width: var(--max-width);
-  margin: 0 auto;
+
+  .linkBox {
+    mix-blend-mode: difference;
+    color: white;
+  }
+}
+
+h2,
+p {
+  mix-blend-mode: difference;
+  color: var(--color-primary);
 }
 
 .headerLogo {
@@ -235,6 +243,25 @@ input:checked+.slider:before {
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    justify-content: flex-start;
+    padding: 0 32px;
+  }
+
+  .linkBox {
+    display: none;
+  }
+
+  .toggleSwitch {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0 16px;
+  }
+
   .linkBox {
     display: none;
   }
