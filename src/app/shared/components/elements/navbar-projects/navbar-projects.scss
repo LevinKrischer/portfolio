@@ -1,16 +1,45 @@
-* {
-  color: white;
-}
-
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 80px;
+
+  .linkBox {
+    mix-blend-mode: difference;
+    color: white;
+  }
+}
+
+h2,
+p {
+  mix-blend-mode: difference;
+  color: var(--color-primary);
 }
 
 .headerLogo {
   max-width: 60px;
+
+  &.layerBack {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  &.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+
+    &:hover {
+      opacity: 0;
+
+      &+.layerBack {
+        opacity: 1;
+      }
+    }
+  }
 }
 
 .toggleSwitch {
@@ -207,9 +236,4 @@ input:checked+.slider:before {
     bottom: 0;
     left: 0px;
   }
-}
-
-.colorBlack {
-  color: var(--color-secondary);
-  font-weight: 700;
 }
