@@ -98,8 +98,17 @@
   display: flex;
   gap: 8px;
   align-items: center;
+  max-width: 200px;
   padding: 24px 0 0 48px;
   font-weight: 700;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    img {
+      transform: translateX(-8px);
+      transition: transform 0.2s ease;
+    }
+  }
 }
 
 .nextLink {
@@ -107,6 +116,27 @@
   gap: 8px;
   align-items: center;
   justify-content: flex-end;
+  margin-left: auto;
   padding: 48px 0px 0 0;
+  max-width: 200px;
   font-weight: 700;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    img {
+      transform: translateX(8px);
+      transition: transform 0.2s ease;
+    }
+  }
+}
+
+h2,
+p,
+a {
+  mix-blend-mode: difference;
+  color: var(--color-primary);
+}
+
+img {
+  mix-blend-mode: normal;
 }
