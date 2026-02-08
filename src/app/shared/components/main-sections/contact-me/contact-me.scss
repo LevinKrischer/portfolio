@@ -224,6 +224,12 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .animationContainer {
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .content {
     background-size: auto 100%;

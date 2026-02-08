@@ -85,3 +85,13 @@ input.error {
     }
   }
 }
+
+.mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+}
