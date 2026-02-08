@@ -1,12 +1,10 @@
-<section class="menue-mobile">
+<section class="menue-mobile" [class.open]="isOpen">
   <section class="headline">
     <div class="logoContainer">
       <a href="#">
         <img class="headerLogo" src="./assets/imgs/layout/lk-logo-yellow.png" alt=""></a>
     </div>
-    <button class="mobileNavigation">
-      <!-- <img src="./assets/imgs/decorations/burger-menue.png" alt="" class="burgerIcon"> -->
-    </button>
+<button class="mobileNavigation" (click)="closeMenu()"></button>
   </section>
   <nav class="menue">
     <div class="linkBox">
@@ -30,5 +28,5 @@
       <p>DE</p>
     </div>
   </nav>
-    <app-social-links></app-social-links>
+  <app-social-links></app-social-links>
 </section>

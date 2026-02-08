@@ -17,6 +17,11 @@
   padding: 32px 32px 80px 32px;
   background-image: url('/assets/imgs/bg/01_Hero-1110px-mobile.png');
   background-size: 100% 100%;
+  transition: transform 300ms ease;
+
+  &.open {
+      transform: translateY(0);
+    }
 }
 
 nav {
@@ -49,6 +54,10 @@ nav {
   padding: 0;
   width: 32px;
   height: 32px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .logoContainer {
