@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Menue } from '../menue/menue';
 
 @Component({
   selector: 'app-navbar',
-  imports: [],
+  imports: [Menue],
   templateUrl: './navbar.html',
   styleUrl: './navbar.scss',
 })

@@ -2,12 +2,17 @@
   color: white;
 }
 
-.navbar {
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menue {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 80px;
-  padding: 0 64px;
 
   .linkBox {
     mix-blend-mode: difference;
@@ -15,19 +20,10 @@
   }
 }
 
-app-menue {
-  width: 80%;
-}
-
 h2,
 p {
   mix-blend-mode: difference;
   color: var(--color-primary);
-}
-
-.logoContainer {
-  width: 20%;
-  display: flex;
 }
 
 .headerLogo {
@@ -252,56 +248,10 @@ input:checked+.slider:before {
   }
 }
 
-.mobile {
-  display: none;
-}
 
 @media (max-width: 768px) {
-  .navbar {
-    justify-content: space-between;
-    padding: 0 32px;
-  }
 
-  .linkBox {
-    display: none;
-  }
-
-  .toggleSwitch {
-    display: none;
-  }
-
-  .mobileNavigation {
-    display: block;
-    background-image: url('/assets/imgs/decorations/burger-menue.png');
-    background-size: 100%;
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    width: 32px;
-    height: 32px;
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    &.opened {
-        background-image: url('/assets/imgs/decorations/burger-menue-close.png');
-      }
-  }
-
-
-}
-
-@media (max-width: 480px) {
-  .navbar {
-    padding: 0 16px;
-  }
-
-  .linkBox {
-    display: none;
-  }
-
-  .toggleSwitch {
+  .menue {
     display: none;
   }
 }

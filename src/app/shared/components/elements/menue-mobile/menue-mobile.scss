@@ -1,0 +1,131 @@
+* {
+  color: white;
+}
+
+.menue-mobile {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  transform: translateY(-100%);
+  width: 100%;
+  z-index: 10;
+  height: 80dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 32px 32px 80px 32px;
+  background-image: url('/assets/imgs/bg/01_Hero-1110px-mobile.png');
+  background-size: 100% 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+
+  .linkBox {
+    mix-blend-mode: difference;
+    color: white;
+    font-size: 20px;
+  }
+}
+
+.headline {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobileNavigation {
+  background-image: url('/assets/imgs/decorations/burger-menue-close.png');
+  background-size: 100%;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.headerLogo {
+  max-width: 60px;
+}
+
+.toggleSwitch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  padding: 8px 16px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 8px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F87A55;
+  border: 1px solid white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #3355FF;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked+.slider:before {
+  transform: translate(20px, -50%);
+
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.linkBox {
+  padding: 8px 16px;
+}
+
+@media (max-width: 480px) {
+  .menue-mobile {
+    padding: 32px 16px 80px 16px;
+  }
+}
