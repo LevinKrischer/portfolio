@@ -3,6 +3,7 @@ import { MainPage } from './shared/pages/main-page/main-page';
 import { JoinProject } from './shared/pages/join-project/join-project';
 import { ElPolloLocoProject } from './shared/pages/el-pollo-loco-project/el-pollo-loco-project';
 import { LegalNotice } from './shared/pages/legal-notice/legal-notice';
+import { DaBubbleProject } from './shared/pages/da-bubble-project/da-bubble-project';
 
 export const routes: Routes = [
   {
@@ -16,6 +17,10 @@ export const routes: Routes = [
   {
     path: 'join-project',
     component: JoinProject
+  },
+  {
+    path: 'dabubble-project',
+    component: DaBubbleProject
   },
   {
     path: 'el-pollo-loco-project',

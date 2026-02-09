@@ -52,19 +52,16 @@ export class ContactForm {
     });
   }
 
-
-  // Fehlertexte pro Feld
   errorTexts: Record<string, string> = {
-    name: 'Please enter your name',
-    email: 'Please enter a valid email address',
-    message: 'Please enter your message',
+    name: 'Bitte gib deinen Namen ein',
+    email: 'Bitte gib eine gültige E-Mail-Adresse ein',
+    message: 'Bitte gib deine Nachricht ein',
   };
 
-  // Defaultwerte pro Feld
   defaultValues: Record<string, string> = {
-    name: 'Your name goes here',
-    email: 'youremail@mail.de',
-    message: 'Hello Levin, I am interested in...',
+    name: 'Dein Name hier',
+    email: 'deineemail@mail.de',
+    message: 'Hallo Levin, ich interessiere mich für...',
   };
 
   // Formular

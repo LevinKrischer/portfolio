@@ -1,16 +1,16 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
-  <label for="name">What's your name?</label>
+  <label for="name">Wie heißt Du?</label>
   <input id="name" type="text" formControlName="name" (focus)="clearField('name')" (blur)="validateField('name')"
     [ngClass]="{ 'error': contactForm.get('name')?.touched && contactForm.get('name')?.invalid }"
     [value]="getDisplayValue('name')" />
 
-  <label for="email">What's your email?</label>
+  <label for="email">Wie lautet deine E-Mail?</label>
   <input id="email" type="email" formControlName="email" (focus)="clearField('email')" (blur)="validateField('email')"
     [ngClass]="{ 'error': contactForm.get('email')?.touched && contactForm.get('email')?.invalid }"
     [value]="getDisplayValue('email')" />
 
-  <label for="message">How can I help you?</label>
+  <label for="message">Wie kann ich dir helfen?</label>
   <input id="message" type="text" formControlName="message" (focus)="clearField('message')"
     (blur)="validateField('message')"
     [ngClass]="{ 'error': contactForm.get('message')?.touched && contactForm.get('message')?.invalid }"
@@ -20,10 +20,10 @@
     <input class="checkbox" type="checkbox" id="consent" formControlName="consent" />
     <div class="checkmark"></div>
     <label class="consentText" for="consent">
-      I've read the <a href="#">privacy policy</a> and agree to the processing of my data.
+      Die <a href="#">Datenschutzerklärung</a> habe ich gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu.
       @if (showConsentError) {
       <span class="consentError">
-        Please accept the privacy policy.
+        Bitte akzeptiere die Datenschutzerklärung.
       </span>
       }
     </label>
@@ -40,7 +40,7 @@
 
     <div class="submitWrapper" (click)="onDisabledSubmitAttempt()">
       <button class="btnStandard" type="submit" [disabled]="!contactForm.valid">
-        Send
+        Absenden
       </button>
     </div>
   </div>
