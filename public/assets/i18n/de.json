@@ -1,0 +1,268 @@
+{
+  "ABOUT": {
+    "SECTION_LABEL": "WER ICH BIN",
+    "HEADLINE": "Über mich",
+
+    "LOCATION": "Hannover",
+    "OPEN_FOR_EDUCATION": "Offen für Weiterbildungen",
+    "OPEN_FOR_REMOTE": "Offen für Remote-Arbeit",
+
+    "TEXT": {
+      "INTRO": "Hallo, ich bin Levin.",
+      "P1": "An der Schnittstelle von Frontend-Entwicklung, Design und Didaktik entsteht für mich der spannendste Raum: dort, wo Struktur auf Ästhetik trifft und Systeme verständlich werden. Genau diese Verbindung treibt mich an, Lösungen zu entwickeln, die klar, modular und nachhaltig sind.",
+      "P2": "Herausforderungen sehe ich als Lernmomente. Jede neue Aufgabe schärft meinen Blick für Architektur, Performance und Nutzererlebnis. Präzision, Verständlichkeit und ein bewusster Umgang mit Komplexität prägen meine Arbeit.",
+      "P3": "Gute Produkte entstehen im Austausch — und genau dort arbeite ich am liebsten. Lass uns gemeinsam etwas bauen, das wirklich Wirkung zeigt!"
+    },
+
+    "CTA": "Kontakt aufnehmen"
+  },
+  "PROJECTS": {
+    "SECTION_LABEL": "MEIN HANDWERK",
+    "HEADLINE": "Projekte",
+    "INTRO": "Die folgenden Projekte zeigen unterschiedliche Ansätze zur Entwicklung responsiver, nutzerfreundlicher Anwendungen mit klarer Struktur und effizientem Code. Alle Beispiele lassen sich direkt im Browser erkunden und interaktiv ausprobieren.",
+    "DETAILS_BUTTON": "Details",
+    "JOIN": {
+      "TITLE": "Join",
+      "DESCRIPTION": "Task‑Manager, inspiriert vom Kanban‑System. Aufgaben können per Drag‑and‑Drop erstellt, organisiert und verwaltet werden. Nutzer und Kategorien lassen sich flexibel zuweisen. Durch die Anbindung an Supabase‑Datenbanken ist eine Nutzung im Team in Echtzeit möglich."
+    },
+    "POLLO": {
+      "TITLE": "El pollo loco",
+      "DESCRIPTION": "Jump‑and‑Run‑Spiel auf objektorientierter Basis. Die Spielfigur sammelt Münzen und Tabasco‑Flaschen, um sich gegen die verrückte Henne zu behaupten. Animationen, Kollisionserkennung und Interaktionen wurden vollständig in JavaScript umgesetzt."
+    },
+    "DABUBBLE": {
+      "TITLE": "DABubble",
+      "DESCRIPTION": "Kommunikationsplattform nach dem Vorbild von Slack. Die Anwendung bietet eine intuitive Oberfläche, Echtzeit‑Nachrichten und klar strukturierte Channel‑Organisation. Ziel ist eine effiziente, teamorientierte Zusammenarbeit in modernen Arbeitsumgebungen."
+    }
+  },
+  "THOUGHTS": {
+    "SECTION_LABEL": "IN EIGENEN WORTEN:",
+    "HEADLINE": "Kommentare von Kollegen",
+
+    "CARD1": {
+      "QUOTE": "\"Working with them was a pleasure. Their dedication to quality and collaboration elevated our team's performance and project outcomes.\"",
+      "NAME": "Liam Smithy",
+      "POSITION": "Project Manager",
+      "PROFILE": "Profil"
+    },
+
+    "CARD2": {
+      "QUOTE": "\"Ihre strukturierte Arbeitsweise und ihr Blick für Details haben unser Projekt auf ein neues Level gehoben. Die Zusammenarbeit war jederzeit produktiv und inspirierend.\"",
+      "NAME": "Julia Meinhardt",
+      "POSITION": "UX Designerin",
+      "PROFILE": "Profil"
+    },
+
+    "CARD3": {
+      "QUOTE": "\"Ein echtes Talent, wenn es darum geht, komplexe Themen verständlich zu machen. Technisch stark, kommunikativ klar und immer lösungsorientiert.\"",
+      "NAME": "Carlos Rivera",
+      "POSITION": "Software Engineer",
+      "PROFILE": "Profil"
+    }
+  },
+  "SKILLS": {
+    "SECTION_LABEL": "MEINE FÄHIGKEITEN",
+    "HEADLINE": "Skills",
+
+    "INTRO": "Mein Schwerpunkt liegt auf der Entwicklung strukturierter, wartbarer und effizienzorientierter Frontend‑Lösungen. Dabei lege ich besonderen Wert auf klare Architekturprinzipien, sauberen Code und einen kontinuierlichen Weiterentwicklungsprozess, um neue Technologien und Methoden fundiert in bestehende Workflows zu integrieren.",
+
+    "ICONS": {
+      "HTML": "HTML",
+      "CSS": "CSS",
+      "JS": "JavaScript",
+      "TS": "TypeScript",
+      "ANGULAR": "Angular",
+      "FIREBASE": "Firebase",
+      "GIT": "Git",
+      "REST_API": "REST‑API",
+      "SCRUM": "Scrum",
+      "MATERIAL": "Material Design"
+    }
+  },
+  "HEADER": {
+    "HELLO": "Hallo Welt!",
+    "IAM": "ICH BIN LEVIN",
+    "CONTACT": "Kontakt"
+  },
+  "CONTACT": {
+    "SECTION_LABEL": "KONTAKT",
+    "HEADLINE": "Bereit für gemeinsame Projekte?",
+
+    "TEXT": "Offenheit für neue Projekte und professionelle Zusammenarbeit steht im Mittelpunkt. Besonders relevant sind Rollen, in denen strukturierte Frontend‑Entwicklung, saubere Architektur und ein verlässlicher Qualitätsanspruch gefragt sind. Durch technische Expertise und kontinuierliche Weiterentwicklung entsteht ein nachhaltiger Beitrag zu modernen Teams und Projekten.\n\nFür Projektanfragen, fachlichen Austausch oder konkrete Ideen bietet das Kontaktformular eine direkte Möglichkeit, in Verbindung zu treten. Rückmeldungen erfolgen zeitnah und zielgerichtet."
+  },
+  "CONTACT_FORM": {
+    "LABEL_NAME": "Wie heißt Du?",
+    "LABEL_EMAIL": "Wie lautet deine E-Mail?",
+    "LABEL_MESSAGE": "Wie kann ich dir helfen?",
+
+    "CONSENT_TEXT": "Die <a href='#'>Datenschutzerklärung</a> habe ich gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu.",
+    "CONSENT_ERROR": "Bitte akzeptiere die Datenschutzerklärung.",
+
+    "SUBMIT": "Absenden"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "© Levin Krischer 2026",
+    "LEGAL_NOTICE": "Impressum",
+    "GITHUB": "GitHub",
+    "LINKEDIN": "LinkedIn",
+    "EMAIL": "Email"
+  },
+  "NAVBAR": {
+    "ABOUT": "Über mich",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projekte",
+    "CONTACT": "Kontakt",
+    "LANG_EN": "EN",
+    "LANG_DE": "DE"
+  },
+  "MOBILE_MENU": {
+    "ABOUT": "Über mich",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projekte",
+    "CONTACT": "Kontakt",
+    "LANG_EN": "EN",
+    "LANG_DE": "DE"
+  },
+  "PROJECTS_DETAIL": {
+    "JOIN": {
+      "TITLE": "Join",
+      "BACK": "zurück",
+
+      "DESCRIPTION": {
+        "LABEL": "Beschreibung",
+        "TEXT": "Task‑Manager, inspiriert vom Kanban‑System. Aufgaben können per Drag‑and‑Drop erstellt, organisiert und verwaltet werden. Nutzer und Kategorien lassen sich flexibel zuweisen. Durch die Anbindung an Supabase‑Datenbanken ist eine Nutzung im Team in Echtzeit möglich."
+      },
+
+      "IMPLEMENTATION": {
+        "LABEL": "Implementation Details",
+        "TEXT": "Teamarbeit steht in diesem Projekt klar im Vordergrund. Nicht nur im Nutzungszweck der Anwendung, sondern vor allem im Entwicklungsprozess. Eine klare Aufgabenverteilung, aber mit gegenseitiger Unterstützung und regelmäßigem Feedback, ist hier unumgänglich. Mir persönlich hat es sehr viel Spaß gemacht, gemeinsam etwas Großes zu schaffen."
+      },
+
+      "DURATION": {
+        "LABEL": "Dauer:",
+        "VALUE": "5 Wochen"
+      },
+
+      "TECH": {
+        "HTML": "HTML5",
+        "CSS": "CSS3",
+        "SUPABASE": "Supabase",
+        "ANGULAR": "Angular",
+        "TS": "TypeScript"
+      },
+
+      "BUTTONS": {
+        "GITHUB": "Github",
+        "LIVE": "Live Test"
+      },
+
+      "NAV": {
+        "NEXT": "Nächstes Projekt"
+      }
+    },
+
+    "POLLO": {
+      "TITLE": "El pollo loco",
+      "BACK": "zurück",
+
+      "DESCRIPTION": {
+        "LABEL": "Beschreibung",
+        "TEXT": "Jump‑and‑Run‑Spiel auf objektorientierter Basis. Die Spielfigur sammelt Münzen und Tabasco‑Flaschen, um sich gegen die verrückte Henne zu behaupten. Animationen, Kollisionserkennung und Interaktionen wurden vollständig in JavaScript umgesetzt."
+      },
+
+      "IMPLEMENTATION": {
+        "LABEL": "Implementation Details",
+        "TEXT": "Die Herausforderung in diesem Projekt war ganz klar die Objektorientierung und die Umsetzung der Spielmechaniken in reinem JavaScript. Gerade hier ist mir aufgefallen, wie wichtig vorherige Planung im Bezug auf die Verbindung aller Klassen und die Kommunikation untereinander ist. Es hat sehr viel Spaß gemacht, die Spiellogik zu entwickeln und immer wieder zu testen, wie sich die einzelnen Elemente im Zusammenspiel verhalten."
+      },
+
+      "DURATION": {
+        "LABEL": "Dauer:",
+        "VALUE": "3 Wochen"
+      },
+
+      "TECH": {
+        "HTML": "HTML5",
+        "CSS": "CSS3",
+        "JS": "JavaScript (vanilla)"
+      },
+
+      "BUTTONS": {
+        "GITHUB": "Github",
+        "LIVE": "Live Test"
+      },
+
+      "NAV": {
+        "NEXT": "Nächstes Projekt"
+      }
+    },
+
+    "DABUBBLE": {
+      "TITLE": "DABubble",
+      "BACK": "zurück",
+
+      "DESCRIPTION": {
+        "LABEL": "Beschreibung",
+        "TEXT": "Kommunikationsplattform nach dem Vorbild von Slack. Die Anwendung bietet eine intuitive Oberfläche, Echtzeit‑Nachrichten und klar strukturierte Channel‑Organisation. Ziel ist eine effiziente, teamorientierte Zusammenarbeit in modernen Arbeitsumgebungen."
+      },
+
+      "IMPLEMENTATION": {
+        "LABEL": "Implementation Details",
+        "TEXT": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis expedita odit sint hic animi laudantium distinctio veritatis iusto obcaecati, neque asperiores? Eaque blanditiis suscipit aliquam veritatis nisi mollitia saepe accusamus."
+      },
+
+      "DURATION": {
+        "LABEL": "Dauer:",
+        "VALUE": "4 Wochen"
+      },
+
+      "TECH": {
+        "HTML": "HTML5",
+        "CSS": "CSS3",
+        "SUPABASE": "Supabase",
+        "ANGULAR": "Angular",
+        "TS": "TypeScript"
+      },
+
+      "BUTTONS": {
+        "GITHUB": "Github",
+        "LIVE": "Live Test"
+      },
+
+      "NAV": {
+        "NEXT": "Nächstes Projekt"
+      }
+    }
+  },
+  "LEGAL_NOTICE": {
+    "TITLE": "Legal Notice",
+    "HEADLINE": "Impressum",
+
+    "NAME": "Levin Krischer",
+    "ADDRESS_LINE1": "Auf dem Amtshof 19",
+    "ADDRESS_LINE2": "30938 Burgwedel",
+
+    "CONTACT_LABEL": "Exploring the board:",
+    "CONTACT_EMAIL": "info@dev.levinkrischer.de",
+
+    "ACCEPTANCE_TITLE": "Akzeptanz der Bedingungen",
+    "ACCEPTANCE_TEXT": "Durch den Zugriff auf und die Nutzung des Portfolios (Produkt) werden die folgenden Bedingungen sowie alle Richtlinien, Hinweise oder zukünftigen Änderungen akzeptiert. Wir, die aufgeführten Studierenden, behalten uns vor, diese Bedingungen jederzeit und ohne vorherige Ankündigung zu aktualisieren oder zu ändern.",
+
+    "SCOPE_TITLE": "Geltungsbereich und Eigentum am Produkt",
+    "SCOPE_TEXT1": "Das Portfolio wurde im Rahmen eines studentischen Gruppenprojekts in einem Web‑Development‑Bootcamp der Developer Akademie GmbH entwickelt. Es dient ausschließlich Ausbildungszwecken und ist nicht für umfangreiche private oder geschäftliche Nutzung vorgesehen. Daher kann keine Gewähr für Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder sonstige Qualitätsmerkmale des Produkts übernommen werden.",
+    "SCOPE_TEXT2": "Das Design des Portfolios ist Eigentum der Developer Akademie GmbH. Eine unbefugte Nutzung, Reproduktion, Modifikation, Verbreitung oder Vervielfältigung des Designs ist strikt untersagt.",
+
+    "OWNERSHIP_TITLE": "Eigentumsrechte",
+    "OWNERSHIP_TEXT": "Abgesehen vom Design, das der Developer Akademie GmbH gehört, behalten wir, die aufgeführten Studierenden, sämtliche Eigentumsrechte am Portfolio, einschließlich aller zugehörigen urheberrechtlich geschützten Materialien, Marken und sonstigen proprietären Informationen.",
+
+    "USAGE_TITLE": "Nutzung des Produkts",
+    "USAGE_TEXT": "Das Portfolio darf ausschließlich für rechtmäßige Zwecke und im Einklang mit geltenden Gesetzen und Vorschriften verwendet werden. Jegliche Nutzung für illegale Aktivitäten oder zur Belästigung, Schädigung, Bedrohung oder Einschüchterung anderer Personen ist untersagt. Die Verantwortung für Interaktionen mit anderen Nutzenden des Portfolios liegt allein bei Ihnen.",
+
+    "DISCLAIMER_TITLE": "Haftungsausschluss",
+    "DISCLAIMER_TEXT": "Das Portfolio wird „wie besehen“ bereitgestellt, ohne jegliche ausdrückliche oder stillschweigende Gewährleistung, einschließlich, aber nicht beschränkt auf die Gewährleistung der Marktgängigkeit, Eignung für einen bestimmten Zweck oder Nichtverletzung von Rechten. In keinem Fall haften wir, die aufgeführten Studierenden, oder die Developer Akademie für direkte, indirekte, zufällige, besondere oder Folgeschäden, einschließlich, aber nicht beschränkt auf entgangene Gewinne, Verlust von Goodwill, Nutzungsausfälle, Datenverluste oder andere immaterielle Schäden, selbst wenn auf die Möglichkeit solcher Schäden hingewiesen wurde und diese im Zusammenhang mit der Nutzung oder Leistung des Portfolios entstehen.",
+
+    "INDEMNITY_TITLE": "Freistellung",
+    "INDEMNITY_TEXT": "Sie erklären sich damit einverstanden, uns, die aufgeführten Studierenden, die Developer Akademie sowie unsere verbundenen Unternehmen, Partner, Führungskräfte, Direktoren, Vertreter und Mitarbeitenden von jeglichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Anwaltskosten) freizustellen, die sich aus Ihrer Nutzung des Portfolios und/oder einem Verstoß gegen dieses Impressum ergeben.",
+
+    "FOOTER_CONTACT": "Bei Fragen oder Hinweisen kontaktieren Sie uns bitte unter",
+    "DATE": "Datum: 30.01.2026"
+  }
+}

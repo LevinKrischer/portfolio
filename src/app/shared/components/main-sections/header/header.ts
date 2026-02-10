@@ -3,10 +3,11 @@ import { Navbar } from "../../elements/navbar/navbar";
 import { LetterComponent } from '../../elements/letter/letter';
 import { Button } from "../../elements/button/button";
 import { SocialLinks } from "../../elements/social-links/social-links";
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
-  imports: [Navbar, LetterComponent, Button, SocialLinks],
+  imports: [Navbar, LetterComponent, Button, SocialLinks, TranslateModule],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })

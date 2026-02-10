@@ -1,35 +1,33 @@
 <section class="content" id="contact">
   <section class="contentInner contactContent">
+
     <section class="contentRow">
+
       <section class="contentLeft">
         <div class="headline">
           <img class="devMedal mobile" src="./assets/imgs/layout/contact-lk-fed.png" alt="">
 
-          <p class="f-size-20">KONTAKT</p>
-          <h2>Bereit für gemeinsame Projekte?</h2>
+          <p class="f-size-20">{{ 'CONTACT.SECTION_LABEL' | translate }}</p>
+          <h2>{{ 'CONTACT.HEADLINE' | translate }}</h2>
         </div>
-        <p>
-          Offenheit für neue Projekte und professionelle Zusammenarbeit steht im Mittelpunkt. Besonders relevant sind
-          Rollen,
-          in denen strukturierte Frontend‑Entwicklung, saubere Architektur und ein verlässlicher Qualitätsanspruch
-          gefragt
-          sind. Durch technische Expertise und kontinuierliche Weiterentwicklung entsteht ein nachhaltiger Beitrag zu
-          modernen
-          Teams und Projekten.<br><br>
 
-          Für Projektanfragen, fachlichen Austausch oder konkrete Ideen bietet das Kontaktformular eine direkte
-          Möglichkeit,
-          in Verbindung zu treten. Rückmeldungen erfolgen zeitnah und zielgerichtet.
+        <p>
+          {{ 'CONTACT.TEXT' | translate }}
         </p>
+
         <div class="animationContainer noMobile">
           <img class="animatedImage" src="./assets/imgs/decorations/line-with-arrow-right.svg" alt="">
         </div>
       </section>
+
       <section class="contentRight">
         <img class="devMedal noMobile" src="./assets/imgs/layout/contact-lk-fed.png" alt="">
         <app-contact-form></app-contact-form>
       </section>
+
     </section>
+
     <app-footer></app-footer>
+
   </section>
 </section>

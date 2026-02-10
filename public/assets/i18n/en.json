@@ -1,0 +1,268 @@
+{
+  "ABOUT": {
+    "SECTION_LABEL": "WHO I AM",
+    "HEADLINE": "About Me",
+
+    "LOCATION": "Hanover",
+    "OPEN_FOR_EDUCATION": "Open to further training",
+    "OPEN_FOR_REMOTE": "Open to remote work",
+
+    "TEXT": {
+      "INTRO": "Hi, I'm Levin.",
+      "P1": "At the intersection of frontend development, design, and didactics lies the most exciting space for me: where structure meets aesthetics and systems become understandable. This connection drives me to create solutions that are clear, modular, and sustainable.",
+      "P2": "I see challenges as learning moments. Every new task sharpens my eye for architecture, performance, and user experience. Precision, clarity, and a conscious approach to complexity shape my work.",
+      "P3": "Good products emerge through collaboration — and that’s exactly where I feel most at home. Let’s build something together that truly makes an impact!"
+    },
+
+    "CTA": "Get in touch"
+  },
+  "PROJECTS": {
+    "SECTION_LABEL": "MY CRAFT",
+    "HEADLINE": "Projects",
+    "INTRO": "The following projects showcase different approaches to building responsive, user‑friendly applications with clear structure and efficient code. All examples can be explored directly in the browser and tried out interactively.",
+    "DETAILS_BUTTON": "Details",
+    "JOIN": {
+      "TITLE": "Join",
+      "DESCRIPTION": "A task manager inspired by the Kanban system. Tasks can be created, organized, and managed via drag‑and‑drop. Users and categories can be assigned flexibly. With Supabase integration, real‑time team collaboration becomes possible."
+    },
+    "POLLO": {
+      "TITLE": "El pollo loco",
+      "DESCRIPTION": "A jump‑and‑run game built with object‑oriented principles. The character collects coins and Tabasco bottles to stand up to the crazy hen. Animations, collision detection, and interactions are fully implemented in JavaScript."
+    },
+    "DABUBBLE": {
+      "TITLE": "DABubble",
+      "DESCRIPTION": "A communication platform inspired by Slack. The application offers an intuitive interface, real‑time messaging, and clearly structured channel organization. The goal is efficient, team‑oriented collaboration in modern work environments."
+    }
+  },
+  "THOUGHTS": {
+    "SECTION_LABEL": "IN THEIR OWN WORDS:",
+    "HEADLINE": "Comments from colleagues",
+
+    "CARD1": {
+      "QUOTE": "\"Working with them was a pleasure. Their dedication to quality and collaboration elevated our team's performance and project outcomes.\"",
+      "NAME": "Liam Smithy",
+      "POSITION": "Project Manager",
+      "PROFILE": "Profile"
+    },
+
+    "CARD2": {
+      "QUOTE": "\"Their structured approach and attention to detail took our project to the next level. Collaboration was consistently productive and inspiring.\"",
+      "NAME": "Julia Meinhardt",
+      "POSITION": "UX Designer",
+      "PROFILE": "Profile"
+    },
+
+    "CARD3": {
+      "QUOTE": "\"A real talent when it comes to making complex topics understandable. Technically strong, communicative, and always solution‑oriented.\"",
+      "NAME": "Carlos Rivera",
+      "POSITION": "Software Engineer",
+      "PROFILE": "Profile"
+    }
+  },
+  "SKILLS": {
+    "SECTION_LABEL": "MY SKILLS",
+    "HEADLINE": "Skills",
+
+    "INTRO": "My focus lies in developing structured, maintainable, and efficiency‑driven frontend solutions. I place great importance on clear architectural principles, clean code, and a continuous improvement process to integrate new technologies and methods into existing workflows in a meaningful way.",
+
+    "ICONS": {
+      "HTML": "HTML",
+      "CSS": "CSS",
+      "JS": "JavaScript",
+      "TS": "TypeScript",
+      "ANGULAR": "Angular",
+      "FIREBASE": "Firebase",
+      "GIT": "Git",
+      "REST_API": "REST API",
+      "SCRUM": "Scrum",
+      "MATERIAL": "Material Design"
+    }
+  },
+  "HEADER": {
+    "HELLO": "Hello World!",
+    "IAM": "I AM LEVIN",
+    "CONTACT": "Contact"
+  },
+  "CONTACT": {
+    "SECTION_LABEL": "CONTACT",
+    "HEADLINE": "Ready for a new project together?",
+
+    "TEXT": "Openness to new projects and professional collaboration is at the core of my work. I am particularly interested in roles that require structured frontend development, clean architecture, and a reliable commitment to quality. Through technical expertise and continuous improvement, I contribute sustainably to modern teams and projects.\n\nFor project inquiries, professional exchange, or concrete ideas, the contact form provides a direct way to get in touch. Responses are timely and focused."
+  },
+  "CONTACT_FORM": {
+    "LABEL_NAME": "What is your name?",
+    "LABEL_EMAIL": "What is your email address?",
+    "LABEL_MESSAGE": "How can I help you?",
+
+    "CONSENT_TEXT": "I have read the <a href='#'>privacy policy</a> and agree to the processing of my data for handling my request.",
+    "CONSENT_ERROR": "Please accept the privacy policy.",
+
+    "SUBMIT": "Send"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "© Levin Krischer 2026",
+    "LEGAL_NOTICE": "Legal Notice",
+    "GITHUB": "GitHub",
+    "LINKEDIN": "LinkedIn",
+    "EMAIL": "Email"
+  },
+  "NAVBAR": {
+    "ABOUT": "About me",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact",
+    "LANG_EN": "EN",
+    "LANG_DE": "DE"
+  },
+  "MOBILE_MENU": {
+    "ABOUT": "About me",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact",
+    "LANG_EN": "EN",
+    "LANG_DE": "DE"
+  },
+  "PROJECTS_DETAIL": {
+    "JOIN": {
+      "TITLE": "Join",
+      "BACK": "back",
+
+      "DESCRIPTION": {
+        "LABEL": "Description",
+        "TEXT": "A task manager inspired by the Kanban system. Tasks can be created, organized, and managed via drag‑and‑drop. Users and categories can be assigned flexibly. With Supabase integration, real‑time team collaboration becomes possible."
+      },
+
+      "IMPLEMENTATION": {
+        "LABEL": "Implementation Details",
+        "TEXT": "Teamwork is at the heart of this project — not only in the intended use of the application but also in the development process itself. Clear task distribution combined with mutual support and regular feedback was essential. Personally, I really enjoyed creating something big together."
+      },
+
+      "DURATION": {
+        "LABEL": "Duration:",
+        "VALUE": "5 weeks"
+      },
+
+      "TECH": {
+        "HTML": "HTML5",
+        "CSS": "CSS3",
+        "SUPABASE": "Supabase",
+        "ANGULAR": "Angular",
+        "TS": "TypeScript"
+      },
+
+      "BUTTONS": {
+        "GITHUB": "Github",
+        "LIVE": "Live Demo"
+      },
+
+      "NAV": {
+        "NEXT": "Next project"
+      }
+    },
+
+    "POLLO": {
+      "TITLE": "El pollo loco",
+      "BACK": "back",
+
+      "DESCRIPTION": {
+        "LABEL": "Description",
+        "TEXT": "A jump‑and‑run game built with object‑oriented principles. The character collects coins and Tabasco bottles to stand up to the crazy hen. Animations, collision detection, and interactions are fully implemented in JavaScript."
+      },
+
+      "IMPLEMENTATION": {
+        "LABEL": "Implementation Details",
+        "TEXT": "The main challenge in this project was the object‑oriented structure and implementing the game mechanics in pure JavaScript. It became clear how important upfront planning is, especially regarding class relationships and communication between components. Developing and testing the game logic repeatedly was both insightful and fun."
+      },
+
+      "DURATION": {
+        "LABEL": "Duration:",
+        "VALUE": "3 weeks"
+      },
+
+      "TECH": {
+        "HTML": "HTML5",
+        "CSS": "CSS3",
+        "JS": "JavaScript (vanilla)"
+      },
+
+      "BUTTONS": {
+        "GITHUB": "Github",
+        "LIVE": "Live Demo"
+      },
+
+      "NAV": {
+        "NEXT": "Next project"
+      }
+    },
+
+    "DABUBBLE": {
+      "TITLE": "DABubble",
+      "BACK": "back",
+
+      "DESCRIPTION": {
+        "LABEL": "Description",
+        "TEXT": "A communication platform inspired by Slack. The application offers an intuitive interface, real‑time messaging, and clearly structured channel organization. The goal is efficient, team‑oriented collaboration in modern work environments."
+      },
+
+      "IMPLEMENTATION": {
+        "LABEL": "Implementation Details",
+        "TEXT": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis expedita odit sint hic animi laudantium distinctio veritatis iusto obcaecati, neque asperiores? Eaque blanditiis suscipit aliquam veritatis nisi mollitia saepe accusamus."
+      },
+
+      "DURATION": {
+        "LABEL": "Duration:",
+        "VALUE": "4 weeks"
+      },
+
+      "TECH": {
+        "HTML": "HTML5",
+        "CSS": "CSS3",
+        "SUPABASE": "Supabase",
+        "ANGULAR": "Angular",
+        "TS": "TypeScript"
+      },
+
+      "BUTTONS": {
+        "GITHUB": "Github",
+        "LIVE": "Live Demo"
+      },
+
+      "NAV": {
+        "NEXT": "Next project"
+      }
+    }
+  },
+  "LEGAL_NOTICE": {
+    "TITLE": "Legal Notice",
+    "HEADLINE": "Imprint",
+
+    "NAME": "Levin Krischer",
+    "ADDRESS_LINE1": "Auf dem Amtshof 19",
+    "ADDRESS_LINE2": "30938 Burgwedel",
+
+    "CONTACT_LABEL": "Exploring the board:",
+    "CONTACT_EMAIL": "info@dev.levinkrischer.de",
+
+    "ACCEPTANCE_TITLE": "Acceptance of Terms",
+    "ACCEPTANCE_TEXT": "By accessing and using this portfolio (product), you agree to the following terms as well as any guidelines, notices, or future changes. We, the listed students, reserve the right to update or modify these terms at any time without prior notice.",
+
+    "SCOPE_TITLE": "Scope and Ownership of the Product",
+    "SCOPE_TEXT1": "This portfolio was developed as part of a student group project in a web development bootcamp at Developer Akademie GmbH. It is intended solely for educational purposes and is not designed for extensive private or commercial use. Therefore, no guarantee can be given regarding availability, reliability, accuracy, or any other quality characteristics of the product.",
+    "SCOPE_TEXT2": "The design of the portfolio is the property of Developer Akademie GmbH. Unauthorized use, reproduction, modification, distribution, or duplication of the design is strictly prohibited.",
+
+    "OWNERSHIP_TITLE": "Intellectual Property Rights",
+    "OWNERSHIP_TEXT": "Aside from the design owned by Developer Akademie GmbH, we, the listed students, retain all intellectual property rights to the portfolio, including all associated copyrighted materials, trademarks, and other proprietary information.",
+
+    "USAGE_TITLE": "Use of the Product",
+    "USAGE_TEXT": "The portfolio may only be used for lawful purposes and in accordance with applicable laws and regulations. Any use for illegal activities or to harass, harm, threaten, or intimidate others is prohibited. Responsibility for interactions with other users of the portfolio lies solely with you.",
+
+    "DISCLAIMER_TITLE": "Disclaimer",
+    "DISCLAIMER_TEXT": "The portfolio is provided “as is” without any express or implied warranties, including but not limited to warranties of merchantability, fitness for a particular purpose, or non‑infringement. In no event shall we, the listed students, or Developer Akademie be liable for any direct, indirect, incidental, special, or consequential damages, including but not limited to lost profits, loss of goodwill, downtime, data loss, or other intangible losses, even if advised of the possibility of such damages and arising in connection with the use or performance of the portfolio.",
+
+    "INDEMNITY_TITLE": "Indemnification",
+    "INDEMNITY_TEXT": "You agree to indemnify and hold harmless us, the listed students, Developer Akademie, and our affiliated companies, partners, officers, directors, agents, and employees from any claims, demands, losses, damages, costs, or liabilities (including reasonable attorney fees) arising from your use of the portfolio and/or a violation of this legal notice.",
+
+    "FOOTER_CONTACT": "If you have any questions or comments, please contact us at",
+    "DATE": "Date: 30.01.2026"
+  }
+}

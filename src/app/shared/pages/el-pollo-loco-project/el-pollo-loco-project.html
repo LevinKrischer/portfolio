@@ -1,66 +1,71 @@
 <header class="content">
   <app-navbar-projects></app-navbar-projects>
+
   <a class="backLink noMobile" href="#el-pollo-loco-project">
-    <img src="./assets/icons/arrow-back-orange.png" alt="">
-    <span class="blend">zurück</span>
+    <img src="./assets/icons/arrow-back-orange.png">
+    <span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BACK' | translate }}</span>
   </a>
+
   <section class="contentInner projectContent">
 
     <section class="contentLeft">
+
       <div class="headline">
-        <h2>El pollo loco</h2>
+        <h2>{{ 'PROJECTS_DETAIL.POLLO.TITLE' | translate }}</h2>
         <div class="animationContainerWidth">
-          <img class="animatedImageWidth" src="./assets/imgs/decorations/blue-line.png" alt="">
+          <img class="animatedImageWidth" src="./assets/imgs/decorations/blue-line.png">
         </div>
       </div>
-      <p class="projectDesc mt-32">Description</p>
-      <p class="f-size-20">Jump‑and‑Run‑Spiel auf objektorientierter Basis. Die Spielfigur sammelt Münzen und
-        Tabasco‑Flaschen, um sich gegen
-        die verrückte Henne zu behaupten. Animationen, Kollisionserkennung und Interaktionen wurden vollständig in
-        JavaScript
-        umgesetzt.</p>
-      <p class="projectDesc mt-32">Implementation Details</p>
-      <p class="f-size-20">Die Herausforderung in diesem Projekt war ganz klar die Objektorientierung und die Umsetzung
-        der Spielmechaniken in reinem JavaScript. Gerade hier ist mir aufgefallen, wie wichtig voherige Planung im Bezug
-        auf die Verbindung alles Klassen und die kommunikationen
-        untereinander ist. Es hat sehr viel Spaß gemacht, die Spiellogik zu entwickeln und immer wieder zu testen, wie
-        sich die einzelnen Elemente im Zusammenspiel verhalten.</p>
 
-      <p class="f-size-20 mt-32"><span class="font-bold">Dauer: </span>3 Wochen</p>
+      <p class="projectDesc mt-32">{{ 'PROJECTS_DETAIL.POLLO.DESCRIPTION.LABEL' | translate }}</p>
+      <p class="f-size-20">{{ 'PROJECTS_DETAIL.POLLO.DESCRIPTION.TEXT' | translate }}</p>
+
+      <p class="projectDesc mt-32">{{ 'PROJECTS_DETAIL.POLLO.IMPLEMENTATION.LABEL' | translate }}</p>
+      <p class="f-size-20">{{ 'PROJECTS_DETAIL.POLLO.IMPLEMENTATION.TEXT' | translate }}</p>
+
+      <p class="f-size-20 mt-32">
+        <span class="font-bold">{{ 'PROJECTS_DETAIL.POLLO.DURATION.LABEL' | translate }} </span>
+        {{ 'PROJECTS_DETAIL.POLLO.DURATION.VALUE' | translate }}
+      </p>
+
       <section class="usedTechSection">
-        <div class="usedTech">
-          <img src="./assets/icons/1-html.png" alt="">
-          <p>HTML5</p>
+        <div class="usedTech"><img src="./assets/icons/1-html.png">
+          <p>{{ 'PROJECTS_DETAIL.POLLO.TECH.HTML' | translate }}</p>
         </div>
-        <div class="usedTech">
-          <img src="./assets/icons/2-css.png" alt="">
-          <p>CSS3</p>
+        <div class="usedTech"><img src="./assets/icons/2-css.png">
+          <p>{{ 'PROJECTS_DETAIL.POLLO.TECH.CSS' | translate }}</p>
         </div>
-        <div class="usedTech">
-          <img src="./assets/icons/3-js.png" alt="">
-          <p>JavaScript (vanilla)</p>
+        <div class="usedTech"><img src="./assets/icons/3-js.png">
+          <p>{{ 'PROJECTS_DETAIL.POLLO.TECH.JS' | translate }}</p>
         </div>
       </section>
+
     </section>
 
     <section class="contentRight">
-      <img class="projectBreadcrumb" src="./assets/imgs/layout/pollo-loco-project-thumbnails.png" alt="">
+
+      <img class="projectBreadcrumb" src="./assets/imgs/layout/pollo-loco-project-thumbnails.png">
+
       <div class="linkBtns">
-        <button class="btnStandardWhite"><a href="">Github</a></button>
-        <button class="btnStandardWhite"><a href="">Live Test</a></button>
+        <button class="btnStandardWhite"><a><span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BUTTONS.GITHUB' | translate
+              }}</span></a></button>
+        <button class="btnStandardWhite"><a><span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BUTTONS.LIVE' | translate
+              }}</span></a></button>
       </div>
+
       <div class="siteNavigation">
         <a class="backLink mobile" href="#el-pollo-loco-project">
-          <img src="./assets/icons/arrow-back-orange.png" alt="">
-          <span class="blend">zurück</span>
+          <img src="./assets/icons/arrow-back-orange.png">
+          <span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BACK' | translate }}</span>
         </a>
+
         <a class="nextLink" href="/dabubble-project">
-          <span class="blend">Nächstes Projekt</span>
-          <img src="./assets/icons/arrow-back-yellow.png" alt="">
+          <span class="blend">{{ 'PROJECTS_DETAIL.POLLO.NAV.NEXT' | translate }}</span>
+          <img src="./assets/icons/arrow-back-yellow.png">
         </a>
       </div>
-    </section>
 
+    </section>
 
   </section>
 </header>

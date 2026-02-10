@@ -1,11 +1,12 @@
 <section class="content" id="aboutMe">
   <section class="contentInner aboutMeContent">
     <section class="contentBoxLeft">
+
       <div class="aboutLocation">
         <img src="./assets/imgs/layout/about-me-1.png" alt="">
         <div class="aboutDescHigher">
           <img class="aboutIcon" src="./assets/icons/location-icon.svg" alt="">
-          <p>Hannover</p>
+          <p>{{ 'ABOUT.LOCATION' | translate }}</p>
         </div>
       </div>
 
@@ -13,48 +14,45 @@
         <img src="./assets/imgs/layout/about-me-2.png" alt="">
         <div class="aboutDesc">
           <img class="aboutIcon" src="./assets/icons/relocate-icon.svg" alt="">
-          <p>Offen für Weiterbildungen</p>
+          <p>{{ 'ABOUT.OPEN_FOR_EDUCATION' | translate }}</p>
         </div>
-
-
       </div>
+
       <div class="aboutRemote">
         <img src="./assets/imgs/layout/about-me-3.png" alt="">
         <div class="aboutDesc">
           <img class="aboutIcon" src="./assets/icons/homeoffice-icon.svg" alt="">
-          <p>Offen für Remote-Arbeit</p>
+          <p>{{ 'ABOUT.OPEN_FOR_REMOTE' | translate }}</p>
         </div>
       </div>
 
     </section>
+
     <section class="contentBoxRight">
-      <p class="f-size-20">WER ICH BIN</p>
+      <p class="f-size-20">{{ 'ABOUT.SECTION_LABEL' | translate }}</p>
+
       <div class="headline">
-        <h2>Über mich</h2>
+        <h2>{{ 'ABOUT.HEADLINE' | translate }}</h2>
         <div class="animationContainerWidth">
           <img class="animatedImageWidth" src="./assets/imgs/decorations/blue-line.png" alt="">
         </div>
       </div>
+
       <p class="f-size-20 mt-40 mb-60">
-        Hallo, ich bin Levin. <br><br>
-        An der Schnittstelle von Frontend‑Entwicklung, Design und Didaktik entsteht für mich der spannendste Raum:
-        dort, wo Struktur auf Ästhetik trifft und Systeme verständlich werden. Genau diese Verbindung treibt mich an,
-        Lösungen zu entwickeln, die klar, modular und nachhaltig sind.<br><br>
-
-        Herausforderungen sehe ich als Lernmomente. Jede neue Aufgabe schärft meinen Blick für Architektur,
-        Performance und Nutzererlebnis. Präzision, Verständlichkeit und ein bewusster Umgang mit Komplexität
-        prägen meine Arbeit.<br><br>
-
-        Gute Produkte entstehen im Austausch — und genau dort arbeite ich am liebsten.
-        Lass uns gemeinsam etwas bauen, das wirklich Wirkung zeigt!
+        {{ 'ABOUT.TEXT.INTRO' | translate }}<br><br>
+        {{ 'ABOUT.TEXT.P1' | translate }}<br><br>
+        {{ 'ABOUT.TEXT.P2' | translate }}<br><br>
+        {{ 'ABOUT.TEXT.P3' | translate }}
       </p>
 
       <div class="flex-right">
-        <button class="btnStandard"><span class="f-size-20"><a href="#contact">Kontakt aufnehmen</a></span></button>
+        <button class="btnStandard">
+          <span class="f-size-20">
+            <a href="#contact">{{ 'ABOUT.CTA' | translate }}</a>
+          </span>
+        </button>
       </div>
 
     </section>
   </section>
-
-
 </section>

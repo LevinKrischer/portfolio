@@ -1,91 +1,77 @@
 <section class="content">
   <header>
-    <!-- <img src="./assets/imgs/bg/03-skills-2300px.jpg" alt=""> -->
     <app-navbar></app-navbar>
     <app-menue-mobile></app-menue-mobile>
-    <h2>Legal Notice</h2>
 
+    <h2>{{ 'LEGAL_NOTICE.TITLE' | translate }}</h2>
   </header>
+
   <section class="contentInner legalNoticeContent">
-    <h3>Impressum</h3>
+
+    <h3>{{ 'LEGAL_NOTICE.HEADLINE' | translate }}</h3>
 
     <div>
-      <p>Levin Krischer</p>
-      <p>Auf dem Amtshof 19</p>
-      <p>30938 Burgwedel</p>
+      <p>{{ 'LEGAL_NOTICE.NAME' | translate }}</p>
+      <p>{{ 'LEGAL_NOTICE.ADDRESS_LINE1' | translate }}</p>
+      <p>{{ 'LEGAL_NOTICE.ADDRESS_LINE2' | translate }}</p>
     </div>
 
     <div class="ln-block">
-      <p class="h4">Exploring the board:</p>
-      <p><a class="footerLink font-bold"
-        href="mailto:info@dev.levinkrischer.de?subject=mail%20by%20website%20imprint">info@dev.levinkrischer.de</a></p>
-    </div>
-
-    <div class="ln-block">
-      <p class="h4">Akzeptanz der Bedingungen</p>
-      <p>Durch den Zugriff auf und die Nutzung des Portfolios (Produkt) werden die folgenden Bedingungen sowie alle
-        Richtlinien, Hinweise oder zukünftigen Änderungen akzeptiert. Wir, die aufgeführten Studierenden, behalten uns
-        vor,
-        diese Bedingungen jederzeit und ohne vorherige Ankündigung zu aktualisieren oder zu ändern.</p>
-    </div>
-
-    <div class="ln-block">
-      <p class="h4">Geltungsbereich und Eigentum am Produkt</p>
-      <p>Das Portfolio wurde im Rahmen eines studentischen Gruppenprojekts in einem Web‑Development‑Bootcamp der
-        Developer
-        Akademie GmbH entwickelt. Es dient ausschließlich Ausbildungszwecken und ist nicht für umfangreiche private oder
-        geschäftliche Nutzung vorgesehen. Daher kann keine Gewähr für Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder
-        sonstige Qualitätsmerkmale des Produkts übernommen werden.</p>
-      <p>Das Design des Portfolios ist Eigentum der Developer Akademie GmbH. Eine unbefugte Nutzung, Reproduktion,
-        Modifikation, Verbreitung oder Vervielfältigung des Designs ist strikt untersagt.</p>
-    </div>
-
-    <div class="ln-block">
-      <p class="h4">Eigentumsrechte</p>
-      <p>Abgesehen vom Design, das der Developer Akademie GmbH gehört, behalten wir, die aufgeführten Studierenden,
-        sämtliche Eigentumsrechte am Portfolio, einschließlich aller zugehörigen urheberrechtlich geschützten
-        Materialien,
-        Marken und sonstigen proprietären Informationen.</p>
-    </div>
-
-    <div class="ln-block">
-      <p class="h4">Nutzung des Produkts</p>
-      <p>Das Portfolio darf ausschließlich für rechtmäßige Zwecke und im Einklang mit geltenden Gesetzen und
-        Vorschriften
-        verwendet werden. Jegliche Nutzung für illegale Aktivitäten oder zur Belästigung, Schädigung, Bedrohung oder
-        Einschüchterung anderer Personen ist untersagt. Die Verantwortung für Interaktionen mit anderen Nutzenden des
-        Portfolios liegt allein bei Ihnen.</p>
-    </div>
-
-    <div class="ln-block">
-      <p class="h4">Haftungsausschluss</p>
-      <p>Das Portfolio wird „wie besehen“ bereitgestellt, ohne jegliche ausdrückliche oder stillschweigende
-        Gewährleistung, einschließlich, aber nicht beschränkt auf die Gewährleistung der Marktgängigkeit, Eignung für
-        einen bestimmten Zweck oder Nichtverletzung von Rechten. In keinem Fall haften wir, die aufgeführten
-        Studierenden,
-        oder die Developer Akademie für direkte, indirekte, zufällige, besondere oder Folgeschäden, einschließlich, aber
-        nicht beschränkt auf entgangene Gewinne, Verlust von Goodwill, Nutzungsausfälle, Datenverluste oder andere
-        immaterielle Schäden, selbst wenn auf die Möglichkeit solcher Schäden hingewiesen wurde und diese im
-        Zusammenhang
-        mit der Nutzung oder Leistung des Portfolios entstehen.</p>
-    </div>
-
-    <div class="ln-block">
-      <p class="h4">Freistellung</p>
-      <p>Sie erklären sich damit einverstanden, uns, die aufgeführten Studierenden, die Developer Akademie sowie unsere
-        verbundenen Unternehmen, Partner, Führungskräfte, Direktoren, Vertreter und Mitarbeitenden von jeglichen
-        Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Anwaltskosten)
-        freizustellen, die sich aus Ihrer Nutzung des Portfolios und/oder einem Verstoß gegen dieses Impressum ergeben.
+      <p class="h4">{{ 'LEGAL_NOTICE.CONTACT_LABEL' | translate }}</p>
+      <p>
+        <a class="footerLink font-bold"
+          href="mailto:{{ 'LEGAL_NOTICE.CONTACT_EMAIL' | translate }}?subject=mail%20by%20website%20imprint">
+          {{ 'LEGAL_NOTICE.CONTACT_EMAIL' | translate }}
+        </a>
       </p>
+    </div>
+
+    <div class="ln-block">
+      <p class="h4">{{ 'LEGAL_NOTICE.ACCEPTANCE_TITLE' | translate }}</p>
+      <p>{{ 'LEGAL_NOTICE.ACCEPTANCE_TEXT' | translate }}</p>
+    </div>
+
+    <div class="ln-block">
+      <p class="h4">{{ 'LEGAL_NOTICE.SCOPE_TITLE' | translate }}</p>
+      <p>{{ 'LEGAL_NOTICE.SCOPE_TEXT1' | translate }}</p>
+      <p>{{ 'LEGAL_NOTICE.SCOPE_TEXT2' | translate }}</p>
+    </div>
+
+    <div class="ln-block">
+      <p class="h4">{{ 'LEGAL_NOTICE.OWNERSHIP_TITLE' | translate }}</p>
+      <p>{{ 'LEGAL_NOTICE.OWNERSHIP_TEXT' | translate }}</p>
+    </div>
+
+    <div class="ln-block">
+      <p class="h4">{{ 'LEGAL_NOTICE.USAGE_TITLE' | translate }}</p>
+      <p>{{ 'LEGAL_NOTICE.USAGE_TEXT' | translate }}</p>
+    </div>
+
+    <div class="ln-block">
+      <p class="h4">{{ 'LEGAL_NOTICE.DISCLAIMER_TITLE' | translate }}</p>
+      <p>{{ 'LEGAL_NOTICE.DISCLAIMER_TEXT' | translate }}</p>
+    </div>
+
+    <div class="ln-block">
+      <p class="h4">{{ 'LEGAL_NOTICE.INDEMNITY_TITLE' | translate }}</p>
+      <p>{{ 'LEGAL_NOTICE.INDEMNITY_TEXT' | translate }}</p>
     </div>
 
     <div class="ln-block"></div>
 
     <div class="ln-block">
-      <p>Bei Fragen oder Hinweisen kontaktieren Sie uns bitte unter <a class="footerLink font-bold" href="mailto:info@dev.levinkrischer.de?subject=mail%20by%20website%20imprint">info@dev.levinkrischer.de</a>.</p>
-      <p>Datum: 30.01.2026</p>
+      <p>
+        {{ 'LEGAL_NOTICE.FOOTER_CONTACT' | translate }}
+        <a class="footerLink font-bold"
+          href="mailto:{{ 'LEGAL_NOTICE.CONTACT_EMAIL' | translate }}?subject=mail%20by%20website%20imprint">
+          {{ 'LEGAL_NOTICE.CONTACT_EMAIL' | translate }}
+        </a>.
+      </p>
+      <p>{{ 'LEGAL_NOTICE.DATE' | translate }}</p>
     </div>
+
   </section>
+
   <section class="footerSection">
     <app-footer></app-footer>
   </section>

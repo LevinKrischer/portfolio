@@ -1,34 +1,46 @@
 <nav class="menue">
+
   <div class="linkBox">
     <div class="animationContainerHeight">
       <img class="animatedImageHeight" src="./assets/imgs/decorations/1.png" alt="">
     </div>
-    <a href="#aboutMe">Über mich</a>
+    <a href="#aboutMe">{{ 'NAVBAR.ABOUT' | translate }}</a>
   </div>
+
   <div class="linkBox">
     <div class="animationContainerWidthA">
       <img class="animatedImageWidth" src="./assets/imgs/decorations/2-a.png" alt="">
     </div>
-    <a href="#skills">Skills</a>
+    <a href="#skills">{{ 'NAVBAR.SKILLS' | translate }}</a>
   </div>
+
   <div class="linkBox">
     <div class="animationContainerWidthB">
       <img class="animatedImageWidthB" src="./assets/imgs/decorations/4.png" alt="">
     </div>
-    <a href="#projects">Projekte</a>
+    <a href="#projects">{{ 'NAVBAR.PROJECTS' | translate }}</a>
   </div>
+
   <div class="linkBox">
     <div class="animationContainerWidthC">
       <img class="animatedImageWidth" src="./assets/imgs/decorations/3.png" alt="">
     </div>
-    <a href="#contact">Kontakt</a>
+    <a href="#contact">{{ 'NAVBAR.CONTACT' | translate }}</a>
   </div>
+
   <div class="toggleSwitch">
-    <p>EN</p>
+    <p [style.font-weight]="!isGerman ? 'bold' : 'normal'">
+      {{ 'NAVBAR.LANG_EN' | translate }}
+    </p>
+
     <label class="switch">
-      <input type="checkbox">
+      <input type="checkbox" [checked]="isGerman" (change)="onToggleLanguage($event)">
       <span class="slider round"></span>
     </label>
-    <p>DE</p>
+
+    <p [style.font-weight]="isGerman ? 'bold' : 'normal'">
+      {{ 'NAVBAR.LANG_DE' | translate }}
+    </p>
   </div>
+
 </nav>

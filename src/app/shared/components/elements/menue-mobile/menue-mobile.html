@@ -1,32 +1,49 @@
 <section class="menue-mobile" [class.open]="isOpen">
+
   <section class="headline">
     <div class="logoContainer">
       <a href="#">
-        <img class="headerLogo" src="./assets/imgs/layout/lk-logo-yellow.png" alt=""></a>
+        <img class="headerLogo" src="./assets/imgs/layout/lk-logo-yellow.png" alt="">
+      </a>
     </div>
-<button class="mobileNavigation" (click)="closeMenu()"></button>
+    <button class="mobileNavigation" (click)="closeMenu()"></button>
   </section>
+
   <nav class="menue">
+
     <div class="linkBox">
-      <a href="#aboutMe">Über mich</a>
+      <a href="#aboutMe">{{ 'MOBILE_MENU.ABOUT' | translate }}</a>
     </div>
+
     <div class="linkBox">
-      <a href="#skills">Skills</a>
+      <a href="#skills">{{ 'MOBILE_MENU.SKILLS' | translate }}</a>
     </div>
+
     <div class="linkBox">
-      <a href="#projects">Projekte</a>
+      <a href="#projects">{{ 'MOBILE_MENU.PROJECTS' | translate }}</a>
     </div>
+
     <div class="linkBox">
-      <a href="#contact">Kontakt</a>
+      <a href="#contact">{{ 'MOBILE_MENU.CONTACT' | translate }}</a>
     </div>
+
     <div class="toggleSwitch">
-      <p>EN</p>
+      <p [style.font-weight]="!isGerman ? 'bold' : 'normal'">
+        {{ 'MOBILE_MENU.LANG_EN' | translate }}
+      </p>
+
       <label class="switch">
-        <input type="checkbox">
+        <input type="checkbox" [checked]="isGerman" (change)="onToggleLanguage($event)">
         <span class="slider round"></span>
       </label>
-      <p>DE</p>
+
+      <p [style.font-weight]="isGerman ? 'bold' : 'normal'">
+        {{ 'MOBILE_MENU.LANG_DE' | translate }}
+      </p>
     </div>
+
   </nav>
+
   <app-social-links></app-social-links>
+
 </section>
