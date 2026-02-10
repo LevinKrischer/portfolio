@@ -90,14 +90,22 @@
     "TEXT": "Offenheit für neue Projekte und professionelle Zusammenarbeit steht im Mittelpunkt. Besonders relevant sind Rollen, in denen strukturierte Frontend‑Entwicklung, saubere Architektur und ein verlässlicher Qualitätsanspruch gefragt sind. Durch technische Expertise und kontinuierliche Weiterentwicklung entsteht ein nachhaltiger Beitrag zu modernen Teams und Projekten.\n\nFür Projektanfragen, fachlichen Austausch oder konkrete Ideen bietet das Kontaktformular eine direkte Möglichkeit, in Verbindung zu treten. Rückmeldungen erfolgen zeitnah und zielgerichtet."
   },
   "CONTACT_FORM": {
-    "LABEL_NAME": "Wie heißt Du?",
-    "LABEL_EMAIL": "Wie lautet deine E-Mail?",
-    "LABEL_MESSAGE": "Wie kann ich dir helfen?",
+    "LABEL_NAME": "Dein Name",
+    "LABEL_EMAIL": "E-Mail-Adresse",
+    "LABEL_MESSAGE": "Nachricht",
 
-    "CONSENT_TEXT": "Die <a href='/privacy-policy'>Datenschutzerklärung</a> habe ich gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu.",
+    "DEFAULT_NAME": "Dein Name kommt hier hin...",
+    "DEFAULT_EMAIL": "deine.email@mail.com",
+    "DEFAULT_MESSAGE": "Hallo Levin, ich interessiere mich für...",
+
+    "ERROR_NAME": "Bitte gib deinen Namen ein",
+    "ERROR_EMAIL": "Bitte gib eine gültige E-Mail-Adresse ein",
+    "ERROR_MESSAGE": "Bitte gib deine Nachricht ein",
+
+    "CONSENT_TEXT": "Ich stimme zu, dass meine Daten zum Zweck der Kontaktaufnahme verarbeitet werden.",
     "CONSENT_ERROR": "Bitte akzeptiere die Datenschutzerklärung.",
 
-    "SUBMIT": "Absenden"
+    "SUBMIT": "Nachricht senden"
   },
   "FOOTER": {
     "COPYRIGHT": "© Levin Krischer 2026",

@@ -1,6 +1,6 @@
 {
   "ABOUT": {
-    "SECTION_LABEL": "WHO I AM",
+    "SECTION_LABEL": "WHO'S LEVIN?",
     "HEADLINE": "About Me",
 
     "LOCATION": "Hanover",
@@ -80,8 +80,8 @@
   },
   "HEADER": {
     "HELLO": "Hello World!",
-    "IAM": "I AM LEVIN",
-    "CONTACT": "Contact"
+    "IAM": "I'M LEVIN KRISCHER",
+    "CONTACT": "Get in touch"
   },
   "CONTACT": {
     "SECTION_LABEL": "CONTACT",
@@ -90,14 +90,18 @@
     "TEXT": "Openness to new projects and professional collaboration is at the core of my work. I am particularly interested in roles that require structured frontend development, clean architecture, and a reliable commitment to quality. Through technical expertise and continuous improvement, I contribute sustainably to modern teams and projects.\n\nFor project inquiries, professional exchange, or concrete ideas, the contact form provides a direct way to get in touch. Responses are timely and focused."
   },
   "CONTACT_FORM": {
-    "LABEL_NAME": "What is your name?",
-    "LABEL_EMAIL": "What is your email address?",
-    "LABEL_MESSAGE": "How can I help you?",
-
-    "CONSENT_TEXT": "I have read the <a href='/privacy-policy'>privacy policy</a> and agree to the processing of my data for handling my request.",
+    "LABEL_NAME": "Your name",
+    "LABEL_EMAIL": "Email address",
+    "LABEL_MESSAGE": "Message",
+    "DEFAULT_NAME": "Your name goes here...",
+    "DEFAULT_EMAIL": "your.email@mail.com",
+    "DEFAULT_MESSAGE": "Hello Levin, I am interested in...",
+    "ERROR_NAME": "Please enter your name",
+    "ERROR_EMAIL": "Please enter a valid email address",
+    "ERROR_MESSAGE": "Please enter your message",
+    "CONSENT_TEXT": "I agree that my data will be processed for the purpose of contacting me.",
     "CONSENT_ERROR": "Please accept the privacy policy.",
-
-    "SUBMIT": "Send"
+    "SUBMIT": "Send message"
   },
   "FOOTER": {
     "COPYRIGHT": "© Levin Krischer 2026",

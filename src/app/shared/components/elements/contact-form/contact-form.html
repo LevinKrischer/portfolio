@@ -3,18 +3,18 @@
   <label for="name">{{ 'CONTACT_FORM.LABEL_NAME' | translate }}</label>
   <input id="name" type="text" formControlName="name" (focus)="clearField('name')" (blur)="validateField('name')"
     [ngClass]="{ 'error': contactForm.get('name')?.touched && contactForm.get('name')?.invalid }"
-    [value]="getDisplayValue('name')" />
+    [value]="getDisplayValue('name') | translate" />
 
   <label for="email">{{ 'CONTACT_FORM.LABEL_EMAIL' | translate }}</label>
   <input id="email" type="email" formControlName="email" (focus)="clearField('email')" (blur)="validateField('email')"
     [ngClass]="{ 'error': contactForm.get('email')?.touched && contactForm.get('email')?.invalid }"
-    [value]="getDisplayValue('email')" />
+    [value]="getDisplayValue('email') | translate" />
 
   <label for="message">{{ 'CONTACT_FORM.LABEL_MESSAGE' | translate }}</label>
   <input id="message" type="text" formControlName="message" (focus)="clearField('message')"
     (blur)="validateField('message')"
     [ngClass]="{ 'error': contactForm.get('message')?.touched && contactForm.get('message')?.invalid }"
-    [value]="getDisplayValue('message')" />
+    [value]="getDisplayValue('message') | translate" />
 
   <div class="consentBox">
     <input class="checkbox" type="checkbox" id="consent" formControlName="consent" />
