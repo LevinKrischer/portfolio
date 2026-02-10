@@ -6,25 +6,34 @@
         <img class="headerLogo" src="./assets/imgs/layout/lk-logo-yellow.png" alt="">
       </a>
     </div>
-    <button class="mobileNavigation" (click)="closeMenu()"></button>
+
+    <button class="mobileNavigation mobile" (click)="toggleMobileMenu()"></button>
   </section>
 
   <nav class="menue">
 
     <div class="linkBox">
-      <a href="#aboutMe">{{ 'MOBILE_MENU.ABOUT' | translate }}</a>
+      <a href="#aboutMe" (click)="closeMenu()">
+        {{ 'MOBILE_MENU.ABOUT' | translate }}
+      </a>
     </div>
 
     <div class="linkBox">
-      <a href="#skills">{{ 'MOBILE_MENU.SKILLS' | translate }}</a>
+      <a href="#skills" (click)="closeMenu()">
+        {{ 'MOBILE_MENU.SKILLS' | translate }}
+      </a>
     </div>
 
     <div class="linkBox">
-      <a href="#projects">{{ 'MOBILE_MENU.PROJECTS' | translate }}</a>
+      <a href="#projects" (click)="closeMenu()">
+        {{ 'MOBILE_MENU.PROJECTS' | translate }}
+      </a>
     </div>
 
     <div class="linkBox">
-      <a href="#contact">{{ 'MOBILE_MENU.CONTACT' | translate }}</a>
+      <a href="#contact" (click)="closeMenu()">
+        {{ 'MOBILE_MENU.CONTACT' | translate }}
+      </a>
     </div>
 
     <div class="toggleSwitch">

@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener, OnDestroy } from '@angular/core';
 import { SocialLinks } from '../social-links/social-links';
 import { MobileMenuService } from '../../../services/mobile-menue.service/mobile-menue.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-
+import { Router, NavigationEnd } from '@angular/router';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-menue-mobile',
@@ -10,12 +11,15 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   templateUrl: './menue-mobile.html',
   styleUrl: './menue-mobile.scss',
 })
-export class MenueMobile {
+export class MenueMobile implements OnDestroy {
   isGerman: boolean = false;
+  private routerSub?: Subscription;
 
   constructor(
     private mobileMenu: MobileMenuService,
-    private translate: TranslateService
+    private translate: TranslateService,
+    private router: Router,
+    private elementRef: ElementRef
   ) {
     // Verfügbare Sprachen registrieren
     translate.addLangs(['en', 'de']);
@@ -23,11 +27,61 @@ export class MenueMobile {
     // Sprache aus localStorage laden oder EN als Default setzen
     const savedLang = localStorage.getItem('userLanguage') || 'en';
 
-    // Default + aktive Sprache setzen
     translate.setDefaultLang(savedLang);
     translate.use(savedLang);
 
     this.isGerman = savedLang === 'de';
+
+    // Route-Wechsel: Menü schließen
+    this.routerSub = this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.closeMenu();
+      }
+    });
+
+    // Hash-Wechsel (#aboutMe etc.)
+    window.addEventListener('hashchange', this.onHashChange);
+  }
+
+  // ⭐ Outside-Click: Menü schließen, außer der Menü-Button wurde geklickt
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent) {
+    if (!this.isOpen) return;
+
+    const clickedElement = event.target as HTMLElement;
+
+    // Wenn der Menü-Button geklickt wurde → NICHT schließen
+    if (clickedElement.closest('.mobileNavigation')) {
+      return;
+    }
+
+    // Wenn innerhalb der Komponente geklickt wurde → NICHT schließen
+    const clickedInside = this.elementRef.nativeElement.contains(clickedElement);
+    if (clickedInside) return;
+
+    // Alles andere → Menü schließen
+    this.closeMenu();
+  }
+
+  // Hashchange-Handler
+  private onHashChange = () => {
+    if (this.isOpen) {
+      this.closeMenu();
+    }
+  };
+
+  ngOnDestroy() {
+    this.routerSub?.unsubscribe();
+    window.removeEventListener('hashchange', this.onHashChange);
+  }
+
+  // ⭐ Wiederhergestellt: Menü öffnen/schließen
+  toggleMobileMenu() {
+    if (this.isOpen) {
+      this.closeMenu();
+    } else {
+      this.mobileMenu.open();
+    }
   }
 
   onToggleLanguage(event: Event) {
@@ -36,10 +90,7 @@ export class MenueMobile {
 
     const newLang = this.isGerman ? 'de' : 'en';
 
-    // Sprache aktiv setzen
     this.translate.use(newLang);
-
-    // Sprache dauerhaft speichern
     localStorage.setItem('userLanguage', newLang);
   }
 
