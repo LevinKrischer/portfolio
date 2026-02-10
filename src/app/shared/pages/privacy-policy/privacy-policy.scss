@@ -6,10 +6,14 @@
 }
 
 header {
-  background-image: url('/assets/imgs/bg/03-skills-2300px.jpg');
-  background-position: bottom center;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  .headerContent {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url('/assets/imgs/bg/03-skills-2300px.jpg');
+    background-position: bottom center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
 
   h2 {
     padding: 96px 64px 160px;
@@ -19,7 +23,9 @@ header {
 
 .contentInner {
   padding: 64px;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
 }
 
 .policyContent {
@@ -59,9 +65,43 @@ header {
 }
 
 .footerSection {
-  padding: 64px 64px 32px;
-  background-image: url('/assets/imgs/bg/07-footer-2300px.jpg');
-  background-size: 100% 100%;
+  .footerContent {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-image: url('/assets/imgs/bg/07-footer-2300px.jpg');
+    background-size: 100% 100%;
+    padding: 64px 64px 32px;
+  }
+}
+
+@media (min-width: 2100px) {
+
+  .headerContent,
+  .policyContent {
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 1%;
+    }
+
+    &::after {
+      right: 0;
+      background: linear-gradient(90deg,
+          rgba(255, 255, 255, 0) 0%,
+          var(--color-primary) 100%);
+    }
+
+    &::before {
+      left: 0;
+      background: linear-gradient(270deg,
+          rgba(255, 255, 255, 0) 0%,
+          var(--color-primary) 100%);
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -74,7 +114,9 @@ header {
   }
 
   .footerSection {
-    padding: 64px 32px 32px;
+    .footerContent {
+      padding: 64px 32px 32px;
+    }
   }
 }
 
@@ -83,11 +125,14 @@ header {
     padding: 32px 16px;
   }
 
-  .footerSection {
-    padding: 64px 16px 32px;
-  }
 
   header h2 {
     padding: 48px 16px 128px;
+  }
+
+  .footerSection {
+    .footerContent {
+      padding: 64px 16px 32px;
+    }
   }
 }
