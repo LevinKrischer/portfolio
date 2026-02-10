@@ -8,7 +8,8 @@ import localeEn from '@angular/common/locales/en';
 import { appConfig } from './app/app.config';
 import { App } from './app/app';
 
-// Locale-Daten registrieren
+import { provideHttpClient } from '@angular/common/http';
+
 registerLocaleData(localeDe);
 registerLocaleData(localeEn);
 
@@ -17,7 +18,8 @@ bootstrapApplication(App, {
   providers: [
     ...(appConfig.providers || []),
 
-    // Browser-Locale abfangen und auf 'de' oder 'en' mappen
+    provideHttpClient(),
+
     {
       provide: LOCALE_ID,
       useFactory: () => {

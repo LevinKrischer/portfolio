@@ -158,7 +158,6 @@ h2 {
 }
 
 @media (max-width: 768px) {
-
   h1 {
     font-size: clamp(48px, 14vw, 120px);
     line-height: clamp(48px, 14vw, 120px);
@@ -184,5 +183,4 @@ h2 {
   .mb-60 {
     margin-bottom: 32px;
   }
-
 }

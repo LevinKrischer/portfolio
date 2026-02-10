@@ -3,6 +3,7 @@ import { FormBuilder, FormControl, ReactiveFormsModule, Validators } from '@angu
 import { CommonModule } from '@angular/common';
 import { AbstractControl } from '@angular/forms';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact-form',
@@ -12,19 +13,21 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrls: ['./contact-form.scss', '../button/button.scss'],
 })
 export class ContactForm {
+
+  // HttpClient korrekt injizieren
+  constructor(private http: HttpClient) { }
+
   fb = inject(FormBuilder);
   translate = inject(TranslateService);
 
   showConsentError = false;
 
-  // Default-Werte werden dynamisch aus i18n geladen
   defaultValues: Record<string, string> = {
     name: '',
     email: '',
     message: '',
   };
 
-  // Fehlertexte → Translation Keys
   errorTexts: Record<string, string> = {
     name: 'CONTACT_FORM.ERROR_NAME',
     email: 'CONTACT_FORM.ERROR_EMAIL',
@@ -39,16 +42,13 @@ export class ContactForm {
   });
 
   ngOnInit() {
-    // Initiale Default-Werte laden und anwenden
     this.loadDefaultValues();
     this.applyDefaultValuesToForm();
 
-    // Consent-Fehler zurücksetzen
     this.contactForm.get('consent')?.valueChanges.subscribe(() => {
       this.showConsentError = false;
     });
 
-    // Live-Update bei Sprachwechsel
     this.translate.onLangChange.subscribe(() => {
       const previousDefaults = { ...this.defaultValues };
       this.loadDefaultValues();
@@ -56,7 +56,6 @@ export class ContactForm {
     });
   }
 
-  // Default-Werte aus Übersetzung laden
   loadDefaultValues() {
     this.defaultValues = {
       name: this.translate.instant('CONTACT_FORM.DEFAULT_NAME'),
@@ -65,7 +64,6 @@ export class ContactForm {
     };
   }
 
-  // Formular initial mit Default-Werten konfigurieren
   applyDefaultValuesToForm() {
     this.contactForm.setControl(
       'name',
@@ -95,7 +93,6 @@ export class ContactForm {
     );
   }
 
-  // Default-Werte live aktualisieren, ohne Nutzereingaben zu überschreiben
   updateFieldsOnLanguageChange(previousDefaults: Record<string, string>) {
     ['name', 'email', 'message'].forEach(field => {
       const control = this.contactForm.get(field);
@@ -105,13 +102,11 @@ export class ContactForm {
       const oldDefault = previousDefaults[field];
       const newDefault = this.defaultValues[field];
 
-      // Nur ersetzen, wenn der Nutzer noch nichts Eigenes eingegeben hat
       if (currentValue === '' || currentValue === oldDefault) {
         control.setValue(newDefault);
         control.markAsUntouched();
       }
 
-      // Validatoren neu setzen (wegen neuer Default-Werte)
       control.setValidators([
         Validators.required,
         Validators.minLength(3),
@@ -133,7 +128,6 @@ export class ContactForm {
       if (this.contactForm.get('consent')?.invalid) {
         this.showConsentError = true;
       }
-
       return;
     }
   }
@@ -185,15 +179,26 @@ export class ContactForm {
     if (!control) return '';
 
     if (control.touched && control.invalid) {
-      return this.errorTexts[field]; // KEY → wird im Template übersetzt
+      return this.errorTexts[field];
     }
 
     return control.value ?? '';
   }
 
+  // ⭐ FINAL: Mail an deine send_mail.php senden
   onSubmit() {
-    if (this.contactForm.valid) {
-      console.log('Form Submitted', this.contactForm.value);
-    }
+    if (this.contactForm.invalid) return;
+
+    const formData = this.contactForm.value;
+
+    this.http.post('https://dev.levinkrischer.de/send_mail.php', formData)
+      .subscribe({
+        next: (response: any) => {
+          console.log("Mail gesendet:", response);
+        },
+        error: (error: any) => {
+          console.error("Fehler beim Senden:", error);
+        }
+      });
   }
 }
