@@ -227,6 +227,12 @@
   display: none;
 }
 
+app-social-links {
+  position: absolute;
+  bottom:0;
+  left: 64px;
+}
+
 @media (min-width: 2100px) {
   .content {
     &::after {
@@ -255,13 +261,19 @@
   .headerHeadline {
     width: 80%;
   }
+
+  app-social-links {
+    bottom: 0px;
+    left: 32px;
+  }
 }
 
 @media (max-width: 768px) {
 
   .content {
-    height:auto;
+    height: auto;
   }
+
   .mobile {
     display: block;
   }
@@ -314,7 +326,7 @@
     align-items: center;
     width: 50%;
 
-   img {
+    img {
       width: 100%;
       height: auto;
       rotate: 8deg;
@@ -331,8 +343,8 @@
     height: 100%;
 
     &:hover {
-        opacity: 1;
-      }
+      opacity: 1;
+    }
   }
 
 }
