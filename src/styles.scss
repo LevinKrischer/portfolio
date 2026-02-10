@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'BricolageGrotesque';
-  src: url('/assets/fonts/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf') format('woff2');
+  src: url('assets/fonts/BricolageGrotesque-VariableFont.ttf') format('truetype');
   font-weight: 100 900;
 }
 
 @font-face {
   font-family: 'Kalam';
-  src: url('/assets/fonts/Kalam-Regular.ttf') format('truetype');
+  src: url('assets/fonts/Kalam-Regular.ttf') format('truetype');
 }
 
 :root {
@@ -33,7 +33,6 @@
 body {
   font-size: 18px;
   font-family: 'BricolageGrotesque', sans-serif;
-  background-color: var(--color-secondary);
 }
 
 h1 {

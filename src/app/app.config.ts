@@ -11,7 +11,7 @@ export class MyTranslateLoader implements TranslateLoader {
 
   // Diese Methode sagt dem Service, wo er die JSON-Dateien findet
   getTranslation(lang: string): Observable<any> {
-    return this.http.get(`/assets/i18n/${lang}.json`);
+    return this.http.get(`./assets/i18n/${lang}.json`);
   }
 }
 

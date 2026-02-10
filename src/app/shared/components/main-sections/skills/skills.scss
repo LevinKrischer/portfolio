@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: center;
   color: var(--color-primary);
-  background-image: url('/assets/imgs/bg/03-skills-2300px.jpg');
   background-position: bottom;
   background-size: cover;
   max-width: var(--max-side-width);
@@ -51,7 +50,6 @@
 }
 
 .skillsIntro {
-  background-image: url('/assets/imgs/layout/1-skills description.png');
   background-size: 100% 100%;
   padding: 32px;
   width: 70%;
@@ -161,7 +159,7 @@ app-peel-off {
 
   .skillsIntro {
     width: 100%;
-    padding: 32px 16px;
+    padding: 48px 16px;
   }
 
   .placeholder {
@@ -170,7 +168,7 @@ app-peel-off {
 
   .skillsIcons {
     width: 100%;
-    padding: 32px 0;
+    padding: 48px 0;
 
     .iconContainer {
       width: 80px;
@@ -187,6 +185,11 @@ app-peel-off {
   .skillsContent {
     padding: 60px 16px;
   }
+
+    .skillsIntro {
+      width: 100%;
+      padding: 60px 16px 40px 16px;
+    }
 
   app-peel-off {
     width: 70%;

@@ -11,8 +11,10 @@
         <h2>{{ 'THOUGHTS.HEADLINE' | translate }}</h2>
       </div>
     </div>
+
     <section class="thoughtsShowcase">
-      <div class="thoughtsCard" id="card1">
+
+      <div class="thoughtsCard" id="card1" [style.background-image]="'url(assets/imgs/layout/thought-card.png)'">
         <div class="thoughtsCardContent">
           <p class="f-size-18">{{ 'THOUGHTS.CARD1.QUOTE' | translate }}</p>
           <div class="bottomLine">
@@ -27,7 +29,8 @@
           </div>
         </div>
       </div>
-      <div class="thoughtsCard" id="card2">
+
+      <div class="thoughtsCard" id="card2" [style.background-image]="'url(assets/imgs/layout/thought-card.png)'">
         <div class="thoughtsCardContent">
           <p class="f-size-18">{{ 'THOUGHTS.CARD2.QUOTE' | translate }}</p>
           <div class="bottomLine">
@@ -42,7 +45,8 @@
           </div>
         </div>
       </div>
-      <div class="thoughtsCard" id="card3">
+
+      <div class="thoughtsCard" id="card3" [style.background-image]="'url(assets/imgs/layout/thought-card.png)'">
         <div class="thoughtsCardContent">
           <p class="f-size-18">{{ 'THOUGHTS.CARD3.QUOTE' | translate }}</p>
           <div class="bottomLine">
@@ -57,6 +61,7 @@
           </div>
         </div>
       </div>
+
     </section>
   </section>
 </section>

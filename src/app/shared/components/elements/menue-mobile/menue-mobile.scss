@@ -15,13 +15,12 @@
   align-items: center;
   gap: 32px;
   padding: 32px 32px 80px 32px;
-  background-image: url('/assets/imgs/bg/01_Hero-1110px-mobile.png');
   background-size: 100% 100%;
   transition: transform 300ms ease;
 
   &.open {
-      transform: translateY(0);
-    }
+    transform: translateY(0);
+  }
 }
 
 nav {
@@ -47,17 +46,19 @@ nav {
 }
 
 .mobileNavigation {
-  background-image: url('/assets/imgs/decorations/burger-menue-close.png');
-  background-size: 100%;
   background-color: transparent;
   border: none;
   padding: 0;
-  width: 32px;
-  height: 32px;
 
   &:hover {
     cursor: pointer;
   }
+}
+
+.mobileNavigationIcon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
 }
 
 .logoContainer {
@@ -99,7 +100,6 @@ nav {
   bottom: 0;
   background-color: #F87A55;
   border: 1px solid white;
-  -webkit-transition: .4s;
   transition: .4s;
 }
 
@@ -112,13 +112,11 @@ nav {
   top: 50%;
   transform: translateY(-50%);
   background-color: #3355FF;
-  -webkit-transition: .4s;
   transition: .4s;
 }
 
 input:checked+.slider:before {
   transform: translate(20px, -50%);
-
 }
 
 .slider.round {

@@ -1,17 +1,18 @@
-<section class="menue-mobile" [class.open]="isOpen">
-
+<section class="menue-mobile" [class.open]="isOpen"
+  [style.background-image]="'url(assets/imgs/bg/01_Hero-1110px-mobile.png)'">
   <section class="headline">
     <div class="logoContainer">
       <a href="#">
-        <img class="headerLogo" src="./assets/imgs/layout/lk-logo-yellow.png" alt="">
+        <img class="headerLogo" src="assets/imgs/layout/lk-logo-yellow.png" alt="">
       </a>
     </div>
 
-    <button class="mobileNavigation mobile" (click)="toggleMobileMenu()"></button>
+    <button class="mobileNavigation mobile" (click)="toggleMobileMenu()">
+      <img class="mobileNavigationIcon" src="assets/imgs/decorations/burger-menue-close.png" alt="close navigation">
+    </button>
   </section>
 
   <nav class="menue">
-
     <div class="linkBox">
       <a href="#aboutMe" (click)="closeMenu()">
         {{ 'MOBILE_MENU.ABOUT' | translate }}
@@ -50,9 +51,7 @@
         {{ 'MOBILE_MENU.LANG_DE' | translate }}
       </p>
     </div>
-
   </nav>
 
   <app-social-links></app-social-links>
-
 </section>
