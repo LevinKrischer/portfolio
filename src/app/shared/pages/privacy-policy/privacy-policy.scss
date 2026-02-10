@@ -10,11 +10,11 @@ header {
   background-position: bottom center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-}
 
-h2 {
-  padding: 96px 64px 160px 64px;
-  color: var(--color-primary);
+  h2 {
+    padding: 96px 64px 160px;
+    color: var(--color-primary);
+  }
 }
 
 .contentInner {
@@ -22,32 +22,44 @@ h2 {
   margin: 0;
 }
 
-.legalNoticeContent {
+.policyContent {
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  h3 {
+    margin-bottom: 8px;
+  }
+
+  .policyTitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #3355FF;
+    margin: 0;
+    padding-top: 16px;
+  }
+
+  .policySubtitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .policySubsubtitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+  }
 }
 
-.legalNoticeContent h3 {
-  margin-bottom: 8px;
-}
-
-.ln-block {
+.policyBlock {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 
-.legalNoticeContent .h4 {
-  font-size: 20px;
-  font-weight: 600;
-  color: #3355FF;
-  margin: 0;
-  padding-top: 16px;
-}
-
 .footerSection {
-  padding: 64px 64px 32px 64px;
+  padding: 64px 64px 32px;
   background-image: url('/assets/imgs/bg/07-footer-2300px.jpg');
   background-size: 100% 100%;
 }
@@ -57,12 +69,12 @@ h2 {
     padding: 32px;
   }
 
-  h2 {
-    padding: 96px 32px 160px 32px;
+  header h2 {
+    padding: 96px 32px 160px;
   }
 
   .footerSection {
-    padding: 64px 32px 32px 32px;
+    padding: 64px 32px 32px;
   }
 }
 
@@ -72,10 +84,10 @@ h2 {
   }
 
   .footerSection {
-    padding: 64px 16px 32px 16px;
+    padding: 64px 16px 32px;
   }
 
-  h2 {
-    padding: 48px 16px 128px 16px;
+  header h2 {
+    padding: 48px 16px 128px;
   }
 }

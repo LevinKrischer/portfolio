@@ -24,9 +24,6 @@ export class Header implements AfterViewInit, OnDestroy {
   constructor(private zone: NgZone, private cdr: ChangeDetectorRef) {
   }
 
-  ngOnInit() {
-  }
-
   ngAfterViewInit() {
     // 1) Element-Resize beobachten
     this.resizeObserver = new ResizeObserver(() => {
@@ -73,6 +70,4 @@ export class Header implements AfterViewInit, OnDestroy {
 
     this.cdr.markForCheck();
   }
-
-
 }

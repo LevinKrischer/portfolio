@@ -1,5 +1,5 @@
 * {
-  color: white;
+  color: white
 }
 
 nav {
@@ -31,7 +31,7 @@ p {
 
   &.layerBack {
     opacity: 0;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity .2s ease-in-out;
   }
 
   &.layer {
@@ -40,7 +40,7 @@ p {
     left: 0;
     z-index: 2;
     opacity: 1;
-    transition: opacity 0.2s ease-in-out;
+    transition: opacity .2s ease-in-out;
 
     &:hover {
       opacity: 0;
@@ -64,12 +64,12 @@ p {
   display: inline-block;
   width: 32px;
   height: 8px;
-}
 
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
 }
 
 .slider {
@@ -81,48 +81,45 @@ p {
   bottom: 0;
   background-color: #F87A55;
   border: 1px solid white;
-  -webkit-transition: .4s;
   transition: .4s;
-}
 
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  left: -2px;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #3355FF;
-  -webkit-transition: .4s;
-  transition: .4s;
+  &:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #3355FF;
+    transition: .4s;
+  }
 }
 
 input:checked+.slider:before {
   transform: translate(20px, -50%);
-
 }
 
 .slider.round {
   border-radius: 34px;
-}
 
-.slider.round:before {
-  border-radius: 50%;
+  &:before {
+    border-radius: 50%;
+  }
 }
 
 .linkBox {
   padding: 8px 16px;
-}
 
-.linkBox:hover {
-  .linkDecoCircle {
-    opacity: 1;
-  }
+  &:hover {
+    .linkDecoCircle {
+      opacity: 1
+    }
 
-  .linkDecoUnderline {
-    opacity: 1;
-    width: 100%;
+    .linkDecoUnderline {
+      opacity: 1;
+      width: 100%
+    }
   }
 }
 
@@ -132,7 +129,7 @@ input:checked+.slider:before {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  transition: all 0.4s ease;
+  transition: all .4s ease;
   opacity: 0;
 }
 
@@ -141,14 +138,14 @@ input:checked+.slider:before {
   bottom: -4px;
   left: 0;
   width: 0;
-  transition: all 0.4s ease;
+  transition: all .4s ease;
   opacity: 0;
 }
 
 .linkBox:hover .animationContainerHeight {
-  animation: showHideFromTop 0.3s ease;
+  animation: showHideFromTop .3s ease;
   opacity: 1;
-  transition: opacity 0.2s ease;
+  transition: opacity .2s ease;
 }
 
 .animationContainerHeight {
@@ -156,7 +153,7 @@ input:checked+.slider:before {
   left: 0;
   top: -7%;
   width: 100%;
-  transition: opacity 0.2s ease;
+  transition: opacity .2s ease;
   overflow: hidden;
   align-self: flex-start;
   opacity: 0;
@@ -169,11 +166,11 @@ input:checked+.slider:before {
 
 @keyframes showHideFromTop {
   0% {
-    height: 0;
+    height: 0
   }
 
   100% {
-    height: 120%;
+    height: 120%
   }
 }
 
@@ -182,58 +179,47 @@ input:checked+.slider:before {
   &A,
   &B,
   &C {
-    animation: showHideFromLeft 0.3s ease;
+    animation: showHideFromLeft .3s ease;
     opacity: 1;
-    transition: opacity 0.2s ease;
+    transition: opacity .2s ease;
   }
-
 }
 
 @keyframes showHideFromLeft {
   0% {
-    width: 0;
+    width: 0
   }
 
   100% {
-    width: 100%;
+    width: 100%
   }
 }
 
 .animationContainerWidth {
 
-  &A {
+  &A,
+  &B,
+  &C {
     position: absolute;
-    bottom: -5%;
     left: 0;
     height: 100%;
     width: 100%;
-    transition: opacity 0.2s ease;
+    transition: opacity .2s ease;
     overflow: hidden;
     opacity: 0;
+  }
+
+  &A {
+    bottom: -5%
   }
 
   &B {
-    position: absolute;
-    bottom: -10%;
-    left: 0%;
-    height: 100%;
-    width: 100%;
-    transition: opacity 0.2s ease;
-    overflow: hidden;
-    opacity: 0;
+    bottom: -10%
   }
 
   &C {
-    position: absolute;
-    bottom: -15%;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    transition: opacity 0.2s ease;
-    overflow: hidden;
-    opacity: 0;
+    bottom: -15%
   }
-
 }
 
 .animatedImageWidth {
@@ -244,14 +230,12 @@ input:checked+.slider:before {
   &B {
     position: absolute;
     bottom: 0;
-    left: 0px;
+    left: 0;
   }
 }
 
-
-@media (max-width: 768px) {
-
+@media(max-width:768px) {
   .menue {
-    display: none;
+    display: none
   }
 }

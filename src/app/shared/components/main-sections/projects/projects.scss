@@ -28,41 +28,18 @@
   flex-direction: column;
   gap: 64px;
   width: 100%;
-  padding: 64px 64px 0 64px;
+  padding: 64px 64px 0;
 }
 
 .headline {
   min-width: 48%;
   max-width: 48%;
-}
 
-.headlineUnderline {
-  position: absolute;
-  bottom: -16px;
-  animation: rollOut 5s infinite;
-}
-
-@keyframes rollOut {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
-
-  10% {
-    width: 50%;
+  .animationContainerWidth {
+    animation: showHideFromLeft 6s ease infinite;
     opacity: 1;
-  }
-
-  80% {
-    width: 50%;
-  }
-
-  90% {
-    width: 0;
-  }
-
-  100% {
-    width: 0;
+    transition: opacity 0.2s ease;
+    overflow: hidden;
   }
 }
 
@@ -78,66 +55,72 @@
   border-radius: 20px;
   overflow: hidden;
   position: relative;
-}
 
-.projectImgOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 50%);
-  opacity: 0;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  padding: 36px;
-  transition: opacity 0.3s ease-in-out;
-}
+  .projectImg {
+    width: 100%;
+    border-radius: 20px;
+    scale: 1;
+    transition: all 0.3s ease-in-out;
+  }
 
-.projectImgOverlay:hover {
-  cursor: pointer;
-}
+  .projectImgJoin {
+    opacity: 0;
+  }
 
-.projectImgContainer:hover .projectImg {
-  scale: 1.1;
-}
+  .projectImgFloat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1;
+    animation: floatAnimation 4s ease-in-out infinite;
+    transition: 0.4s ease-in-out;
+  }
 
-.projectImgContainer:hover .projectImgOverlay {
-  opacity: 1;
-}
+  .featuredSticker {
+    position: absolute;
+    bottom: 64px;
+    left: 0;
+    width: 160px;
+  }
 
-.projectImgContainer:hover .projectImgFloat {
-  animation-play-state: paused;
-  scale: 1.1;
-}
+  .wip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+  }
 
-.projectImg {
-  width: 100%;
-  border-radius: 20px;
-  scale: 1;
-  transition: all 0.3s ease-in-out;
-}
+  .projectImgOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 50%);
+    opacity: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 36px;
+    transition: opacity 0.3s ease-in-out;
 
-.projectImgJoin {
-  opacity: 0;
-}
+    &:hover {
+      cursor: pointer;
+    }
+  }
 
-.featuredSticker {
-  position: absolute;
-  bottom: 64px;
-  left: 0;
-  width: 160px;
-}
+  &:hover {
+    .projectImg {
+      scale: 1.1;
+    }
 
-.projectImgFloat {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 1;
-  animation: floatAnimation 4s ease-in-out infinite;
-  transition: 0.4s ease-in-out;
+    .projectImgOverlay {
+      opacity: 1;
+    }
+
+    .projectImgFloat {
+      animation-play-state: paused;
+      scale: 1.1;
+    }
+  }
 }
 
 @keyframes floatAnimation {
@@ -152,13 +135,6 @@
   100% {
     transform: translateY(0);
   }
-}
-
-.animationContainerWidth {
-  animation: showHideFromLeft 6s ease infinite;
-  opacity: 1;
-  transition: opacity 0.2s ease;
-  overflow: hidden;
 }
 
 @keyframes showHideFromLeft {
@@ -186,17 +162,6 @@
 .mobile {
   display: none;
 }
-
-.wip {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 45%;
-}
-
-/* ---------------------- */
-/*      MEDIA QUERIES     */
-/* ---------------------- */
 
 @media (max-width: 768px) {
 
@@ -235,10 +200,6 @@
     &:hover {
       cursor: default;
     }
-  }
-
-  .projectImgOverlay:hover {
-    cursor: default;
   }
 
   .mobile {

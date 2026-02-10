@@ -23,12 +23,11 @@
   flex-direction: column;
   gap: 32px;
   width: 100%;
-  padding: 140px 64px 48px 64px;
+  padding: 140px 64px 48px;
 }
 
 .contentRow {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   gap: 64px;
   width: 100%;
@@ -46,29 +45,12 @@
   width: 40%;
   border-radius: 16px;
   align-self: flex-end;
-  padding-bottom: 0;
 }
 
 .headline {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
-
-.headlineDecImg {
-  width: 50%;
-  margin-right: 0;
-  margin-left: auto
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.footerLogo {
-  width: 80px;
 }
 
 .animationContainer {
@@ -80,10 +62,10 @@
   padding-left: 40%;
   overflow: hidden;
   animation: showHideFromLeft 5s ease infinite;
-}
 
-.animatedImage {
-  height: 100%;
+  .animatedImage {
+    height: 100%;
+  }
 }
 
 @keyframes showHideFromLeft {
@@ -104,59 +86,15 @@
   }
 }
 
-.linkBox {
-  padding: 8px 16px;
-}
-
-.linkBox:hover .animationContainerWidth {
-
-  &C {
-    animation: showHideFromLeftC 0.3s ease;
-    opacity: 1;
-    transition: opacity 0.2s ease;
-  }
-
-}
-
-@keyframes showHideFromLeftC {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 100%;
-  }
-}
-
-.animationContainerWidth {
-
-  &C {
-    position: absolute;
-    bottom: 0%;
-    left: 16px;
-    height: 100%;
-    width: 100%;
-    transition: opacity 0.2s ease;
-    overflow: hidden;
-    opacity: 0;
-  }
-}
-
-.animatedImageWidthC {
-  position: absolute;
-  bottom: 0;
-  padding-left: 8px;
-}
-
 .footerLink {
   background-color: transparent;
   padding: 8px 16px;
   border-radius: 24px;
   transition: background-color 0.2s ease;
-}
 
-.footerLink:hover {
-  background-color: var(--color-high-nd);
+  &:hover {
+    background-color: var(--color-high-nd);
+  }
 }
 
 .footerLinkIcon {
@@ -169,14 +107,14 @@
 }
 
 .footerLink:hover~.footerLinkIcon {
-  transform: translateX(0px) rotate(360deg);
+  transform: translateX(0) rotate(360deg);
   opacity: 1;
   animation: rollIn 0.4s;
 }
 
 @keyframes rollIn {
   0% {
-    transform: translateX(-50px) rotate(0deg);
+    transform: translateX(-50px) rotate(0);
     opacity: 0;
   }
 
@@ -186,7 +124,7 @@
   }
 
   100% {
-    transform: translateX(0px) rotate(360deg);
+    transform: translateX(0) rotate(360deg);
     opacity: 1;
   }
 }
@@ -202,24 +140,24 @@
 
 @media (min-width: 2100px) {
   .content {
-    &::after {
-      content: " ";
+
+    &::after,
+    &::before {
+      content: "";
       position: absolute;
       top: 0;
-      right: 0;
       height: 100%;
-      background: linear-gradient(90deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 1) 100%);
       width: 1%;
     }
 
+    &::after {
+      right: 0;
+      background: linear-gradient(90deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 1) 100%);
+    }
+
     &::before {
-      content: " ";
-      position: absolute;
-      top: 0;
-      left: 0%;
-      height: 100%;
+      left: 0;
       background: linear-gradient(270deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 1) 100%);
-      width: 1%;
     }
   }
 }
@@ -236,7 +174,7 @@
   }
 
   .contactContent {
-    padding: 80px 32px 32px 32px;
+    padding: 80px 32px 32px;
   }
 
   .contentRow,
@@ -269,6 +207,6 @@
 
 @media (max-width: 480px) {
   .contactContent {
-    padding: 60px 16px 16px 16px;
+    padding: 60px 16px 16px;
   }
 }

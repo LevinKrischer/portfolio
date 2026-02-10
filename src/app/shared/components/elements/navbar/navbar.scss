@@ -1,5 +1,5 @@
 * {
-  color: white;
+  color: white
 }
 
 .navbar {
@@ -9,7 +9,7 @@
   height: 80px;
   padding: 0 64px;
   max-width: 1440px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 
 app-menue {
@@ -29,35 +29,35 @@ p {
 
 .headerLogo {
   max-width: 60px;
+}
 
-  &.layerBack {
-    opacity: 0;
-    transition: opacity 0.2s ease-in-out;
-  }
+.headerLogo.layerBack {
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+}
 
-  &.layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
+.headerLogo.layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+}
 
-    &:hover {
-      opacity: 0;
+.headerLogo.layer:hover {
+  opacity: 0;
+}
 
-      &+.layerBack {
-        opacity: 1;
-      }
-    }
-  }
+.headerLogo.layer:hover+.layerBack {
+  opacity: 1;
 }
 
 .mobileNavigation {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media(max-width:768px) {
   .navbar {
     justify-content: space-between;
     padding: 0 32px;
@@ -72,20 +72,18 @@ p {
     padding: 0;
     width: 32px;
     height: 32px;
-
-    &:hover {
-      cursor: pointer;
-    }
-
-    &.opened {
-      background-image: url('/assets/imgs/decorations/burger-menue-close.png');
-    }
   }
 
+  .mobileNavigation:hover {
+    cursor: pointer;
+  }
 
+  .mobileNavigation.opened {
+    background-image: url('/assets/imgs/decorations/burger-menue-close.png');
+  }
 }
 
-@media (max-width: 480px) {
+@media(max-width:480px) {
   .navbar {
     padding: 0 16px;
   }

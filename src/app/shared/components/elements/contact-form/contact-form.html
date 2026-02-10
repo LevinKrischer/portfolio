@@ -1,46 +1,34 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-
   <label for="name">{{ 'CONTACT_FORM.LABEL_NAME' | translate }}</label>
   <input id="name" type="text" formControlName="name" (focus)="clearField('name')" (blur)="validateField('name')"
     [ngClass]="{ 'error': contactForm.get('name')?.touched && contactForm.get('name')?.invalid }"
     [value]="getDisplayValue('name') | translate" />
-
   <label for="email">{{ 'CONTACT_FORM.LABEL_EMAIL' | translate }}</label>
   <input id="email" type="email" formControlName="email" (focus)="clearField('email')" (blur)="validateField('email')"
     [ngClass]="{ 'error': contactForm.get('email')?.touched && contactForm.get('email')?.invalid }"
     [value]="getDisplayValue('email') | translate" />
-
   <label for="message">{{ 'CONTACT_FORM.LABEL_MESSAGE' | translate }}</label>
   <input id="message" type="text" formControlName="message" (focus)="clearField('message')"
     (blur)="validateField('message')"
     [ngClass]="{ 'error': contactForm.get('message')?.touched && contactForm.get('message')?.invalid }"
     [value]="getDisplayValue('message') | translate" />
-
   <div class="consentBox">
     <input class="checkbox" type="checkbox" id="consent" formControlName="consent" />
     <div class="checkmark"></div>
-
     <label class="consentText" for="consent">
       <span [innerHTML]="'CONTACT_FORM.CONSENT_TEXT' | translate"></span>
-
       @if (showConsentError) {
-      <span class="consentError">
-        {{ 'CONTACT_FORM.CONSENT_ERROR' | translate }}
-      </span>
+      <span class="consentError">{{ 'CONTACT_FORM.CONSENT_ERROR' | translate }}</span>
       }
     </label>
   </div>
-
   <div class="submitArea">
     <div class="animationContainer mobile">
       <img class="animatedImage" src="./assets/imgs/decorations/line-with-arrow-right.svg" alt="">
     </div>
-
     <div class="submitWrapper" (click)="onDisabledSubmitAttempt()">
-      <button class="btnStandard" type="submit" [disabled]="!contactForm.valid">
-        {{ 'CONTACT_FORM.SUBMIT' | translate }}
-      </button>
+      <button class="btnStandard" type="submit" [disabled]="!contactForm.valid">{{ 'CONTACT_FORM.SUBMIT' | translate
+        }}</button>
     </div>
   </div>
-
 </form>

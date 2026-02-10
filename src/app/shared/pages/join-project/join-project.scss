@@ -11,7 +11,7 @@
   justify-content: space-between;
   gap: 24px;
   height: calc(100% - 100px);
-  padding: 32px 64px 64px 64px
+  padding: 32px 64px 64px;
 }
 
 .contentLeft {
@@ -28,8 +28,8 @@
 
   .wip {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     width: 30%;
     z-index: 2;
   }
@@ -41,6 +41,11 @@
   transition: opacity 0.2s ease;
   overflow: hidden;
 
+  .animatedImageWidth {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 }
 
 @keyframes showHideFromLeft {
@@ -57,18 +62,18 @@
   }
 
   90% {
-    width: 0%;
+    width: 0;
   }
 
   100% {
-    width: 0%;
+    width: 0;
   }
 }
 
 .projectDesc {
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 16px
+  margin-bottom: 16px;
 }
 
 .usedTechSection {
@@ -77,22 +82,20 @@
   gap: 16px;
   margin-top: 32px;
 
-}
+  .usedTech {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
 
-.usedTech {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 16px;
-
-  img {
-    width: 20px;
+    img {
+      width: 20px;
+    }
   }
 }
 
 .linkBtns {
   display: flex;
-  align-items: center;
   justify-content: flex-end;
   gap: 16px;
   margin-top: 32px;
@@ -107,11 +110,9 @@
   font-weight: 700;
   transition: transform 0.2s ease;
 
-  &:hover {
-    img {
-      transform: translateX(-8px);
-      transition: transform 0.2s ease;
-    }
+  &:hover img {
+    transform: translateX(-8px);
+    transition: transform 0.2s ease;
   }
 
   &.mobile {
@@ -129,11 +130,9 @@
   font-weight: 700;
   transition: transform 0.2s ease;
 
-  &:hover {
-    img {
-      transform: translateX(8px);
-      transition: transform 0.2s ease;
-    }
+  &:hover img {
+    transform: translateX(8px);
+    transition: transform 0.2s ease;
   }
 }
 

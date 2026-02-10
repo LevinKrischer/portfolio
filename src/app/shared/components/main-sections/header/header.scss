@@ -19,7 +19,6 @@
 .headline {
   display: flex;
   align-items: end;
-  height: auto;
 
   &Right {
     flex-direction: row;
@@ -39,20 +38,20 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-}
 
-.headerHeadlineTopLeft {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 70%;
-}
+  &Left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 70%;
+  }
 
-.headerHeadlineTopRight {
-  display: flex;
-  justify-content: end;
-  width: 30%;
-  max-width: 15dvw;
+  &Right {
+    display: flex;
+    justify-content: end;
+    width: 30%;
+    max-width: 15dvw;
+  }
 }
 
 .headerHeadlineBottom {
@@ -66,137 +65,114 @@
   display: none;
 }
 
-/* ----------------------------------------------------------
-   PROFILE IMAGE (verbesserte Version)
----------------------------------------------------------- */
-
 .profileImg {
   width: 100%;
   min-width: 150px;
-  height: auto;
   rotate: 8deg;
   position: relative;
-}
 
-.profileImgFrame {
-  width: 100%;
-  display: block;
-}
+  .profileImgFrame {
+    width: 100%;
+    display: block;
+  }
 
-.profileImgFrameInner {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: opacity 0.3s ease;
-  opacity: 1;
+  .profileImgFrameInner {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+    opacity: 1;
 
-  &:hover {
-    opacity: 0;
+    &:hover {
+      opacity: 0;
+    }
   }
 }
 
-.profileName {
-  font-family: 'Kalam';
-  font-weight: bold;
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: clamp(12px, 1.25vw, 20px);
-}
-
-/* ---------------------------------------------------------- */
-
 .headerBtn {
+  position: relative;
   transition: all 0.4s ease-in-out;
-  border: white solid 1px;
+  border: 1px solid white;
   border-radius: 24px;
   width: 128px;
   margin-bottom: 32px;
 
   &:hover {
     width: 183px;
+
+    .firstBtn {
+      opacity: 0;
+    }
+
+    .secondBtn {
+      opacity: 1;
+      color: white;
+      width: 100%;
+    }
+
+    .headerBtnBg {
+      opacity: 1;
+      width: 100%;
+    }
   }
 
-  &:hover .firstBtn {
+  .firstBtn,
+  .secondBtn {
+    font-family: 'BricolageGrotesque', sans-serif;
+    font-size: 1rem;
+    border: none;
+    padding: 8px 16px;
+    transition: all 0.4s ease-in-out;
+    white-space: nowrap;
+  }
+
+  .firstBtn {
+    background: none;
+    color: white;
+    opacity: 1;
+  }
+
+  .secondBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: none;
+    border-radius: 24px;
+    color: var(--color-secondary);
+    opacity: 0;
+    width: 0;
+  }
+
+  .headerBtnBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 24px;
+    background-color: var(--color-high-nd);
+    width: 0;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+  .buttonHeaderIcon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -40px;
+    right: 0;
+    transition: all 0.4s ease-in-out;
+    rotate: 180deg;
     opacity: 0;
   }
 
-  &:hover .secondBtn {
+  &:hover .buttonHeaderIcon {
+    rotate: 360deg;
+    animation: rollOut 0.7s;
     opacity: 1;
-    color: white;
-    width: 100%;
   }
-
-  &:hover .headerBtnBg {
-    opacity: 1;
-    width: 100%;
-  }
-}
-
-.firstBtn {
-  font-family: 'BricolageGrotesque', sans-serif;
-  font-size: 1rem;
-  background: none;
-  border: none;
-  padding: 8px 16px;
-  color: white;
-  transition: all 0.4s ease-in-out;
-  opacity: 1;
-  overflow: hidden;
-}
-
-.secondBtn {
-  font-family: 'BricolageGrotesque', sans-serif;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: unset;
-  border: none;
-  border-radius: 24px;
-  font-size: 1rem;
-  padding: 8px 16px;
-  color: var(--color-secondary);
-  transition: all 0.4s ease-in-out;
-  opacity: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  box-shadow: inset var(--color-primary) 0px 0px;
-  overflow: hidden;
-  width: 0;
-}
-
-.headerBtnBg {
-  content: " ";
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 24px;
-  background-color: var(--color-high-nd);
-  width: 0;
-  height: 100%;
-  opacity: 0;
-  transition: all 0.4s ease-in-out;
-}
-
-.buttonHeaderIcon {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  top: -40px;
-  right: 0;
-  transition: all 0.4s ease-in-out;
-  rotate: 180deg;
-  opacity: 0;
-}
-
-.headerBtn:hover .buttonHeaderIcon {
-  rotate: 360deg;
-  animation: rollOut 0.7s;
-  opacity: 1;
 }
 
 .mobile {
@@ -219,7 +195,6 @@
 
   100% {
     rotate: 360deg;
-    transform: translateX(0px);
   }
 }
 
@@ -229,30 +204,30 @@
 
 app-social-links {
   position: absolute;
-  bottom:0;
+  bottom: 0;
   left: 64px;
 }
 
 @media (min-width: 2100px) {
   .content {
-    &::after {
-      content: " ";
+
+    &::after,
+    &::before {
+      content: "";
       position: absolute;
       top: 0;
-      right: 0;
       height: 100%;
-      background: linear-gradient(90deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 1) 100%);
       width: 1%;
     }
 
+    &::after {
+      right: 0;
+      background: linear-gradient(90deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 1) 100%);
+    }
+
     &::before {
-      content: " ";
-      position: absolute;
-      top: 0;
-      left: 0%;
-      height: 100%;
+      left: 0;
       background: linear-gradient(270deg, rgba(29, 29, 29, 0) 0%, rgba(29, 29, 29, 1) 100%);
-      width: 1%;
     }
   }
 }
@@ -263,13 +238,12 @@ app-social-links {
   }
 
   app-social-links {
-    bottom: 0px;
+    bottom: 0;
     left: 32px;
   }
 }
 
 @media (max-width: 768px) {
-
   .content {
     height: auto;
   }
@@ -295,8 +269,7 @@ app-social-links {
     justify-content: flex-start;
     align-items: center;
     gap: 64px;
-    padding: 64px 0 128px 0;
-    overflow: hidden;
+    padding: 64px 0 128px;
   }
 
   .headline {
@@ -346,7 +319,6 @@ app-social-links {
       opacity: 1;
     }
   }
-
 }
 
 @media (max-width: 480px) {
@@ -356,6 +328,6 @@ app-social-links {
 
   .headerContent {
     gap: 32px;
-    padding: 32px 0 96px 0;
+    padding: 32px 0 96px;
   }
 }

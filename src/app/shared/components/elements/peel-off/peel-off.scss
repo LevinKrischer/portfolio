@@ -1,5 +1,5 @@
 *:hover {
-  cursor: pointer;
+  cursor: pointer
 }
 
 .skillsPeel {
@@ -9,10 +9,10 @@
 .peel {
   width: 100%;
   rotate: 8deg;
+}
 
-  .peelImage {
-    width: 100%;
-  }
+.peelImage {
+  width: 100%;
 }
 
 .peel.slightlyOpened,
@@ -23,11 +23,7 @@
   width: 100%;
   rotate: 8deg;
   opacity: 1;
-  transition: 0.3s ease-in-out;
-
-  .peelImage {
-    width: 100%;
-  }
+  transition: .3s ease-in-out;
 }
 
 .peel.closed:hover {
@@ -36,11 +32,11 @@
 
 @keyframes hidePeel {
   0% {
-    opacity: 1;
+    opacity: 1
   }
 
   100% {
-    opacity: 0;
+    opacity: 0
   }
 }
 
@@ -58,38 +54,28 @@
 
 .toBeHidden {
   opacity: 0;
-  animation: hidePeel 0.5s;
-}
-
-@keyframes hidePeel {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
+  animation: hidePeel .5s;
 }
 
 .hidden {
   display: none;
 }
 
-@media (max-width: 1100px) {
+@media(max-width:1100px) {
   .noMobile {
-    display: none;
+    display: none
   }
 
   .mobile {
-    display: block;
+    display: block
   }
 
-    .hidden {
-      display: none;
-    }
+  .hidden {
+    display: none
+  }
 }
 
-@media (max-width: 768px) {
+@media(max-width:768px) {
   .skillsPeel {
     position: relative;
     width: 70%;
