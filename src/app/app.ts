@@ -12,16 +12,20 @@ export class App {
   protected readonly title = signal('portfolio');
 
   constructor(private translate: TranslateService) {
-    // Fallback language
-    translate.setDefaultLang('en');
+    const savedLang = localStorage.getItem('userLanguage') || 'en';
+
+    translate.setDefaultLang(savedLang);
+    translate.use(savedLang);
   }
 
   ngOnInit() {
-    // Set initial language
-    this.translate.use('de');
+    // NICHTS MEHR HIER SETZEN!
+    // Alles passiert bereits im Constructor.
   }
 
   useLanguage(lang: string) {
     this.translate.use(lang);
+    localStorage.setItem('userLanguage', lang);
   }
 }
+
