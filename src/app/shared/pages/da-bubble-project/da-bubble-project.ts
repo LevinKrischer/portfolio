@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { NavbarProjects } from '../../components/elements/navbar-projects/navbar-projects';
 import { TranslateModule } from '@ngx-translate/core';
+import { Navbar } from "../../components/elements/navbar/navbar";
+import { MenueMobile } from '../../components/elements/menue-mobile/menue-mobile';
 
 @Component({
   selector: 'app-da-bubble-project',
-  imports: [NavbarProjects, TranslateModule],
+  imports: [Navbar, TranslateModule, Navbar, MenueMobile],
   templateUrl: './da-bubble-project.html',
   styleUrl: './da-bubble-project.scss',
 })

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { NavbarProjects } from '../../components/elements/navbar-projects/navbar-projects';
 import { TranslateModule } from '@ngx-translate/core';
+import { Navbar } from "../../components/elements/navbar/navbar";
+import { MenueMobile } from '../../components/elements/menue-mobile/menue-mobile';
 
 @Component({
   selector: 'app-el-pollo-loco-project',
-  imports: [NavbarProjects, TranslateModule],
+  imports: [Navbar, TranslateModule, Navbar, MenueMobile],
   templateUrl: './el-pollo-loco-project.html',
   styleUrl: './el-pollo-loco-project.scss',
 })
