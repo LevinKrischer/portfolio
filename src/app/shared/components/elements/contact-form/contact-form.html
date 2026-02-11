@@ -15,12 +15,16 @@
   <div class="consentBox">
     <input class="checkbox" type="checkbox" id="consent" formControlName="consent" />
     <div class="checkmark"></div>
-    <label class="consentText" for="consent">
-      <span [innerHTML]="'CONTACT_FORM.CONSENT_TEXT' | translate"></span>
-      @if (showConsentError) {
-      <span class="consentError">{{ 'CONTACT_FORM.CONSENT_ERROR' | translate }}</span>
-      }
-    </label>
+    <span>
+      {{ 'CONTACT_FORM.CONSENT_TEXT_PART1' | translate }}
+      <a routerLink="/privacy-policy" class="consentLink">
+        {{ 'CONTACT_FORM.CONSENT_TEXT_LINK' | translate }}
+      </a>
+      {{ 'CONTACT_FORM.CONSENT_TEXT_PART2' | translate }}
+    </span>
+    @if (showConsentError) {
+    <span class="consentError">{{ 'CONTACT_FORM.CONSENT_ERROR' | translate }}</span>
+    }
   </div>
   <div class="submitArea">
     <div class="animationContainer mobile">

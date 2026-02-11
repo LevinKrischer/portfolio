@@ -28,6 +28,7 @@ form {
 .consentBox {
   display: flex;
   margin: 2rem 0;
+  gap: 8px;
 
   .consentText {
     font-size: 18px;
@@ -65,6 +66,16 @@ form {
     button:disabled {
       pointer-events: none;
     }
+  }
+}
+
+.consentLink {
+  color: var(--color-high-nd);
+  transition: color 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--color-high-st)
   }
 }
 

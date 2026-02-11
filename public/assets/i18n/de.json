@@ -102,8 +102,10 @@
     "ERROR_EMAIL": "Bitte gib eine gültige E-Mail-Adresse ein",
     "ERROR_MESSAGE": "Bitte gib deine Nachricht ein",
 
-    "CONSENT_TEXT": "Ich stimme zu, dass meine Daten zum Zweck der Kontaktaufnahme verarbeitet werden.",
-    "CONSENT_ERROR": "Bitte akzeptiere die Datenschutzerklärung.",
+    "CONSENT_TEXT_PART1": "Ich stimme der ",
+    "CONSENT_TEXT_LINK": "Datenschutzerklärung",
+    "CONSENT_TEXT_PART2": " sowie der Verarbeitung meiner Daten zu, um meine Anfrage zu bearbeiten.",
+    "CONSENT_ERROR": "Bitte akzeptiere die Datenschutzerklärung, um fortzufahren",
 
     "SUBMIT": "Nachricht senden"
   },
