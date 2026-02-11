@@ -185,13 +185,20 @@ export class ContactForm {
     return control.value ?? '';
   }
 
-  // ⭐ FINAL: Mail an deine send_mail.php senden
   onSubmit() {
     if (this.contactForm.invalid) return;
 
-    const formData = this.contactForm.value;
+    const formData = {
+      name: this.contactForm.value.name,
+      email: this.contactForm.value.email,
+      message: this.contactForm.value.message
+    };
 
-    this.http.post('https://dev.levinkrischer.de/send_mail.php', formData)
+    this.http.post(
+      'send_mail.php',
+      formData,
+      { responseType: 'json' }
+    )
       .subscribe({
         next: (response: any) => {
           console.log("Mail gesendet:", response);

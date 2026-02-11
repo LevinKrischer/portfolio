@@ -21,10 +21,8 @@ export class MenueMobile implements OnDestroy {
     private router: Router,
     private elementRef: ElementRef
   ) {
-    // Verfügbare Sprachen registrieren
     translate.addLangs(['en', 'de']);
 
-    // Sprache aus localStorage laden oder EN als Default setzen
     const savedLang = localStorage.getItem('userLanguage') || 'en';
 
     translate.setDefaultLang(savedLang);
@@ -32,38 +30,31 @@ export class MenueMobile implements OnDestroy {
 
     this.isGerman = savedLang === 'de';
 
-    // Route-Wechsel: Menü schließen
     this.routerSub = this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.closeMenu();
       }
     });
 
-    // Hash-Wechsel (#aboutMe etc.)
     window.addEventListener('hashchange', this.onHashChange);
   }
 
-  // ⭐ Outside-Click: Menü schließen, außer der Menü-Button wurde geklickt
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {
     if (!this.isOpen) return;
 
     const clickedElement = event.target as HTMLElement;
 
-    // Wenn der Menü-Button geklickt wurde → NICHT schließen
     if (clickedElement.closest('.mobileNavigation')) {
       return;
     }
 
-    // Wenn innerhalb der Komponente geklickt wurde → NICHT schließen
     const clickedInside = this.elementRef.nativeElement.contains(clickedElement);
     if (clickedInside) return;
 
-    // Alles andere → Menü schließen
     this.closeMenu();
   }
 
-  // Hashchange-Handler
   private onHashChange = () => {
     if (this.isOpen) {
       this.closeMenu();
@@ -75,7 +66,6 @@ export class MenueMobile implements OnDestroy {
     window.removeEventListener('hashchange', this.onHashChange);
   }
 
-  // ⭐ Wiederhergestellt: Menü öffnen/schließen
   toggleMobileMenu() {
     if (this.isOpen) {
       this.closeMenu();

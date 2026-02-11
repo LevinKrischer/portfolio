@@ -16,6 +16,10 @@ app-menue {
   width: 80%;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 h2,
 p {
   mix-blend-mode: difference;

@@ -4,7 +4,7 @@
     <app-menue-mobile></app-menue-mobile>
 
     <section class="contentAbove">
-      <a class="backLink noMobile" href="#da-bubble-project">
+      <a class="backLink noMobile" href="#projects">
         <img src="./assets/icons/arrow-back-orange.png">
         <span class="blend">{{ 'PROJECTS_DETAIL.DABUBBLE.BACK' | translate }}</span>
       </a>
@@ -59,21 +59,21 @@
         <img class="projectBreadcrumb" src="./assets/imgs/layout/join-project-thumbnails.png">
 
         <div class="linkBtns">
-          <button class="btnStandardWhite">
+          <button class="btnStandardWhite" disabled>
             <a><span class="blend">{{ 'PROJECTS_DETAIL.DABUBBLE.BUTTONS.GITHUB' | translate }}</span></a>
           </button>
-          <button class="btnStandardWhite">
+          <button class="btnStandardWhite" disabled>
             <a><span class="blend">{{ 'PROJECTS_DETAIL.DABUBBLE.BUTTONS.LIVE' | translate }}</span></a>
           </button>
         </div>
 
         <div class="siteNavigation">
-          <a class="backLink mobile" href="#da-bubble-project">
+          <a class="backLink mobile" href="#projects">
             <img src="./assets/icons/arrow-back-orange.png">
             <span class="blend">{{ 'PROJECTS_DETAIL.DABUBBLE.BACK' | translate }}</span>
           </a>
 
-          <a class="nextLink" href="/join-project">
+          <a class="nextLink" routerLink="/join-project">
             <span class="blend">{{ 'PROJECTS_DETAIL.DABUBBLE.NAV.NEXT' | translate }}</span>
             <img src="./assets/icons/arrow-back-yellow.png">
           </a>

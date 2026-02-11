@@ -4,7 +4,7 @@
     <app-menue-mobile></app-menue-mobile>
 
     <section class="contentAbove">
-      <a class="backLink noMobile" href="#el-pollo-loco-project">
+      <a class="backLink noMobile" href="#projects">
         <img src="./assets/icons/arrow-back-orange.png">
         <span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BACK' | translate }}</span>
       </a>
@@ -51,20 +51,20 @@
 
         <div class="linkBtns">
           <button class="btnStandardWhite">
-            <a><span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BUTTONS.GITHUB' | translate }}</span></a>
+            <a href="https://github.com/LevinKrischer/el-pollo-loco" target="_blank"><span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BUTTONS.GITHUB' | translate }}</span></a>
           </button>
           <button class="btnStandardWhite">
-            <a><span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BUTTONS.LIVE' | translate }}</span></a>
+            <a href="https://levin-krischer.developerakademie.net/el-pollo-loco/index.html" target="_blank"><span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BUTTONS.LIVE' | translate }}</span></a>
           </button>
         </div>
 
         <div class="siteNavigation">
-          <a class="backLink mobile" href="#el-pollo-loco-project">
+          <a class="backLink mobile" href="#projects">
             <img src="./assets/icons/arrow-back-orange.png">
             <span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BACK' | translate }}</span>
           </a>
 
-          <a class="nextLink" href="/dabubble-project">
+          <a class="nextLink" routerLink="/dabubble-project">
             <span class="blend">{{ 'PROJECTS_DETAIL.POLLO.NAV.NEXT' | translate }}</span>
             <img src="./assets/icons/arrow-back-yellow.png">
           </a>
