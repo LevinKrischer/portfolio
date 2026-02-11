@@ -78,7 +78,13 @@
 @media(max-width:768px) {
   .skillsPeel {
     position: relative;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
+  }
+}
+
+@media(max-width:480px) {
+  .skillsPeel {
+    width: 100%;
   }
 }

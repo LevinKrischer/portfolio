@@ -42,8 +42,8 @@ h1 {
 }
 
 h2 {
-  font-size: 64px;
-  line-height: 64px;
+  font-size: clamp(32px, 3.4vw, 64px);
+  line-height: clamp(32px, 3.33vw, 64px);
 }
 
 .colorWhite {
@@ -160,11 +160,6 @@ h2 {
   h1 {
     font-size: clamp(48px, 14vw, 120px);
     line-height: clamp(48px, 14vw, 120px);
-  }
-
-  h2 {
-    font-size: 48px;
-    line-height: 48px;
   }
 
   .f-size-20 {
