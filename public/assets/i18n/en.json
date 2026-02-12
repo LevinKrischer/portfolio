@@ -274,7 +274,9 @@
   "LEGAL_PRIVACY": {
     "TITLE": "Privacy Policy",
     "HEADLINE": "Privacy Policy",
-
+    "NAME": "Levin Krischer",
+    "ADDRESS_LINE1": "Auf dem Amtshof 19",
+    "ADDRESS_LINE2": "30938 Burgwedel",
     "SECTION_1": {
       "TITLE": "1. Data Protection at a Glance",
 
