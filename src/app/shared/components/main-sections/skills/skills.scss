@@ -99,6 +99,44 @@ app-peel-off {
   width: 20%;
 }
 
+.animationContainerHeight {
+  position: absolute;
+  left: -15%;
+  top: -5%;
+  width: 130%;
+  transition: opacity .2s ease;
+  overflow: hidden;
+  align-self: flex-start;
+  animation: showHideFromTop 6s ease infinite;
+}
+
+.animatedImageHeight {
+  width: 100%;
+  object-fit: cover;
+}
+
+@keyframes showHideFromTop {
+  0% {
+    height: 0
+  }
+
+  10% {
+    height: 120%
+  }
+
+  70% {
+    height: 120%
+  }
+
+  80% {
+    height: 0
+  }
+
+  100% {
+    height: 0
+  }
+}
+
 @media (min-width: 2100px) {
   .content {
 
@@ -186,10 +224,10 @@ app-peel-off {
     padding: 60px 16px;
   }
 
-    .skillsIntro {
-      width: 100%;
-      padding: 60px 16px 40px 16px;
-    }
+  .skillsIntro {
+    width: 100%;
+    padding: 60px 16px 40px 16px;
+  }
 
   app-peel-off {
     width: 70%;

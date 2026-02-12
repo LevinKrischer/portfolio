@@ -4,17 +4,17 @@
       <p class="f-size-20">{{ 'SKILLS.SECTION_LABEL' | translate }}</p>
       <div>
         <h2>{{ 'SKILLS.HEADLINE' | translate }}</h2>
-        <img class="headlineCircle" src="./assets/imgs/decorations/circle-orange.png" alt="">
+        <div class="animationContainerHeight">
+          <img class="animatedImageHeight" src="./assets/imgs/decorations/circle-orange.png" alt="">
+        </div>
       </div>
     </div>
-
     <div class="skillsIntro" [style.background-image]="'url(assets/imgs/layout/1-skills-description.png)'">
       <p class="skillsText">{{ 'SKILLS.INTRO' | translate }}</p>
     </div>
 
     <div class="placeholder"></div>
   </section>
-
   <section class="contentInner skillsDetails">
     <div class="placeholder"></div>
     <div class="skillsIcons">
@@ -59,7 +59,6 @@
         <p class="skillsIconDesc">{{ 'SKILLS.ICONS.MATERIAL' | translate }}</p>
       </div>
     </div>
-
     <app-peel-off></app-peel-off>
   </section>
 </section>
