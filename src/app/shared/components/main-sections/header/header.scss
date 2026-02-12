@@ -5,18 +5,7 @@
   max-width: var(--max-side-width);
   margin: 0 auto;
   overflow: hidden;
-}
-
-.bg-desktop,
-.bg-mobile {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: bottom;
-}
-
-.bg-mobile {
-  display: none;
+  background-image: url('/../../../../../assets/imgs/bg/01-Hero-2300px.jpg');
 }
 
 .headerContent {
@@ -244,6 +233,10 @@ app-social-links {
 }
 
 @media (max-width: 1100px) {
+  .content {
+    background-image: url('/../../../../../assets/imgs/bg/01_Hero-1110px-mobile.png');
+  }
+
   .headerHeadline {
     width: 80%;
   }
@@ -251,14 +244,6 @@ app-social-links {
   app-social-links {
     bottom: 0;
     left: 32px;
-  }
-
-  .bg-desktop {
-    display: none;
-  }
-
-  .bg-mobile {
-    display: block;
   }
 }
 
