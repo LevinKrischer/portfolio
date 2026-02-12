@@ -149,11 +149,28 @@
   }
 }
 
+@media (max-width: 1110px) {
+  .aboutMeContent {
+    gap: 32px;
+    padding: 32px 32px 64px;
+  }
+
+  .aboutWork,
+  .aboutLocation,
+  .aboutRemote {
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   .aboutMeContent {
     flex-direction: column-reverse;
     gap: 48px;
     padding: 32px 32px 64px;
+  }
+
+  .aboutText {
+    font-size: 30px;
   }
 
   .contentBoxLeft {
@@ -162,10 +179,24 @@
     p {
       font-size: 20px;
     }
+
+    .aboutText {
+      font-size: 24px;
+    }
+
+    .aboutIcon {
+      width: 30px;
+    }
   }
 
   .contentBoxRight {
     width: 100%;
+  }
+
+  .aboutWork,
+  .aboutLocation,
+  .aboutRemote {
+    width: 80%;
   }
 }
 
@@ -177,6 +208,12 @@
   .aboutLocation,
   .aboutRemote,
   .aboutWork {
-    width: 100%;
+    width: 80%;
+  }
+
+  .contentBoxLeft {
+    .aboutText {
+      font-size: 16px;
+    }
   }
 }

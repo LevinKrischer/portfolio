@@ -9,8 +9,10 @@
   height: calc(100% - 100px);
   max-width: 1440px;
   min-height: 100dvh;
-  background-size: cover;
+  background-size: auto 100%;
   background-position: left;
+  background-image: url('../../../../../public/assets/imgs/bg/project-bg.png');
+  background-repeat: no-repeat;
 }
 
 .contentMain {
@@ -33,6 +35,14 @@
 
   .projectBreadcrumb {
     width: 100%;
+  }
+
+  .wip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    z-index: 2;
   }
 }
 
@@ -183,6 +193,13 @@ p {
 }
 
 @media (max-width: 1100px) {
+  .projectContent {
+    background-image: url('../../../../../public/assets/imgs/bg/project-bg-1100-90deg.png');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
   .btnStandardWhite {
     border: var(--color-secondary) solid 1px;
     box-shadow: 4px 4px var(--color-secondary);
@@ -218,9 +235,21 @@ p {
   .noMobile {
     display: none;
   }
+
+  .btnStandardWhite {
+    border: var(--color-primary) solid 1px;
+    box-shadow: 4px 4px var(--color-primary);
+    color: var(--color-primary);
+  }
 }
 
 @media (max-width: 768px) {
+  .projectContent {
+    background-image: url('../../../../../public/assets/imgs/bg/project-bg-1100-90deg.png');
+    background-size: auto 80%;
+  }
+
+
   .contentMain {
     padding: 32px;
   }
