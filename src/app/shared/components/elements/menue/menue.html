@@ -3,25 +3,25 @@
     <div class="animationContainerHeight">
       <img class="animatedImageHeight" src="./assets/imgs/decorations/1.png" alt="">
     </div>
-    <a href="#aboutMe">{{ 'NAVBAR.ABOUT' | translate }}</a>
+    <a routerLink="/" fragment="aboutMe">{{ 'NAVBAR.ABOUT' | translate }}</a>
   </div>
   <div class="linkBox">
     <div class="animationContainerWidthA">
       <img class="animatedImageWidth" src="./assets/imgs/decorations/2-a.png" alt="">
     </div>
-    <a href="#skills">{{ 'NAVBAR.SKILLS' | translate }}</a>
+    <a routerLink="/" fragment="skills">{{ 'NAVBAR.SKILLS' | translate }}</a>
   </div>
   <div class="linkBox">
     <div class="animationContainerWidthB">
       <img class="animatedImageWidthB" src="./assets/imgs/decorations/4.png" alt="">
     </div>
-    <a href="#projects">{{ 'NAVBAR.PROJECTS' | translate }}</a>
+    <a routerLink="/" fragment="projects">{{ 'NAVBAR.PROJECTS' | translate }}</a>
   </div>
   <div class="linkBox">
     <div class="animationContainerWidthC">
       <img class="animatedImageWidth" src="./assets/imgs/decorations/3.png" alt="">
     </div>
-    <a href="#contact">{{ 'NAVBAR.CONTACT' | translate }}</a>
+    <a routerLink="/" fragment="contact">{{ 'NAVBAR.CONTACT' | translate }}</a>
   </div>
   <div class="toggleSwitch">
     <p [style.font-weight]="!isGerman ? 'bold' : 'normal'">{{ 'NAVBAR.LANG_EN' | translate }}</p>

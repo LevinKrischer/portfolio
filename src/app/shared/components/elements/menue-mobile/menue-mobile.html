@@ -2,7 +2,7 @@
   [style.background-image]="'url(assets/imgs/bg/01_Hero-1110px-mobile.png)'">
   <section class="headline">
     <div class="logoContainer">
-      <a href="#header">
+      <a routerLink="/">
         <img class="headerLogo" src="assets/imgs/layout/lk-logo-yellow.png" alt="">
       </a>
     </div>
@@ -14,25 +14,25 @@
 
   <nav class="menue">
     <div class="linkBox">
-      <a href="#aboutMe" (click)="closeMenu()">
+      <a routerLink="/" fragment="aboutMe" (click)="closeMenu()">
         {{ 'MOBILE_MENU.ABOUT' | translate }}
       </a>
     </div>
 
     <div class="linkBox">
-      <a href="#skills" (click)="closeMenu()">
+      <a routerLink="/" fragment="skills" (click)="closeMenu()">
         {{ 'MOBILE_MENU.SKILLS' | translate }}
       </a>
     </div>
 
     <div class="linkBox">
-      <a href="#projects" (click)="closeMenu()">
+      <a routerLink="/" fragment="projects" (click)="closeMenu()">
         {{ 'MOBILE_MENU.PROJECTS' | translate }}
       </a>
     </div>
 
     <div class="linkBox">
-      <a href="#contact" (click)="closeMenu()">
+      <a routerLink="/" fragment="contact" (click)="closeMenu()">
         {{ 'MOBILE_MENU.CONTACT' | translate }}
       </a>
     </div>

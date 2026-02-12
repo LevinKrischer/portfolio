@@ -2,12 +2,12 @@ import { Component, ElementRef, HostListener, OnDestroy } from '@angular/core';
 import { SocialLinks } from '../social-links/social-links';
 import { MobileMenuService } from '../../../services/mobile-menue.service/mobile-menue.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, RouterLink } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-menue-mobile',
-  imports: [SocialLinks, TranslateModule],
+  imports: [SocialLinks, TranslateModule, RouterLink],
   templateUrl: './menue-mobile.html',
   styleUrl: './menue-mobile.scss',
 })

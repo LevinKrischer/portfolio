@@ -4,10 +4,11 @@ import { LetterComponent } from '../../elements/letter/letter';
 import { Button } from "../../elements/button/button";
 import { SocialLinks } from "../../elements/social-links/social-links";
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-header',
-  imports: [Navbar, LetterComponent, Button, SocialLinks, TranslateModule],
+  imports: [Navbar, LetterComponent, Button, SocialLinks, TranslateModule, RouterLink],
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
