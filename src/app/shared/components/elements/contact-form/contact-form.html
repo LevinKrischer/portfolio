@@ -1,31 +1,36 @@
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-  <label for="name">{{ 'CONTACT_FORM.LABEL_NAME' | translate }}</label>
-  <input id="name" type="text" formControlName="name" (focus)="clearField('name')" (blur)="validateField('name')"
-    [ngClass]="{ 'error': contactForm.get('name')?.touched && contactForm.get('name')?.invalid }"
-    [value]="getDisplayValue('name') | translate" />
-  <label for="email">{{ 'CONTACT_FORM.LABEL_EMAIL' | translate }}</label>
-  <input id="email" type="email" formControlName="email" (focus)="clearField('email')" (blur)="validateField('email')"
-    [ngClass]="{ 'error': contactForm.get('email')?.touched && contactForm.get('email')?.invalid }"
-    [value]="getDisplayValue('email') | translate" />
-  <label for="message">{{ 'CONTACT_FORM.LABEL_MESSAGE' | translate }}</label>
-  <input id="message" type="text" formControlName="message" (focus)="clearField('message')"
-    (blur)="validateField('message')"
-    [ngClass]="{ 'error': contactForm.get('message')?.touched && contactForm.get('message')?.invalid }"
-    [value]="getDisplayValue('message') | translate" />
+  <div class="fieldWrapper">
+    <label for="name">{{ 'CONTACT_FORM.LABEL_NAME' | translate }}</label>
+    <input id="name" type="text" formControlName="name" (focus)="clearError('name')" (blur)="validateField('name')"
+      [ngClass]="{ 'error': isInvalid('name'), 'defaultError': showDefaultError('name') }" />
+    <span class="fieldError" [class.visible]="isInvalid('name')">{{ errorTexts['name'] | translate }}</span>
+  </div>
+
+  <div class="fieldWrapper">
+    <label for="email">{{ 'CONTACT_FORM.LABEL_EMAIL' | translate }}</label>
+    <input id="email" type="email" formControlName="email" (focus)="clearError('email')" (blur)="validateField('email')"
+      [ngClass]="{ 'error': isInvalid('email'), 'defaultError': showDefaultError('email') }" />
+    <span class="fieldError" [class.visible]="isInvalid('email')">{{ errorTexts['email'] | translate }}</span>
+  </div>
+
+  <div class="fieldWrapper">
+    <label for="message">{{ 'CONTACT_FORM.LABEL_MESSAGE' | translate }}</label>
+    <input id="message" type="text" formControlName="message" (focus)="clearError('message')"
+      (blur)="validateField('message')"
+      [ngClass]="{ 'error': isInvalid('message'), 'defaultError': showDefaultError('message') }" />
+    <span class="fieldError" [class.visible]="isInvalid('message')">{{ errorTexts['message'] | translate }}</span>
+  </div>
+
   <div class="consentBox">
     <input class="checkbox" type="checkbox" id="consent" formControlName="consent" />
-    <div class="checkmark"></div>
-    <span>
+    <div>
       {{ 'CONTACT_FORM.CONSENT_TEXT_PART1' | translate }}
-      <a routerLink="/privacy-policy" class="consentLink">
-        {{ 'CONTACT_FORM.CONSENT_TEXT_LINK' | translate }}
-      </a>
+      <a routerLink="/privacy-policy" class="consentLink">{{ 'CONTACT_FORM.CONSENT_TEXT_LINK' | translate }}</a>
       {{ 'CONTACT_FORM.CONSENT_TEXT_PART2' | translate }}
-    </span>
-    @if (showConsentError) {
-    <span class="consentError">{{ 'CONTACT_FORM.CONSENT_ERROR' | translate }}</span>
-    }
+      @if (showConsentError) { <span class="consentError">{{ 'CONTACT_FORM.CONSENT_ERROR' | translate }}</span> }
+    </div>
   </div>
+
   <div class="submitArea">
     <div class="animationContainer mobile">
       <img class="animatedImage" src="./assets/imgs/decorations/line-with-arrow-right.svg" alt="">

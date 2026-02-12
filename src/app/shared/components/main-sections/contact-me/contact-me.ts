@@ -7,7 +7,7 @@ import { TranslateModule } from '@ngx-translate/core';
   selector: 'app-contact-me',
   imports: [ContactForm, Footer, TranslateModule],
   templateUrl: './contact-me.html',
-  styleUrl: './contact-me.scss',
+  styleUrls: ['./contact-me.scss']
 })
 export class ContactMe {
 

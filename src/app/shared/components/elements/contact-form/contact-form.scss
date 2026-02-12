@@ -28,7 +28,7 @@ form {
 .consentBox {
   display: flex;
   margin: 2rem 0;
-  gap: 8px;
+  gap: 16px;
 
   .consentText {
     font-size: 18px;
@@ -81,6 +81,31 @@ form {
 
 .mobile {
   display: none;
+}
+
+.fieldWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldError {
+  min-height: 1.2rem;
+  font-size: 0.85rem;
+  color: var(--color-error);
+  margin-top: 4px;
+  line-height: 1.2rem;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.fieldError.visible {
+  opacity: 1;
+}
+
+.defaultError {
+  color: var(--color-error);
 }
 
 @media (max-width: 768px) {
