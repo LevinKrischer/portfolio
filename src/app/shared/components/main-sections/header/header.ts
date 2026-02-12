@@ -26,17 +26,14 @@ export class Header implements AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit() {
-    // 1) Element-Resize beobachten
     this.resizeObserver = new ResizeObserver(() => {
       this.scheduleScaleUpdate();
     });
     this.resizeObserver.observe(this.headlineRoot.nativeElement);
 
-    // 2) Fenster-Resize beobachten
     this.windowListener = () => this.scheduleScaleUpdate();
     window.addEventListener('resize', this.windowListener);
 
-    // Initialer Aufruf
     this.scheduleScaleUpdate();
   }
 

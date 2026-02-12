@@ -6,52 +6,43 @@
         <img class="headerLogo" src="assets/imgs/layout/lk-logo-yellow.png" alt="">
       </a>
     </div>
-
     <button class="mobileNavigation mobile" (click)="toggleMobileMenu()">
       <img class="mobileNavigationIcon" src="assets/imgs/decorations/burger-menue-close.png" alt="close navigation">
     </button>
   </section>
-
   <nav class="menue">
     <div class="linkBox">
       <a routerLink="/" fragment="aboutMe" (click)="closeMenu()">
         {{ 'MOBILE_MENU.ABOUT' | translate }}
       </a>
     </div>
-
     <div class="linkBox">
       <a routerLink="/" fragment="skills" (click)="closeMenu()">
         {{ 'MOBILE_MENU.SKILLS' | translate }}
       </a>
     </div>
-
     <div class="linkBox">
       <a routerLink="/" fragment="projects" (click)="closeMenu()">
         {{ 'MOBILE_MENU.PROJECTS' | translate }}
       </a>
     </div>
-
     <div class="linkBox">
       <a routerLink="/" fragment="contact" (click)="closeMenu()">
         {{ 'MOBILE_MENU.CONTACT' | translate }}
       </a>
     </div>
-
     <div class="toggleSwitch">
       <p [style.font-weight]="!isGerman ? 'bold' : 'normal'">
         {{ 'MOBILE_MENU.LANG_EN' | translate }}
       </p>
-
       <label class="switch">
         <input type="checkbox" [checked]="isGerman" (change)="onToggleLanguage($event)">
         <span class="slider round"></span>
       </label>
-
       <p [style.font-weight]="isGerman ? 'bold' : 'normal'">
         {{ 'MOBILE_MENU.LANG_DE' | translate }}
       </p>
     </div>
   </nav>
-
   <app-social-links></app-social-links>
 </section>

@@ -182,10 +182,9 @@ export class ContactForm {
           this.loading = false;
           this.error = true;
 
-          // Fehleranzeige nach 3 Sekunden zurücksetzen
           setTimeout(() => {
             this.error = false;
-          }, 3000);
+          }, 5000);
         }
       });
   }

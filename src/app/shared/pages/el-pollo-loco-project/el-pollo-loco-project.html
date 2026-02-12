@@ -2,14 +2,12 @@
   <section class="contentInner projectContent">
     <app-navbar></app-navbar>
     <app-menue-mobile></app-menue-mobile>
-
     <section class="contentAbove">
       <a class="backLink noMobile" routerLink="/" fragment="projects">
         <img src="./assets/icons/arrow-back-orange.png">
         <span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BACK' | translate }}</span>
       </a>
     </section>
-
     <section class="contentMain">
       <section class="contentLeft">
         <div class="headline">
@@ -18,18 +16,14 @@
             <img class="animatedImageWidth" src="./assets/imgs/decorations/blue-line.png">
           </div>
         </div>
-
         <p class="projectDesc mt-32">{{ 'PROJECTS_DETAIL.POLLO.DESCRIPTION.LABEL' | translate }}</p>
         <p class="f-size-20">{{ 'PROJECTS_DETAIL.POLLO.DESCRIPTION.TEXT' | translate }}</p>
-
         <p class="projectDesc mt-32">{{ 'PROJECTS_DETAIL.POLLO.IMPLEMENTATION.LABEL' | translate }}</p>
         <p class="f-size-20">{{ 'PROJECTS_DETAIL.POLLO.IMPLEMENTATION.TEXT' | translate }}</p>
-
         <p class="f-size-20 mt-32">
           <span class="font-bold">{{ 'PROJECTS_DETAIL.POLLO.DURATION.LABEL' | translate }}</span>
           {{ 'PROJECTS_DETAIL.POLLO.DURATION.VALUE' | translate }}
         </p>
-
         <section class="usedTechSection">
           <div class="usedTech">
             <img src="./assets/icons/1-html.png">
@@ -45,25 +39,23 @@
           </div>
         </section>
       </section>
-
       <section class="contentRight">
         <img class="projectBreadcrumb" src="./assets/imgs/layout/pollo-loco-project-thumbnails.png">
-
         <div class="linkBtns">
           <button class="btnStandardWhite">
-            <a href="https://github.com/LevinKrischer/el-pollo-loco" target="_blank"><span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BUTTONS.GITHUB' | translate }}</span></a>
+            <a href="https://github.com/LevinKrischer/el-pollo-loco" target="_blank"><span class="blend">{{
+                'PROJECTS_DETAIL.POLLO.BUTTONS.GITHUB' | translate }}</span></a>
           </button>
           <button class="btnStandardWhite">
-            <a href="https://levin-krischer.developerakademie.net/el-pollo-loco/index.html" target="_blank"><span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BUTTONS.LIVE' | translate }}</span></a>
+            <a href="https://levin-krischer.developerakademie.net/el-pollo-loco/index.html" target="_blank"><span
+                class="blend">{{ 'PROJECTS_DETAIL.POLLO.BUTTONS.LIVE' | translate }}</span></a>
           </button>
         </div>
-
         <div class="siteNavigation">
           <a class="backLink mobile" routerLink="/" fragment="projects">
             <img src="./assets/icons/arrow-back-orange.png">
             <span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BACK' | translate }}</span>
           </a>
-
           <a class="nextLink" routerLink="/dabubble-project">
             <span class="blend">{{ 'PROJECTS_DETAIL.POLLO.NAV.NEXT' | translate }}</span>
             <img src="./assets/icons/arrow-back-yellow.png">
