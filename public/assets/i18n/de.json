@@ -2,18 +2,15 @@
   "ABOUT": {
     "SECTION_LABEL": "WER ICH BIN",
     "HEADLINE": "Über mich",
-
     "LOCATION": "Hannover",
     "OPEN_FOR_EDUCATION": "Offen für Weiterbildungen",
     "OPEN_FOR_REMOTE": "Offen für Remote-Arbeit",
-
     "TEXT": {
       "INTRO": "Hallo, ich bin Levin.",
       "P1": "An der Schnittstelle von Frontend-Entwicklung, Design und Didaktik entsteht für mich der spannendste Raum: dort, wo Struktur auf Ästhetik trifft und Systeme verständlich werden. Genau diese Verbindung treibt mich an, Lösungen zu entwickeln, die klar, modular und nachhaltig sind.",
       "P2": "Herausforderungen sehe ich als Lernmomente. Jede neue Aufgabe schärft meinen Blick für Architektur, Performance und Nutzererlebnis. Präzision, Verständlichkeit und ein bewusster Umgang mit Komplexität prägen meine Arbeit.",
       "P3": "Gute Produkte entstehen im Austausch — und genau dort arbeite ich am liebsten. Lass uns gemeinsam etwas bauen, das wirklich Wirkung zeigt!"
     },
-
     "CTA": "Kontakt aufnehmen"
   },
   "PROJECTS": {
@@ -37,21 +34,18 @@
   "THOUGHTS": {
     "SECTION_LABEL": "IN EIGENEN WORTEN:",
     "HEADLINE": "Kommentare von Kollegen",
-
     "CARD1": {
       "QUOTE": "\"Working with them was a pleasure. Their dedication to quality and collaboration elevated our team's performance and project outcomes.\"",
       "NAME": "Liam Smithy",
       "POSITION": "Project Manager",
       "PROFILE": "Profil"
     },
-
     "CARD2": {
       "QUOTE": "\"Ihre strukturierte Arbeitsweise und ihr Blick für Details haben unser Projekt auf ein neues Level gehoben. Die Zusammenarbeit war jederzeit produktiv und inspirierend.\"",
       "NAME": "Julia Meinhardt",
       "POSITION": "UX Designerin",
       "PROFILE": "Profil"
     },
-
     "CARD3": {
       "QUOTE": "\"Ein echtes Talent, wenn es darum geht, komplexe Themen verständlich zu machen. Technisch stark, kommunikativ klar und immer lösungsorientiert.\"",
       "NAME": "Carlos Rivera",
@@ -62,9 +56,7 @@
   "SKILLS": {
     "SECTION_LABEL": "MEINE FÄHIGKEITEN",
     "HEADLINE": "Skills",
-
     "INTRO": "Mein Schwerpunkt liegt auf der Entwicklung strukturierter, wartbarer und effizienzorientierter Frontend‑Lösungen. Dabei lege ich besonderen Wert auf klare Architekturprinzipien, sauberen Code und einen kontinuierlichen Weiterentwicklungsprozess, um neue Technologien und Methoden fundiert in bestehende Workflows zu integrieren.",
-
     "ICONS": {
       "HTML": "HTML",
       "CSS": "CSS",
@@ -86,28 +78,27 @@
   "CONTACT": {
     "SECTION_LABEL": "KONTAKT",
     "HEADLINE": "Bereit für gemeinsame Projekte?",
-
     "TEXT": "Offenheit für neue Projekte und professionelle Zusammenarbeit steht im Mittelpunkt. Besonders relevant sind Rollen, in denen strukturierte Frontend‑Entwicklung, saubere Architektur und ein verlässlicher Qualitätsanspruch gefragt sind. Durch technische Expertise und kontinuierliche Weiterentwicklung entsteht ein nachhaltiger Beitrag zu modernen Teams und Projekten.\n\nFür Projektanfragen, fachlichen Austausch oder konkrete Ideen bietet das Kontaktformular eine direkte Möglichkeit, in Verbindung zu treten. Rückmeldungen erfolgen zeitnah und zielgerichtet."
   },
   "CONTACT_FORM": {
     "LABEL_NAME": "Dein Name",
     "LABEL_EMAIL": "E-Mail-Adresse",
     "LABEL_MESSAGE": "Nachricht",
-
     "DEFAULT_NAME": "Dein Name kommt hier hin...",
     "DEFAULT_EMAIL": "deine.email@mail.com",
     "DEFAULT_MESSAGE": "Hallo Levin, ich interessiere mich für...",
-
     "ERROR_NAME": "Bitte gib deinen Namen ein",
     "ERROR_EMAIL": "Bitte gib eine gültige E-Mail-Adresse ein",
     "ERROR_MESSAGE": "Bitte gib deine Nachricht ein",
-
     "CONSENT_TEXT_PART1": "Ich stimme der ",
     "CONSENT_TEXT_LINK": "Datenschutzerklärung",
     "CONSENT_TEXT_PART2": " sowie der Verarbeitung meiner Daten zu, um meine Anfrage zu bearbeiten.",
     "CONSENT_ERROR": "Bitte akzeptiere die Datenschutzerklärung, um fortzufahren",
-
-    "SUBMIT": "Nachricht senden"
+    "SUBMIT": "Nachricht senden",
+    "SENDING": "Wird gesendet…",
+    "SUCCESS_SHORT": "Gesendet!",
+    "ERROR_SHORT": "Fehler beim Senden!",
+    "ERROR_RETRY": "Bitte versuche es erneut."
   },
   "FOOTER": {
     "COPYRIGHT": "© Levin Krischer 2026",
@@ -136,22 +127,18 @@
     "JOIN": {
       "TITLE": "Join",
       "BACK": "zurück",
-
       "DESCRIPTION": {
         "LABEL": "Beschreibung",
         "TEXT": "Task‑Manager, inspiriert vom Kanban‑System. Aufgaben können per Drag‑and‑Drop erstellt, organisiert und verwaltet werden. Nutzer und Kategorien lassen sich flexibel zuweisen. Durch die Anbindung an Supabase‑Datenbanken ist eine Nutzung im Team in Echtzeit möglich."
       },
-
       "IMPLEMENTATION": {
         "LABEL": "Implementation Details",
         "TEXT": "Teamarbeit steht in diesem Projekt klar im Vordergrund. Nicht nur im Nutzungszweck der Anwendung, sondern vor allem im Entwicklungsprozess. Eine klare Aufgabenverteilung, aber mit gegenseitiger Unterstützung und regelmäßigem Feedback, ist hier unumgänglich. Mir persönlich hat es sehr viel Spaß gemacht, gemeinsam etwas Großes zu schaffen."
       },
-
       "DURATION": {
         "LABEL": "Dauer:",
         "VALUE": "5 Wochen"
       },
-
       "TECH": {
         "HTML": "HTML5",
         "CSS": "CSS3",
@@ -159,71 +146,57 @@
         "ANGULAR": "Angular",
         "TS": "TypeScript"
       },
-
       "BUTTONS": {
         "GITHUB": "Github",
         "LIVE": "Live Test"
       },
-
       "NAV": {
         "NEXT": "Nächstes Projekt"
       }
     },
-
     "POLLO": {
       "TITLE": "El pollo loco",
       "BACK": "zurück",
-
       "DESCRIPTION": {
         "LABEL": "Beschreibung",
         "TEXT": "Jump‑and‑Run‑Spiel auf objektorientierter Basis. Die Spielfigur sammelt Münzen und Tabasco‑Flaschen, um sich gegen die verrückte Henne zu behaupten. Animationen, Kollisionserkennung und Interaktionen wurden vollständig in JavaScript umgesetzt."
       },
-
       "IMPLEMENTATION": {
         "LABEL": "Implementation Details",
         "TEXT": "Die Herausforderung in diesem Projekt war ganz klar die Objektorientierung und die Umsetzung der Spielmechaniken in reinem JavaScript. Gerade hier ist mir aufgefallen, wie wichtig vorherige Planung im Bezug auf die Verbindung aller Klassen und die Kommunikation untereinander ist. Es hat sehr viel Spaß gemacht, die Spiellogik zu entwickeln und immer wieder zu testen, wie sich die einzelnen Elemente im Zusammenspiel verhalten."
       },
-
       "DURATION": {
         "LABEL": "Dauer:",
         "VALUE": "3 Wochen"
       },
-
       "TECH": {
         "HTML": "HTML5",
         "CSS": "CSS3",
         "JS": "JavaScript (vanilla)"
       },
-
       "BUTTONS": {
         "GITHUB": "Github",
         "LIVE": "Live Test"
       },
-
       "NAV": {
         "NEXT": "Nächstes Projekt"
       }
     },
-
     "DABUBBLE": {
       "TITLE": "DABubble",
       "BACK": "zurück",
-
       "DESCRIPTION": {
         "LABEL": "Beschreibung",
         "TEXT": "Kommunikationsplattform nach dem Vorbild von Slack. Die Anwendung bietet eine intuitive Oberfläche, Echtzeit‑Nachrichten und klar strukturierte Channel‑Organisation. Ziel ist eine effiziente, teamorientierte Zusammenarbeit in modernen Arbeitsumgebungen."
       },
-
       "IMPLEMENTATION": {
         "LABEL": "Implementation Details",
         "TEXT": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis expedita odit sint hic animi laudantium distinctio veritatis iusto obcaecati, neque asperiores? Eaque blanditiis suscipit aliquam veritatis nisi mollitia saepe accusamus."
       },
-
       "DURATION": {
         "LABEL": "Dauer:",
         "VALUE": "4 Wochen"
       },
-
       "TECH": {
         "HTML": "HTML5",
         "CSS": "CSS3",
@@ -231,12 +204,10 @@
         "ANGULAR": "Angular",
         "TS": "TypeScript"
       },
-
       "BUTTONS": {
         "GITHUB": "Github",
         "LIVE": "Live Test"
       },
-
       "NAV": {
         "NEXT": "Nächstes Projekt"
       }
@@ -245,33 +216,24 @@
   "LEGAL_NOTICE": {
     "TITLE": "Legal Notice",
     "HEADLINE": "Impressum",
-
     "NAME": "Levin Krischer",
     "ADDRESS_LINE1": "Auf dem Amtshof 19",
     "ADDRESS_LINE2": "30938 Burgwedel",
-
     "CONTACT_LABEL": "Exploring the board:",
     "CONTACT_EMAIL": "info@levinkrischer.de",
-
     "ACCEPTANCE_TITLE": "Akzeptanz der Bedingungen",
     "ACCEPTANCE_TEXT": "Durch den Zugriff auf und die Nutzung des Portfolios (Produkt) werden die folgenden Bedingungen sowie alle Richtlinien, Hinweise oder zukünftigen Änderungen akzeptiert. Wir, die aufgeführten Studierenden, behalten uns vor, diese Bedingungen jederzeit und ohne vorherige Ankündigung zu aktualisieren oder zu ändern.",
-
     "SCOPE_TITLE": "Geltungsbereich und Eigentum am Produkt",
     "SCOPE_TEXT1": "Das Portfolio wurde im Rahmen eines studentischen Gruppenprojekts in einem Web‑Development‑Bootcamp der Developer Akademie GmbH entwickelt. Es dient ausschließlich Ausbildungszwecken und ist nicht für umfangreiche private oder geschäftliche Nutzung vorgesehen. Daher kann keine Gewähr für Verfügbarkeit, Zuverlässigkeit, Genauigkeit oder sonstige Qualitätsmerkmale des Produkts übernommen werden.",
     "SCOPE_TEXT2": "Das Design des Portfolios ist Eigentum der Developer Akademie GmbH. Eine unbefugte Nutzung, Reproduktion, Modifikation, Verbreitung oder Vervielfältigung des Designs ist strikt untersagt.",
-
     "OWNERSHIP_TITLE": "Eigentumsrechte",
     "OWNERSHIP_TEXT": "Abgesehen vom Design, das der Developer Akademie GmbH gehört, behalten wir, die aufgeführten Studierenden, sämtliche Eigentumsrechte am Portfolio, einschließlich aller zugehörigen urheberrechtlich geschützten Materialien, Marken und sonstigen proprietären Informationen.",
-
     "USAGE_TITLE": "Nutzung des Produkts",
     "USAGE_TEXT": "Das Portfolio darf ausschließlich für rechtmäßige Zwecke und im Einklang mit geltenden Gesetzen und Vorschriften verwendet werden. Jegliche Nutzung für illegale Aktivitäten oder zur Belästigung, Schädigung, Bedrohung oder Einschüchterung anderer Personen ist untersagt. Die Verantwortung für Interaktionen mit anderen Nutzenden des Portfolios liegt allein bei Ihnen.",
-
     "DISCLAIMER_TITLE": "Haftungsausschluss",
     "DISCLAIMER_TEXT": "Das Portfolio wird „wie besehen“ bereitgestellt, ohne jegliche ausdrückliche oder stillschweigende Gewährleistung, einschließlich, aber nicht beschränkt auf die Gewährleistung der Marktgängigkeit, Eignung für einen bestimmten Zweck oder Nichtverletzung von Rechten. In keinem Fall haften wir, die aufgeführten Studierenden, oder die Developer Akademie für direkte, indirekte, zufällige, besondere oder Folgeschäden, einschließlich, aber nicht beschränkt auf entgangene Gewinne, Verlust von Goodwill, Nutzungsausfälle, Datenverluste oder andere immaterielle Schäden, selbst wenn auf die Möglichkeit solcher Schäden hingewiesen wurde und diese im Zusammenhang mit der Nutzung oder Leistung des Portfolios entstehen.",
-
     "INDEMNITY_TITLE": "Freistellung",
     "INDEMNITY_TEXT": "Sie erklären sich damit einverstanden, uns, die aufgeführten Studierenden, die Developer Akademie sowie unsere verbundenen Unternehmen, Partner, Führungskräfte, Direktoren, Vertreter und Mitarbeitenden von jeglichen Ansprüchen, Forderungen, Verlusten, Schäden, Kosten oder Haftungen (einschließlich angemessener Anwaltskosten) freizustellen, die sich aus Ihrer Nutzung des Portfolios und/oder einem Verstoß gegen dieses Impressum ergeben.",
-
     "FOOTER_CONTACT": "Bei Fragen oder Hinweisen kontaktieren Sie uns bitte unter",
     "DATE": "Datum: 30.01.2026"
   },
@@ -283,31 +245,25 @@
     "DRESS_LINE2": "30938 Burgwedel",
     "SECTION_1": {
       "TITLE": "1. Datenschutz auf einen Blick",
-
       "SUB_1": {
         "TITLE": "Allgemeine Hinweise",
         "TEXT": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können. Ausführliche Informationen zum Thema Datenschutz entnehmen Sie unserer unter diesem Text aufgeführten Datenschutzerklärung."
       },
-
       "SUB_2": {
         "TITLE": "Datenerfassung auf dieser Website",
-
         "SUBSUB_1": {
           "TITLE": "Wer ist verantwortlich für die Datenerfassung auf dieser Website?",
           "TEXT": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle“ in dieser Datenschutzerklärung entnehmen."
         },
-
         "SUBSUB_2": {
           "TITLE": "Wie erfassen wir Ihre Daten?",
           "TEXT_1": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben.",
           "TEXT_2": "Andere Daten werden automatisch oder nach Ihrer Einwilligung beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs). Die Erfassung dieser Daten erfolgt automatisch, sobald Sie diese Website betreten."
         },
-
         "SUBSUB_3": {
           "TITLE": "Wofür nutzen wir Ihre Daten?",
           "TEXT": "Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden. Sofern über die Website Verträge geschlossen oder angebahnt werden können, werden die übermittelten Daten auch für Vertragsangebote, Bestellungen oder sonstige Auftragsanfragen verarbeitet."
         },
-
         "SUBSUB_4": {
           "TITLE": "Welche Rechte haben Sie bezüglich Ihrer Daten?",
           "TEXT_1": "Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten.",
@@ -319,35 +275,28 @@
         }
       }
     },
-
     "SECTION_2": {
       "TITLE": "2. Hosting",
-
       "TEXT_1": "Wir hosten die Inhalte unserer Website bei folgendem Anbieter:",
-
       "SUB_1": {
         "TITLE": "Strato",
         "TEXT_1": "Anbieter ist die Strato AG, Otto-Ostrowski-Straße 7, 10249 Berlin (nachfolgend „Strato“). Wenn Sie unsere Website besuchen, erfasst Strato verschiedene Logfiles inklusive Ihrer IP-Adressen.",
         "TEXT_2": "Weitere Informationen entnehmen Sie der Datenschutzerklärung von Strato: https://www.strato.de/datenschutz/",
         "TEXT_3": "Die Verwendung von Strato erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse an einer möglichst zuverlässigen Darstellung unserer Website. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, soweit die Einwilligung die Speicherung von Cookies oder den Zugriff auf Informationen im Endgerät des Nutzers (z. B. Device-Fingerprinting) im Sinne des TDDDG umfasst. Die Einwilligung ist jederzeit widerrufbar."
       },
-
       "SUB_2": {
         "TITLE": "Auftragsverarbeitung",
         "TEXT": "Wir haben einen Vertrag über Auftragsverarbeitung (AVV) zur Nutzung des oben genannten Dienstes geschlossen. Hierbei handelt es sich um einen datenschutzrechtlich vorgeschriebenen Vertrag, der gewährleistet, dass dieser die personenbezogenen Daten unserer Websitebesucher nur nach unseren Weisungen und unter Einhaltung der DSGVO verarbeitet."
       }
     },
-
     "SECTION_3": {
       "TITLE": "3. Allgemeine Hinweise und Pflichtinformationen",
-
       "SUB_1": {
         "TITLE": "Datenschutz",
         "TEXT_1": "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.",
         "TEXT_2": "Wenn Sie diese Website benutzen, werden verschiedene personenbezogene Daten erhoben. Personenbezogene Daten sind Daten, mit denen Sie persönlich identifiziert werden können. Die vorliegende Datenschutzerklärung erläutert, welche Daten wir erheben und wofür wir sie nutzen. Sie erläutert auch, wie und zu welchem Zweck das geschieht.",
         "TEXT_3": "Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein lückenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich."
       },
-
       "SUB_2": {
         "TITLE": "Hinweis zur verantwortlichen Stelle",
         "TEXT_1": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:",
@@ -355,48 +304,39 @@
         "TEXT_3": "Telefon: 01636808422\nE-Mail: info@levinkrischer.de",
         "TEXT_4": "Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet."
       },
-
       "SUB_3": {
         "TITLE": "Speicherdauer",
         "TEXT": "Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen, werden Ihre Daten gelöscht, sofern wir keine anderen rechtlich zulässigen Gründe für die Speicherung Ihrer personenbezogenen Daten haben (z. B. steuer- oder handelsrechtliche Aufbewahrungsfristen); im letztgenannten Fall erfolgt die Löschung nach Fortfall dieser Gründe."
       },
-
       "SUB_4": {
         "TITLE": "Allgemeine Hinweise zu den Rechtsgrundlagen der Datenverarbeitung auf dieser Website",
         "TEXT": "Sofern Sie in die Datenverarbeitung eingewilligt haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO bzw. Art. 9 Abs. 2 lit. a DSGVO, sofern besondere Datenkategorien nach Art. 9 Abs. 1 DSGVO verarbeitet werden. Im Falle einer ausdrücklichen Einwilligung in die Übertragung personenbezogener Daten in Drittstaaten erfolgt die Datenverarbeitung außerdem auf Grundlage von Art. 49 Abs. 1 lit. a DSGVO. Sofern Sie in die Speicherung von Cookies oder in den Zugriff auf Informationen in Ihr Endgerät (z. B. via Device-Fingerprinting) eingewilligt haben, erfolgt die Datenverarbeitung zusätzlich auf Grundlage von § 25 Abs. 1 TDDDG. Die Einwilligung ist jederzeit widerrufbar. Sind Ihre Daten zur Vertragserfüllung oder zur Durchführung vorvertraglicher Maßnahmen erforderlich, verarbeiten wir Ihre Daten auf Grundlage des Art. 6 Abs. 1 lit. b DSGVO. Des Weiteren verarbeiten wir Ihre Daten, sofern diese zur Erfüllung einer rechtlichen Verpflichtung erforderlich sind auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO. Die Datenverarbeitung kann ferner auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f DSGVO erfolgen. Über die jeweils im Einzelfall einschlägigen Rechtsgrundlagen wird in den folgenden Absätzen dieser Datenschutzerklärung informiert."
       },
-
       "SUB_5": {
         "TITLE": "Empfänger von personenbezogenen Daten",
         "TEXT": "Im Rahmen unserer Geschäftstätigkeit arbeiten wir mit verschiedenen externen Stellen zusammen. Dabei ist teilweise auch eine Übermittlung von personenbezogenen Daten an diese externen Stellen erforderlich. Wir geben personenbezogene Daten nur dann an externe Stellen weiter, wenn dies im Rahmen einer Vertragserfüllung erforderlich ist, wenn wir gesetzlich hierzu verpflichtet sind (z. B. Weitergabe von Daten an Steuerbehörden), wenn wir ein berechtigtes Interesse nach Art. 6 Abs. 1 lit. f DSGVO an der Weitergabe haben oder wenn eine sonstige Rechtsgrundlage die Datenweitergabe erlaubt. Beim Einsatz von Auftragsverarbeitern geben wir personenbezogene Daten unserer Kunden nur auf Grundlage eines gültigen Vertrags über Auftragsverarbeitung weiter. Im Falle einer gemeinsamen Verarbeitung wird ein Vertrag über gemeinsame Verarbeitung geschlossen."
       },
-
       "SUB_6": {
         "TITLE": "Widerruf Ihrer Einwilligung zur Datenverarbeitung",
         "TEXT": "Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt."
       },
-
       "SUB_7": {
         "TITLE": "Widerspruchsrecht gegen die Datenerhebung in besonderen Fällen sowie gegen Direktwerbung (Art. 21 DSGVO)",
         "TEXT_1": "WENN DIE DATENVERARBEITUNG AUF GRUNDLAGE VON ART. 6 ABS. 1 LIT. E ODER F DSGVO ERFOLGT, HABEN SIE JEDERZEIT DAS RECHT, AUS GRÜNDEN, DIE SICH AUS IHRER BESONDEREN SITUATION ERGEBEN, GEGEN DIE VERARBEITUNG IHRER PERSONENBEZOGENEN DATEN WIDERSPRUCH EINZULEGEN; DIES GILT AUCH FÜR EIN AUF DIESE BESTIMMUNGEN GESTÜTZTES PROFILING. DIE JEWEILIGE RECHTSGRUNDLAGE, AUF DENEN EINE VERARBEITUNG BERUHT, ENTNEHMEN SIE DIESER DATENSCHUTZERKLÄRUNG. WENN SIE WIDERSPRUCH EINLEGEN, WERDEN WIR IHRE BETROFFENEN PERSONENBEZOGENEN DATEN NICHT MEHR VERARBEITEN, ES SEI DENN, WIR KÖNNEN ZWINGENDE SCHUTZWÜRDIGE GRÜNDE FÜR DIE VERARBEITUNG NACHWEISEN, DIE IHRE INTERESSEN, RECHTE UND FREIHEITEN ÜBERWIEGEN ODER DIE VERARBEITUNG DIENT DER GELTENDMACHUNG, AUSÜBUNG ODER VERTEIDIGUNG VON RECHTSANSPRÜCHEN (WIDERSPRUCH NACH ART. 21 ABS. 1 DSGVO).",
         "TEXT_2": "WERDEN IHRE PERSONENBEZOGENEN DATEN VERARBEITET, UM DIREKTWERBUNG ZU BETREIBEN, SO HABEN SIE DAS RECHT, JEDERZEIT WIDERSPRUCH GEGEN DIE VERARBEITUNG SIE BETREFFENDER PERSONENBEZOGENER DATEN ZUM ZWECKE DERARTIGER WERBUNG EINZULEGEN; DIES GILT AUCH FÜR DAS PROFILING, SOWEIT ES MIT SOLCHER DIREKTWERBUNG IN VERBINDUNG STEHT. WENN SIE WIDERSPRECHEN, WERDEN IHRE PERSONENBEZOGENEN DATEN ANSCHLIESSEND NICHT MEHR ZUM ZWECKE DER DIREKTWERBUNG VERWENDET (WIDERSPRUCH NACH ART. 21 ABS. 2 DSGVO)."
       },
-
       "SUB_8": {
         "TITLE": "Beschwerderecht bei der zuständigen Aufsichtsbehörde",
         "TEXT": "Im Falle von Verstößen gegen die DSGVO steht den Betroffenen ein Beschwerderecht bei einer Aufsichtsbehörde, insbesondere in dem Mitgliedstaat ihres gewöhnlichen Aufenthalts, ihres Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes zu. Das Beschwerderecht besteht unbeschadet anderweitiger verwaltungsrechtlicher oder gerichtlicher Rechtsbehelfe."
       },
-
       "SUB_9": {
         "TITLE": "Recht auf Datenübertragbarkeit",
         "TEXT": "Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erfüllung eines Vertrags automatisiert verarbeiten, an sich oder an einen Dritten in einem gängigen, maschinenlesbaren Format aushändigen zu lassen. Sofern Sie die direkte Übertragung der Daten an einen anderen Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch machbar ist."
       },
-
       "SUB_10": {
         "TITLE": "Auskunft, Berichtigung und Löschung",
         "TEXT": "Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten. Hierzu sowie zu weiteren Fragen zum Thema personenbezogene Daten können Sie sich jederzeit an uns wenden."
       },
-
       "SUB_11": {
         "TITLE": "Recht auf Einschränkung der Verarbeitung",
         "TEXT_1": "Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen. Hierzu können Sie sich jederzeit an uns wenden. Das Recht auf Einschränkung der Verarbeitung besteht in folgenden Fällen:",
@@ -406,17 +346,14 @@
         "LIST_4": "Wenn Sie einen Widerspruch nach Art. 21 Abs. 1 DSGVO eingelegt haben, muss eine Abwägung zwischen Ihren und unseren Interessen vorgenommen werden. Solange noch nicht feststeht, wessen Interessen überwiegen, haben Sie das Recht, die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen.",
         "TEXT_2": "Wenn Sie die Verarbeitung Ihrer personenbezogenen Daten eingeschränkt haben, dürfen diese Daten – von ihrer Speicherung abgesehen – nur mit Ihrer Einwilligung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen oder zum Schutz der Rechte einer anderen natürlichen oder juristischen Person oder aus Gründen eines wichtigen öffentlichen Interesses der Europäischen Union oder eines Mitgliedstaats verarbeitet werden."
       },
-
       "SUB_12": {
         "TITLE": "SSL- bzw. TLS-Verschlüsselung",
         "TEXT_1": "Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://“ auf „https://“ wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.",
         "TEXT_2": "Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden."
       }
     },
-
     "SECTION_4": {
       "TITLE": "4. Datenerfassung auf dieser Website",
-
       "SUB_1": {
         "TITLE": "Kontaktformular",
         "TEXT_1": "Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter.",
@@ -424,7 +361,6 @@
         "TEXT_3": "Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt (z. B. nach abgeschlossener Bearbeitung Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt."
       }
     },
-
     "FOOTER": {
       "SOURCE": "Quelle: https://www.e-recht24.de"
     }

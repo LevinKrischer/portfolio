@@ -25,12 +25,16 @@ export function emailWithDefaultValidator(defaultValue: string) {
 })
 export class ContactForm {
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
 
   fb = inject(FormBuilder);
   translate = inject(TranslateService);
 
   showConsentError = false;
+
+  loading = false;
+  success = false;
+  error = false;
 
   defaultValues: Record<string, string> = {
     name: '',
@@ -150,15 +154,39 @@ export class ContactForm {
 
   onSubmit() {
     if (this.contactForm.invalid) return;
+
+    this.loading = true;
+    this.success = false;
+    this.error = false;
+
     const formData = {
       name: this.contactForm.value.name,
       email: this.contactForm.value.email,
       message: this.contactForm.value.message
     };
+
     this.http.post('send_mail.php', formData, { responseType: 'json' })
       .subscribe({
-        next: r => console.log("Mail gesendet:", r),
-        error: e => console.error("Fehler beim Senden:", e)
+        next: () => {
+          this.loading = false;
+          this.success = true;
+
+          this.contactForm.reset();
+          this.contactForm.get('consent')?.setValue(false);
+
+          setTimeout(() => {
+            this.success = false;
+          }, 2000);
+        },
+        error: () => {
+          this.loading = false;
+          this.error = true;
+
+          // Fehleranzeige nach 3 Sekunden zurücksetzen
+          setTimeout(() => {
+            this.error = false;
+          }, 3000);
+        }
       });
   }
 }

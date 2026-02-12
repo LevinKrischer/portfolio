@@ -2,18 +2,15 @@
   "ABOUT": {
     "SECTION_LABEL": "WHO'S LEVIN?",
     "HEADLINE": "About Me",
-
     "LOCATION": "Hanover",
     "OPEN_FOR_EDUCATION": "Open to further training",
     "OPEN_FOR_REMOTE": "Open to remote work",
-
     "TEXT": {
       "INTRO": "Hi, I'm Levin.",
       "P1": "At the intersection of frontend development, design, and didactics lies the most exciting space for me: where structure meets aesthetics and systems become understandable. This connection drives me to create solutions that are clear, modular, and sustainable.",
       "P2": "I see challenges as learning moments. Every new task sharpens my eye for architecture, performance, and user experience. Precision, clarity, and a conscious approach to complexity shape my work.",
       "P3": "Good products emerge through collaboration — and that’s exactly where I feel most at home. Let’s build something together that truly makes an impact!"
     },
-
     "CTA": "Get in touch"
   },
   "PROJECTS": {
@@ -37,21 +34,18 @@
   "THOUGHTS": {
     "SECTION_LABEL": "IN THEIR OWN WORDS:",
     "HEADLINE": "Comments from colleagues",
-
     "CARD1": {
       "QUOTE": "\"Working with them was a pleasure. Their dedication to quality and collaboration elevated our team's performance and project outcomes.\"",
       "NAME": "Liam Smithy",
       "POSITION": "Project Manager",
       "PROFILE": "Profile"
     },
-
     "CARD2": {
       "QUOTE": "\"Their structured approach and attention to detail took our project to the next level. Collaboration was consistently productive and inspiring.\"",
       "NAME": "Julia Meinhardt",
       "POSITION": "UX Designer",
       "PROFILE": "Profile"
     },
-
     "CARD3": {
       "QUOTE": "\"A real talent when it comes to making complex topics understandable. Technically strong, communicative, and always solution‑oriented.\"",
       "NAME": "Carlos Rivera",
@@ -62,9 +56,7 @@
   "SKILLS": {
     "SECTION_LABEL": "MY SKILLS",
     "HEADLINE": "Skills",
-
     "INTRO": "My focus lies in developing structured, maintainable, and efficiency‑driven frontend solutions. I place great importance on clear architectural principles, clean code, and a continuous improvement process to integrate new technologies and methods into existing workflows in a meaningful way.",
-
     "ICONS": {
       "HTML": "HTML",
       "CSS": "CSS",
@@ -86,7 +78,6 @@
   "CONTACT": {
     "SECTION_LABEL": "CONTACT",
     "HEADLINE": "Ready for a new project together?",
-
     "TEXT": "Openness to new projects and professional collaboration is at the core of my work. I am particularly interested in roles that require structured frontend development, clean architecture, and a reliable commitment to quality. Through technical expertise and continuous improvement, I contribute sustainably to modern teams and projects.\n\nFor project inquiries, professional exchange, or concrete ideas, the contact form provides a direct way to get in touch. Responses are timely and focused."
   },
   "CONTACT_FORM": {
@@ -103,7 +94,11 @@
     "CONSENT_TEXT_LINK": "privacy policy",
     "CONSENT_TEXT_PART2": " for more information.",
     "CONSENT_ERROR": "Please accept the privacy policy to proceed.",
-    "SUBMIT": "Send message"
+    "SUBMIT": "Send message",
+    "SENDING": "Sending…",
+    "SUCCESS_SHORT": "Sent!",
+    "ERROR_SHORT": "Sending failed!",
+    "ERROR_RETRY": "Please try again."
   },
   "FOOTER": {
     "COPYRIGHT": "© Levin Krischer 2026",
@@ -132,22 +127,18 @@
     "JOIN": {
       "TITLE": "Join",
       "BACK": "back",
-
       "DESCRIPTION": {
         "LABEL": "Description",
         "TEXT": "A task manager inspired by the Kanban system. Tasks can be created, organized, and managed via drag‑and‑drop. Users and categories can be assigned flexibly. With Supabase integration, real‑time team collaboration becomes possible."
       },
-
       "IMPLEMENTATION": {
         "LABEL": "Implementation Details",
         "TEXT": "Teamwork is at the heart of this project — not only in the intended use of the application but also in the development process itself. Clear task distribution combined with mutual support and regular feedback was essential. Personally, I really enjoyed creating something big together."
       },
-
       "DURATION": {
         "LABEL": "Duration:",
         "VALUE": "5 weeks"
       },
-
       "TECH": {
         "HTML": "HTML5",
         "CSS": "CSS3",
@@ -155,71 +146,57 @@
         "ANGULAR": "Angular",
         "TS": "TypeScript"
       },
-
       "BUTTONS": {
         "GITHUB": "Github",
         "LIVE": "Live Demo"
       },
-
       "NAV": {
         "NEXT": "Next project"
       }
     },
-
     "POLLO": {
       "TITLE": "El pollo loco",
       "BACK": "back",
-
       "DESCRIPTION": {
         "LABEL": "Description",
         "TEXT": "A jump‑and‑run game built with object‑oriented principles. The character collects coins and Tabasco bottles to stand up to the crazy hen. Animations, collision detection, and interactions are fully implemented in JavaScript."
       },
-
       "IMPLEMENTATION": {
         "LABEL": "Implementation Details",
         "TEXT": "The main challenge in this project was the object‑oriented structure and implementing the game mechanics in pure JavaScript. It became clear how important upfront planning is, especially regarding class relationships and communication between components. Developing and testing the game logic repeatedly was both insightful and fun."
       },
-
       "DURATION": {
         "LABEL": "Duration:",
         "VALUE": "3 weeks"
       },
-
       "TECH": {
         "HTML": "HTML5",
         "CSS": "CSS3",
         "JS": "JavaScript (vanilla)"
       },
-
       "BUTTONS": {
         "GITHUB": "Github",
         "LIVE": "Live Demo"
       },
-
       "NAV": {
         "NEXT": "Next project"
       }
     },
-
     "DABUBBLE": {
       "TITLE": "DABubble",
       "BACK": "back",
-
       "DESCRIPTION": {
         "LABEL": "Description",
         "TEXT": "A communication platform inspired by Slack. The application offers an intuitive interface, real‑time messaging, and clearly structured channel organization. The goal is efficient, team‑oriented collaboration in modern work environments."
       },
-
       "IMPLEMENTATION": {
         "LABEL": "Implementation Details",
         "TEXT": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis expedita odit sint hic animi laudantium distinctio veritatis iusto obcaecati, neque asperiores? Eaque blanditiis suscipit aliquam veritatis nisi mollitia saepe accusamus."
       },
-
       "DURATION": {
         "LABEL": "Duration:",
         "VALUE": "4 weeks"
       },
-
       "TECH": {
         "HTML": "HTML5",
         "CSS": "CSS3",
@@ -227,12 +204,10 @@
         "ANGULAR": "Angular",
         "TS": "TypeScript"
       },
-
       "BUTTONS": {
         "GITHUB": "Github",
         "LIVE": "Live Demo"
       },
-
       "NAV": {
         "NEXT": "Next project"
       }
@@ -241,33 +216,24 @@
   "LEGAL_NOTICE": {
     "TITLE": "Legal Notice",
     "HEADLINE": "Imprint",
-
     "NAME": "Levin Krischer",
     "ADDRESS_LINE1": "Auf dem Amtshof 19",
     "ADDRESS_LINE2": "30938 Burgwedel",
-
     "CONTACT_LABEL": "Exploring the board:",
     "CONTACT_EMAIL": "info@levinkrischer.de",
-
     "ACCEPTANCE_TITLE": "Acceptance of Terms",
     "ACCEPTANCE_TEXT": "By accessing and using this portfolio (product), you agree to the following terms as well as any guidelines, notices, or future changes. We, the listed students, reserve the right to update or modify these terms at any time without prior notice.",
-
     "SCOPE_TITLE": "Scope and Ownership of the Product",
     "SCOPE_TEXT1": "This portfolio was developed as part of a student group project in a web development bootcamp at Developer Akademie GmbH. It is intended solely for educational purposes and is not designed for extensive private or commercial use. Therefore, no guarantee can be given regarding availability, reliability, accuracy, or any other quality characteristics of the product.",
     "SCOPE_TEXT2": "The design of the portfolio is the property of Developer Akademie GmbH. Unauthorized use, reproduction, modification, distribution, or duplication of the design is strictly prohibited.",
-
     "OWNERSHIP_TITLE": "Intellectual Property Rights",
     "OWNERSHIP_TEXT": "Aside from the design owned by Developer Akademie GmbH, we, the listed students, retain all intellectual property rights to the portfolio, including all associated copyrighted materials, trademarks, and other proprietary information.",
-
     "USAGE_TITLE": "Use of the Product",
     "USAGE_TEXT": "The portfolio may only be used for lawful purposes and in accordance with applicable laws and regulations. Any use for illegal activities or to harass, harm, threaten, or intimidate others is prohibited. Responsibility for interactions with other users of the portfolio lies solely with you.",
-
     "DISCLAIMER_TITLE": "Disclaimer",
     "DISCLAIMER_TEXT": "The portfolio is provided “as is” without any express or implied warranties, including but not limited to warranties of merchantability, fitness for a particular purpose, or non‑infringement. In no event shall we, the listed students, or Developer Akademie be liable for any direct, indirect, incidental, special, or consequential damages, including but not limited to lost profits, loss of goodwill, downtime, data loss, or other intangible losses, even if advised of the possibility of such damages and arising in connection with the use or performance of the portfolio.",
-
     "INDEMNITY_TITLE": "Indemnification",
     "INDEMNITY_TEXT": "You agree to indemnify and hold harmless us, the listed students, Developer Akademie, and our affiliated companies, partners, officers, directors, agents, and employees from any claims, demands, losses, damages, costs, or liabilities (including reasonable attorney fees) arising from your use of the portfolio and/or a violation of this legal notice.",
-
     "FOOTER_CONTACT": "If you have any questions or comments, please contact us at",
     "DATE": "Date: 30.01.2026"
   },
@@ -279,31 +245,25 @@
     "ADDRESS_LINE2": "30938 Burgwedel",
     "SECTION_1": {
       "TITLE": "1. Data Protection at a Glance",
-
       "SUB_1": {
         "TITLE": "General Information",
         "TEXT": "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data is any data that can be used to personally identify you. Detailed information on data protection can be found in the full privacy policy below."
       },
-
       "SUB_2": {
         "TITLE": "Data Collection on This Website",
-
         "SUBSUB_1": {
           "TITLE": "Who is responsible for data collection on this website?",
           "TEXT": "Data processing on this website is carried out by the website operator. You can find the operator’s contact details in the section “Information on the Responsible Party” in this privacy policy."
         },
-
         "SUBSUB_2": {
           "TITLE": "How do we collect your data?",
           "TEXT_1": "Some data is collected when you provide it to us. This may include data you enter into a contact form.",
           "TEXT_2": "Other data is collected automatically or after your consent when you visit the website. This primarily includes technical data (e.g., browser type, operating system, or time of page access). This data is collected automatically as soon as you access this website."
         },
-
         "SUBSUB_3": {
           "TITLE": "What do we use your data for?",
           "TEXT": "Part of the data is collected to ensure the error‑free provision of the website. Other data may be used to analyze your user behavior. If contracts can be concluded or initiated via the website, the transmitted data may also be processed for contract offers, orders, or other inquiries."
         },
-
         "SUBSUB_4": {
           "TITLE": "What rights do you have regarding your data?",
           "TEXT_1": "You have the right to receive information free of charge at any time about the origin, recipients, and purpose of your stored personal data.",
@@ -315,35 +275,28 @@
         }
       }
     },
-
     "SECTION_2": {
       "TITLE": "2. Hosting",
-
       "TEXT_1": "We host the content of our website with the following provider:",
-
       "SUB_1": {
         "TITLE": "Strato",
         "TEXT_1": "The provider is Strato AG, Otto-Ostrowski-Straße 7, 10249 Berlin (hereinafter “Strato”). When you visit our website, Strato collects various log files including your IP address.",
         "TEXT_2": "Further information can be found in Strato’s privacy policy: https://www.strato.de/datenschutz/",
         "TEXT_3": "The use of Strato is based on Art. 6(1)(f) GDPR. We have a legitimate interest in the most reliable presentation of our website. If consent has been requested, processing is carried out exclusively on the basis of Art. 6(1)(a) GDPR and § 25(1) TDDDG, insofar as the consent includes the storage of cookies or access to information on the user’s device (e.g., device fingerprinting) within the meaning of the TDDDG. Consent may be withdrawn at any time."
       },
-
       "SUB_2": {
         "TITLE": "Data Processing Agreement",
         "TEXT": "We have concluded a data processing agreement (DPA) with the provider named above. This legally required contract ensures that the provider processes the personal data of our website visitors only according to our instructions and in compliance with the GDPR."
       }
     },
-
     "SECTION_3": {
       "TITLE": "3. General Information and Mandatory Disclosures",
-
       "SUB_1": {
         "TITLE": "Data Protection",
         "TEXT_1": "The operators of this website take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with statutory data protection regulations and this privacy policy.",
         "TEXT_2": "When you use this website, various personal data is collected. Personal data is any data that can be used to personally identify you. This privacy policy explains what data we collect and what we use it for. It also explains how and for what purpose this happens.",
         "TEXT_3": "We point out that data transmission over the Internet (e.g., communication by email) may have security gaps. Complete protection of data from access by third parties is not possible."
       },
-
       "SUB_2": {
         "TITLE": "Information on the Responsible Party",
         "TEXT_1": "The responsible party for data processing on this website is:",
@@ -351,48 +304,39 @@
         "TEXT_3": "Phone: 01636808422\nEmail: info@levinkrischer.de",
         "TEXT_4": "The responsible party is the natural or legal person who, alone or jointly with others, determines the purposes and means of processing personal data (e.g., names, email addresses, etc.)."
       },
-
       "SUB_3": {
         "TITLE": "Storage Duration",
         "TEXT": "Unless a more specific storage period is stated in this privacy policy, your personal data will remain with us until the purpose for data processing no longer applies. If you assert a legitimate request for deletion or withdraw your consent to data processing, your data will be deleted unless we have other legally permissible reasons for storing your personal data (e.g., tax or commercial retention periods). In the latter case, deletion will occur after these reasons no longer apply."
       },
-
       "SUB_4": {
         "TITLE": "General Information on the Legal Basis for Data Processing",
         "TEXT": "If you have consented to data processing, we process your personal data on the basis of Art. 6(1)(a) GDPR or Art. 9(2)(a) GDPR if special categories of data under Art. 9(1) GDPR are processed. In the case of explicit consent to the transfer of personal data to third countries, processing is also based on Art. 49(1)(a) GDPR. If you have consented to the storage of cookies or access to information on your device (e.g., via device fingerprinting), processing is additionally based on § 25(1) TDDDG. Consent may be withdrawn at any time. If your data is required for contract fulfillment or pre‑contractual measures, we process your data based on Art. 6(1)(b) GDPR. We also process your data if required to fulfill a legal obligation based on Art. 6(1)(c) GDPR. Data processing may also be based on our legitimate interest under Art. 6(1)(f) GDPR. The relevant legal basis for each individual case is explained in the following sections of this privacy policy."
       },
-
       "SUB_5": {
         "TITLE": "Recipients of Personal Data",
         "TEXT": "In the course of our business activities, we work with various external parties. This may require the transfer of personal data to these external parties. We only transfer personal data to external parties if this is necessary for contract fulfillment, if we are legally obliged to do so (e.g., transfer of data to tax authorities), if we have a legitimate interest under Art. 6(1)(f) GDPR, or if another legal basis permits the transfer. When using processors, we only transfer personal data on the basis of a valid data processing agreement. In the case of joint processing, a joint processing agreement is concluded."
       },
-
       "SUB_6": {
         "TITLE": "Withdrawal of Your Consent",
         "TEXT": "Many data processing operations are only possible with your explicit consent. You may withdraw consent at any time. The legality of data processing carried out before the withdrawal remains unaffected."
       },
-
       "SUB_7": {
         "TITLE": "Right to Object to Data Processing in Special Cases and to Direct Marketing (Art. 21 GDPR)",
         "TEXT_1": "IF DATA PROCESSING IS BASED ON ART. 6(1)(E) OR (F) GDPR, YOU HAVE THE RIGHT TO OBJECT AT ANY TIME, ON GROUNDS RELATING TO YOUR PARTICULAR SITUATION, TO THE PROCESSING OF YOUR PERSONAL DATA; THIS ALSO APPLIES TO PROFILING BASED ON THESE PROVISIONS. THE RELEVANT LEGAL BASIS FOR PROCESSING CAN BE FOUND IN THIS PRIVACY POLICY. IF YOU OBJECT, WE WILL NO LONGER PROCESS YOUR PERSONAL DATA UNLESS WE CAN DEMONSTRATE COMPELLING LEGITIMATE GROUNDS FOR THE PROCESSING WHICH OVERRIDE YOUR INTERESTS, RIGHTS, AND FREEDOMS OR THE PROCESSING SERVES THE ESTABLISHMENT, EXERCISE, OR DEFENSE OF LEGAL CLAIMS (OBJECTION UNDER ART. 21(1) GDPR).",
         "TEXT_2": "IF YOUR PERSONAL DATA IS PROCESSED FOR DIRECT MARKETING PURPOSES, YOU HAVE THE RIGHT TO OBJECT AT ANY TIME TO THE PROCESSING OF YOUR PERSONAL DATA FOR SUCH MARKETING; THIS ALSO APPLIES TO PROFILING TO THE EXTENT THAT IT IS RELATED TO SUCH DIRECT MARKETING. IF YOU OBJECT, YOUR PERSONAL DATA WILL NO LONGER BE USED FOR DIRECT MARKETING PURPOSES (OBJECTION UNDER ART. 21(2) GDPR)."
       },
-
       "SUB_8": {
         "TITLE": "Right to Lodge a Complaint with the Supervisory Authority",
         "TEXT": "In the event of violations of the GDPR, data subjects have the right to lodge a complaint with a supervisory authority, particularly in the member state of their habitual residence, place of work, or place of the alleged violation. The right to lodge a complaint exists without prejudice to other administrative or judicial remedies."
       },
-
       "SUB_9": {
         "TITLE": "Right to Data Portability",
         "TEXT": "You have the right to receive data that we process automatically on the basis of your consent or in fulfillment of a contract in a commonly used, machine‑readable format. If you request the direct transfer of the data to another controller, this will only be done where technically feasible."
       },
-
       "SUB_10": {
         "TITLE": "Right of Access, Rectification, and Erasure",
         "TEXT": "Within the framework of applicable legal provisions, you have the right at any time to obtain free information about your stored personal data, its origin and recipients, and the purpose of data processing, and, if applicable, a right to rectification or deletion of this data. You may contact us at any time regarding this or any other questions about personal data."
       },
-
       "SUB_11": {
         "TITLE": "Right to Restriction of Processing",
         "TEXT_1": "You have the right to request the restriction of processing of your personal data. You may contact us at any time regarding this. The right to restriction applies in the following cases:",
@@ -402,17 +346,14 @@
         "LIST_4": "If you have objected under Art. 21(1) GDPR, a balancing of interests must be carried out. Until it is determined whose interests prevail, you have the right to request the restriction of processing of your personal data.",
         "TEXT_2": "If you have restricted the processing of your personal data, such data may—apart from being stored—only be processed with your consent or for the establishment, exercise, or defense of legal claims or for the protection of the rights of another natural or legal person or for reasons of important public interest of the European Union or a member state."
       },
-
       "SUB_12": {
         "TITLE": "SSL or TLS Encryption",
         "TEXT_1": "For security reasons and to protect the transmission of confidential content, such as orders or inquiries you send to us as the site operator, this site uses SSL or TLS encryption. You can recognize an encrypted connection by the fact that the browser’s address line changes from “http://” to “https://” and by the lock symbol in your browser bar.",
         "TEXT_2": "If SSL or TLS encryption is activated, the data you transmit to us cannot be read by third parties."
       }
     },
-
     "SECTION_4": {
       "TITLE": "4. Data Collection on This Website",
-
       "SUB_1": {
         "TITLE": "Contact Form",
         "TEXT_1": "If you send us inquiries via the contact form, the information you provide in the form, including the contact details you enter there, will be stored by us for the purpose of processing the inquiry and in case of follow‑up questions. We do not pass on this data without your consent.",
@@ -420,7 +361,6 @@
         "TEXT_3": "The data you enter in the contact form will remain with us until you request deletion, withdraw your consent to storage, or the purpose for data storage no longer applies (e.g., after your inquiry has been fully processed). Mandatory statutory provisions—especially retention periods—remain unaffected."
       }
     },
-
     "FOOTER": {
       "SOURCE": "Source: https://www.e-recht24.de"
     }

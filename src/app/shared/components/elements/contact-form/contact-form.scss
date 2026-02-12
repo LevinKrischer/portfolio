@@ -108,6 +108,58 @@ form {
   color: var(--color-error);
 }
 
+.btnStandard {
+  font-family: 'BricolageGrotesque', sans-serif;
+  font-size: 1rem;
+  border: white solid 1px;
+  border-radius: 24px;
+  padding: 8px 16px;
+  margin: 0px 4px 4px;
+  color: white;
+  background-color: transparent;
+  box-shadow: 4px 4px white;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0px 0px white;
+    transform: translate(4px, 4px);
+    background-color: #f87a55;
+    cursor: pointer;
+  }
+
+  &:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+
+    &:hover {
+      box-shadow: 4px 4px white;
+      transform: translate(0px, 0px);
+    }
+  }
+
+  &.success {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+    box-shadow: 4px 4px #2ecc71;
+    transform: translate(0, 0);
+    cursor: default;
+
+    &:hover {
+      background-color: #2ecc71;
+      box-shadow: 4px 4px #2ecc71;
+      transform: translate(0, 0);
+    }
+  }
+
+  &.error {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    box-shadow: 4px 4px #e74c3c;
+    transform: translate(0, 0);
+    cursor: default;
+  }
+}
+
 @media (max-width: 768px) {
   .mobile {
     display: block;
