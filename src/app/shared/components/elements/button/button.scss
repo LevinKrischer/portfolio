@@ -17,13 +17,42 @@
     cursor: pointer;
   }
 
-  &:disabled {
+  &:disabled:not(.success):not(.error) {
     background-color: grey;
     cursor: not-allowed;
 
     &:hover {
       box-shadow: 4px 4px white;
       transform: translate(0px, 0px);
+      background-color: grey;
+    }
+  }
+
+  &.success {
+    background-color: #2ecc71;
+    border-color: #2ecc71;
+    box-shadow: 4px 4px #cdffe2;
+    transform: translate(0, 0);
+    cursor: default;
+
+    &:hover {
+      background-color: #2ecc71;
+      box-shadow: 4px 4px #cdffe2;
+      transform: translate(0, 0);
+    }
+  }
+
+  &.error {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    box-shadow: 4px 4px #ffc4bd;
+    transform: translate(0, 0);
+    cursor: default;
+
+    &:hover {
+      background-color: #e74c3c;
+      box-shadow: 4px 4px #ffc4bd;
+      transform: translate(0, 0);
     }
   }
 }
