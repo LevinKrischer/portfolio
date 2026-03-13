@@ -77,7 +77,7 @@ export class ContactForm {
   applyDefaultValuesToForm() {
     this.contactForm.setControl('name', new FormControl(this.defaultValues['name'], [
       Validators.required,
-      Validators.minLength(1),
+      Validators.minLength(2),
       this.isNotDefault(this.defaultValues['name']),
     ]));
     this.contactForm.setControl('email', new FormControl(this.defaultValues['email'], [
@@ -85,7 +85,7 @@ export class ContactForm {
     ]));
     this.contactForm.setControl('message', new FormControl(this.defaultValues['message'], [
       Validators.required,
-      Validators.minLength(1),
+      Validators.minLength(5),
       this.isNotDefault(this.defaultValues['message']),
     ]));
   }
@@ -105,7 +105,7 @@ export class ContactForm {
       } else {
         control.setValidators([
           Validators.required,
-          Validators.minLength(1),
+          Validators.minLength(5),
           this.isNotDefault(newDefault),
         ]);
       }
