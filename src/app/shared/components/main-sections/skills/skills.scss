@@ -14,10 +14,10 @@
 .skillsContent,
 .skillsDetails {
   width: 100%;
-  padding: 80px 64px;
+  padding: 5rem 4rem;
   display: flex;
   justify-content: center;
-  gap: 64px;
+  gap: 4rem;
 }
 
 .skillsContent {
@@ -26,7 +26,7 @@
 
 .skillsDetails {
   flex-direction: row;
-  padding-bottom: 160px;
+  padding-bottom: 10rem;
 }
 
 .headline {
@@ -52,7 +52,7 @@
 
 .skillsIntro {
   background-size: 100% 100%;
-  padding: 32px;
+  padding: 2rem;
   width: 70%;
 
   .skillsText {
@@ -69,11 +69,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 32px;
+  gap: 2rem;
   width: 55%;
 
   .icon {
-    width: 64px;
+    width: 4rem;
     filter: grayscale(100);
     transition: all 0.2s ease-in-out;
 
@@ -87,8 +87,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 96px;
-    gap: 8px;
+    width: 6rem;
+    gap: 0.5rem;
 
     .skillsIconDesc {
       text-align: center;
@@ -138,7 +138,7 @@ app-peel-off {
   }
 }
 
-@media (min-width: 2100px) {
+@media (min-width: 131.25rem) {
   .content {
 
     &::after,
@@ -162,11 +162,11 @@ app-peel-off {
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 68.75rem) {
   .skillsDetails {
     flex-direction: column;
-    gap: 32px;
-    padding: 0 32px 220px;
+    gap: 2rem;
+    padding: 0 2rem 13.75rem;
     align-items: center;
   }
 
@@ -184,21 +184,21 @@ app-peel-off {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .skillsContent {
     flex-direction: column;
-    gap: 48px;
-    padding: 64px 32px;
+    gap: 3rem;
+    padding: 4rem 2rem;
   }
 
   .headline {
     width: 100%;
-    gap: 16px;
+    gap: 1rem;
   }
 
   .skillsIntro {
     width: 100%;
-    padding: 48px 16px;
+    padding: 3rem 1rem;
   }
 
   .placeholder {
@@ -207,10 +207,10 @@ app-peel-off {
 
   .skillsIcons {
     width: 100%;
-    padding: 48px 0;
+    padding: 3rem 0;
 
     .iconContainer {
-      width: 80px;
+      width: 5rem;
     }
   }
 
@@ -220,14 +220,14 @@ app-peel-off {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   .skillsContent {
-    padding: 60px 16px;
+    padding: 3.75rem 1rem;
   }
 
   .skillsIntro {
     width: 100%;
-    padding: 60px 16px 40px 16px;
+    padding: 3.75rem 1rem 2.5rem 1rem;
   }
 
   app-peel-off {

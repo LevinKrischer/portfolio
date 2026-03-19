@@ -26,9 +26,9 @@
 .projectsContent {
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 4rem;
   width: 100%;
-  padding: 64px 64px 0;
+  padding: 4rem 4rem 0;
 }
 
 .headline {
@@ -45,14 +45,14 @@
 .projectShowcase {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 1.5rem;
   width: 48%;
 }
 
 .projectImgContainer {
   width: 100%;
   aspect-ratio: 560 / 338;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   overflow: hidden;
   position: relative;
 
@@ -63,7 +63,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 1.25rem;
     scale: 1;
     transition: all 0.3s ease-in-out;
   }
@@ -87,9 +87,9 @@
 
   .featuredSticker {
     position: absolute;
-    bottom: 64px;
+    bottom: 4rem;
     left: 0;
-    width: 160px;
+    width: 10rem;
   }
 
   .wip {
@@ -114,7 +114,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    padding: 36px;
+    padding: 2.25rem;
     transition: opacity 0.3s ease-in-out;
 
     &:hover {
@@ -144,7 +144,7 @@
   }
 
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-1.25rem);
   }
 
   100% {
@@ -178,7 +178,7 @@
   display: none;
 }
 
-@media (min-width: 2100px) {
+@media (min-width: 131.25rem) {
   .content {
 
     &::after,
@@ -202,13 +202,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
 
   .contentTop,
   .contentBottom {
     flex-direction: column;
     align-items: flex-end;
-    gap: 80px;
+    gap: 5rem;
   }
 
   .buttonContainer {
@@ -225,12 +225,12 @@
   }
 
   .projectsContent {
-    padding: 0px 32px 48px 32px;
-    gap: 80px;
+    padding: 0px 2rem 3rem 2rem;
+    gap: 5rem;
   }
 
   .projectShowcase {
-    gap: 16px;
+    gap: 1rem;
   }
 
   .projectImgOverlay {
@@ -246,17 +246,17 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   .projectsContent {
-    padding: 32px 16px;
+    padding: 2rem 1rem;
   }
 
   .projectImgOverlay {
-    padding: 20px;
+    padding: 1.25rem;
   }
 
   .contentTop,
   .contentBottom {
-    gap: 48px;
+    gap: 3rem;
   }
 }

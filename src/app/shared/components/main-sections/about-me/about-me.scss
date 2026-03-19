@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 64px;
+  gap: 4rem;
   background-color: var(--color-primary);
   color: var(--color-secondary);
   max-width: var(--max-side-width);
@@ -13,9 +13,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 64px;
+  gap: 4rem;
   width: 100%;
-  padding: 80px 64px;
+  padding: 5rem 4rem;
 }
 
 .contentBoxLeft {
@@ -29,7 +29,7 @@
   }
 
   .aboutIcon {
-    width: 40px;
+    width: 2.5rem;
   }
 }
 
@@ -77,8 +77,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
-  font-size: 24px;
+  gap: 1rem;
+  font-size: 1.5rem;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -125,7 +125,7 @@
   }
 }
 
-@media (min-width: 2100px) {
+@media (min-width: 131.25rem) {
   .content {
 
     &::after,
@@ -149,10 +149,10 @@
   }
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 69.375rem) {
   .aboutMeContent {
-    gap: 32px;
-    padding: 32px 32px 64px;
+    gap: 2rem;
+    padding: 2rem 2rem 4rem;
   }
 
   .aboutWork,
@@ -162,30 +162,30 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .aboutMeContent {
     flex-direction: column-reverse;
-    gap: 48px;
-    padding: 32px 32px 64px;
+    gap: 3rem;
+    padding: 2rem 2rem 4rem;
   }
 
   .aboutText {
-    font-size: 30px;
+    font-size: 1.875rem;
   }
 
   .contentBoxLeft {
     width: 100%;
 
     p {
-      font-size: 20px;
+      font-size: 1.25rem;
     }
 
     .aboutText {
-      font-size: 24px;
+      font-size: 1.5rem;
     }
 
     .aboutIcon {
-      width: 30px;
+      width: 1.875rem;
     }
   }
 
@@ -200,9 +200,9 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   .aboutMeContent {
-    padding: 32px 16px 48px;
+    padding: 2rem 1rem 3rem;
   }
 
   .aboutLocation,
@@ -213,7 +213,7 @@
 
   .contentBoxLeft {
     .aboutText {
-      font-size: 16px;
+      font-size: 1rem;
     }
   }
 }

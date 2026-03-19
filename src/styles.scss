@@ -16,8 +16,8 @@
   --color-high-nd: #3355FF;
   --color-high-rd: #F87A55;
   --color-error: #FF3A00;
-  --max-width: 1440px;
-  --max-side-width: 2300px;
+  --max-width: 90rem;
+  --max-side-width: 143.75rem;
 }
 
 * {
@@ -32,19 +32,19 @@
 }
 
 body {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'BricolageGrotesque', sans-serif;
 }
 
 h1 {
-  font-size: 128px;
-  line-height: 128px;
+  font-size: 8rem;
+  line-height: 8rem;
   color: var(--color-primary);
 }
 
 h2 {
-  font-size: clamp(40px, 4vw, 64px);
-  line-height: clamp(40px, 4vw, 64px);
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: clamp(2.5rem, 4vw, 4rem);
 }
 
 .colorWhite {
@@ -60,47 +60,47 @@ h2 {
 }
 
 .f-size-16 {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .f-size-20 {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .f-size-24 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .mt-32 {
-  margin-top: 32px;
+  margin-top: 2rem;
 }
 
 .mt-40 {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 .mb-40 {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 
 .mt-60 {
-  margin-top: 60px;
+  margin-top: 3.75rem;
 }
 
 .mb-60 {
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
 
 .mt-80 {
-  margin-top: 80px;
+  margin-top: 5rem;
 }
 
 .mb-80 {
-  margin-bottom: 80px;
+  margin-bottom: 5rem;
 }
 
 .contentInner {
-  max-width: 1400px;
+  max-width: 87.5rem;
   margin: 0 auto;
 }
 
@@ -114,9 +114,9 @@ h2 {
   font-family: 'BricolageGrotesque', sans-serif;
   font-size: 1rem;
   border: var(--color-secondary) solid 1px;
-  border-radius: 24px;
-  padding: 8px 16px;
-  margin: 0px 4px 4px;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0px 0.25rem 0.25rem;
   color: var(--color-secondary);
   background-color: transparent;
   box-shadow: 4px 4px var(--color-secondary);
@@ -124,7 +124,7 @@ h2 {
 
   &:hover {
     box-shadow: 0px 0px var(--color-secondary);
-    transform: translate(4px, 4px);
+    transform: translate(0.25rem, 0.25rem);
     background-color: #f87a55;
     cursor: pointer;
   }
@@ -134,9 +134,9 @@ h2 {
   font-family: 'BricolageGrotesque', sans-serif;
   font-size: 1rem;
   border: var(--color-primary) solid 1px;
-  border-radius: 24px;
-  padding: 8px 16px;
-  margin: 0px 4px 4px;
+  border-radius: 1.5rem;
+  padding: 0.5rem 1rem;
+  margin: 0px 0.25rem 0.25rem;
   color: var(--color-primary);
   background-color: transparent;
   box-shadow: 4px 4px var(--color-primary);
@@ -144,7 +144,7 @@ h2 {
 
   &:hover {
     box-shadow: 0px 0px var(--color-primary);
-    transform: translate(4px, 4px);
+    transform: translate(0.25rem, 0.25rem);
     background-color: #f87a55;
     cursor: pointer;
   }
@@ -157,26 +157,26 @@ h2 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   h1 {
-    font-size: clamp(48px, 14vw, 120px);
-    line-height: clamp(48px, 14vw, 120px);
+    font-size: clamp(3rem, 14vw, 7.5rem);
+    line-height: clamp(3rem, 14vw, 7.5rem);
   }
 
   .f-size-20 {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .f-size-24 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .mt-60 {
-    margin-top: 32px;
+    margin-top: 2rem;
   }
 
   .mb-60 {
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
   }
 }
 

@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(90% - 200px);
+  height: calc(90% - 12.5rem);
   max-width: var(--max-width);
 }
 
@@ -29,7 +29,7 @@
 .headerHeadline {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
   width: 70%;
   margin: 0 auto;
 }
@@ -58,7 +58,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 32px;
+  gap: 2rem;
 }
 
 .headlineLetterMobile {
@@ -67,7 +67,7 @@
 
 .profileImg {
   width: 100%;
-  min-width: 150px;
+  min-width: 9.375rem;
   rotate: 8deg;
   position: relative;
 
@@ -95,12 +95,12 @@
   position: relative;
   transition: all 0.4s ease-in-out;
   border: 1px solid white;
-  border-radius: 24px;
-  width: 128px;
-  margin-bottom: 32px;
+  border-radius: 1.5rem;
+  width: 8rem;
+  margin-bottom: 2rem;
 
   &:hover {
-    width: 183px;
+    width: 11.4375rem;
 
     .firstBtn {
       opacity: 0;
@@ -123,7 +123,7 @@
     font-family: 'BricolageGrotesque', sans-serif;
     font-size: 1rem;
     border: none;
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     transition: all 0.4s ease-in-out;
     white-space: nowrap;
   }
@@ -139,7 +139,7 @@
     top: 0;
     left: 0;
     background: none;
-    border-radius: 24px;
+    border-radius: 1.5rem;
     color: var(--color-secondary);
     opacity: 0;
     width: 0;
@@ -149,7 +149,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    border-radius: 24px;
+    border-radius: 1.5rem;
     background-color: var(--color-high-nd);
     width: 0;
     height: 100%;
@@ -159,9 +159,9 @@
 
   .buttonHeaderIcon {
     position: absolute;
-    width: 40px;
-    height: 40px;
-    top: -40px;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: -2.5rem;
     right: 0;
     transition: all 0.4s ease-in-out;
     rotate: 180deg;
@@ -190,7 +190,7 @@
 
   70% {
     rotate: 400deg;
-    right: -20px;
+    right: -1.25rem;
   }
 
   100% {
@@ -205,10 +205,10 @@
 app-social-links {
   position: absolute;
   bottom: 0;
-  left: 64px;
+  left: 4rem;
 }
 
-@media (min-width: 2100px) {
+@media (min-width: 131.25rem) {
   .content {
 
     &::after,
@@ -232,7 +232,7 @@ app-social-links {
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 68.75rem) {
   .content {
     background-image: url('/../../../../../assets/imgs/bg/01_Hero-1110px-mobile.png');
   }
@@ -243,11 +243,11 @@ app-social-links {
 
   app-social-links {
     bottom: 0;
-    left: 32px;
+    left: 2rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .content {
     height: auto;
   }
@@ -272,8 +272,8 @@ app-social-links {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 64px;
-    padding: 64px 0 128px;
+    gap: 4rem;
+    padding: 4rem 0 8rem;
   }
 
   .headline {
@@ -282,7 +282,7 @@ app-social-links {
 
   .headerHeadline {
     width: 90%;
-    gap: 16px;
+    gap: 1rem;
   }
 
   .headerHeadlineTopRight {
@@ -325,13 +325,13 @@ app-social-links {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   .profileImgMobile {
     width: 70%;
   }
 
   .headerContent {
-    gap: 32px;
-    padding: 32px 0 96px;
+    gap: 2rem;
+    padding: 2rem 0 6rem;
   }
 }

@@ -12,7 +12,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 5rem;
 
   .linkBox {
     mix-blend-mode: difference;
@@ -27,7 +27,7 @@ p {
 }
 
 .headerLogo {
-  max-width: 60px;
+  max-width: 3.75rem;
 
   &.layerBack {
     opacity: 0;
@@ -55,15 +55,15 @@ p {
 .toggleSwitch {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 16px;
+  gap: 0.5rem;
+  font-size: 1rem;
 }
 
 .switch {
   position: relative;
   display: inline-block;
-  width: 32px;
-  height: 8px;
+  width: 2rem;
+  height: 0.5rem;
 
   input {
     opacity: 0;
@@ -86,8 +86,8 @@ p {
   &:before {
     position: absolute;
     content: "";
-    height: 16px;
-    width: 16px;
+    height: 1rem;
+    width: 1rem;
     left: -2px;
     top: 50%;
     transform: translateY(-50%);
@@ -97,11 +97,11 @@ p {
 }
 
 input:checked+.slider:before {
-  transform: translate(20px, -50%);
+  transform: translate(1.25rem, -50%);
 }
 
 .slider.round {
-  border-radius: 34px;
+  border-radius: 2.125rem;
 
   &:before {
     border-radius: 50%;
@@ -109,7 +109,7 @@ input:checked+.slider:before {
 }
 
 .linkBox {
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
 
   &:hover {
     .linkDecoCircle {
@@ -135,7 +135,7 @@ input:checked+.slider:before {
 
 .linkDecoUnderline {
   position: absolute;
-  bottom: -4px;
+  bottom: -0.25rem;
   left: 0;
   width: 0;
   transition: all .4s ease;
@@ -225,7 +225,7 @@ input:checked+.slider:before {
 .animatedImageWidth {
   position: absolute;
   bottom: 0;
-  left: 4px;
+  left: 0.25rem;
 
   &B {
     position: absolute;
@@ -234,7 +234,7 @@ input:checked+.slider:before {
   }
 }
 
-@media(max-width:768px) {
+@media(max-width:48rem) {
   .menue {
     display: none
   }

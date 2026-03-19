@@ -20,15 +20,15 @@
 .contactContent {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
   width: 100%;
-  padding: 140px 64px 48px;
+  padding: 8.75rem 4rem 3rem;
 }
 
 .contentRow {
   display: flex;
   justify-content: space-between;
-  gap: 64px;
+  gap: 4rem;
   width: 100%;
 }
 
@@ -36,13 +36,13 @@
 .contentRight {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
   width: 50%;
 }
 
 .contentRight img {
   width: 40%;
-  border-radius: 16px;
+  border-radius: 1rem;
   align-self: flex-end;
 }
 
@@ -87,8 +87,8 @@
 
 .footerLink {
   background-color: transparent;
-  padding: 8px 16px;
-  border-radius: 24px;
+  padding: 0.5rem 1rem;
+  border-radius: 1.5rem;
   transition: background-color 0.2s ease;
 
   &:hover {
@@ -100,7 +100,7 @@
   position: absolute;
   top: -90%;
   right: 0;
-  transform: translateX(-50px) rotate(0deg);
+  transform: translateX(-3.125rem) rotate(0deg);
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
@@ -113,12 +113,12 @@
 
 @keyframes rollIn {
   0% {
-    transform: translateX(-50px) rotate(0);
+    transform: translateX(-3.125rem) rotate(0);
     opacity: 0;
   }
 
   70% {
-    transform: translateX(10px) rotate(380deg);
+    transform: translateX(0.625rem) rotate(380deg);
     opacity: 1;
   }
 
@@ -130,14 +130,14 @@
 
 .devMedal {
   margin-bottom: -20%;
-  min-width: 140px;
+  min-width: 8.75rem;
 }
 
 .mobile {
   display: none;
 }
 
-@media (min-width: 2100px) {
+@media (min-width: 131.25rem) {
   .content {
 
     &::after,
@@ -161,19 +161,19 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
   .animationContainer {
     padding-left: 0;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .content {
     background-size: auto 100%;
   }
 
   .contactContent {
-    padding: 80px 32px 32px;
+    padding: 5rem 2rem 2rem;
   }
 
   .contentRow,
@@ -181,11 +181,11 @@
   .contentLeft {
     flex-direction: column;
     width: 100%;
-    gap: 48px;
+    gap: 3rem;
   }
 
   .contentRight {
-    padding-bottom: 64px;
+    padding-bottom: 4rem;
   }
 
   .noMobile {
@@ -198,14 +198,14 @@
 
   .devMedal {
     width: 40%;
-    max-width: 200px;
+    max-width: 12.5rem;
     margin-bottom: 0;
     align-self: flex-end;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   .contactContent {
-    padding: 60px 16px 16px;
+    padding: 3.75rem 1rem 1rem;
   }
 }

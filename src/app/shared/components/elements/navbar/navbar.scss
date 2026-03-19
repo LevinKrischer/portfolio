@@ -6,9 +6,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
-  padding: 0 64px;
-  max-width: 1440px;
+  height: 5rem;
+  padding: 0 4rem;
+  max-width: 90rem;
   margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@ p {
 }
 
 .headerLogo {
-  max-width: 60px;
+  max-width: 3.75rem;
 }
 
 .headerLogo.layerBack {
@@ -65,8 +65,8 @@ p {
 }
 
 .mobileNavigationIcon {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
   object-fit: contain;
   display: block;
 }
@@ -87,10 +87,10 @@ p {
   display: block;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .navbar {
     justify-content: space-between;
-    padding: 0 32px;
+    padding: 0 2rem;
   }
 
   .mobileNavigation {
@@ -98,8 +98,8 @@ p {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30rem) {
   .navbar {
-    padding: 0 16px;
+    padding: 0 1rem;
   }
 }

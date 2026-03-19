@@ -3,7 +3,7 @@ form {
   flex-direction: column;
 
   label {
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 1rem 1rem 0;
   }
 
@@ -28,16 +28,16 @@ form {
 .consentBox {
   display: flex;
   margin: 2rem 0;
-  gap: 16px;
+  gap: 1rem;
 
   .consentText {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .consentError {
     color: #FF3A00;
-    font-size: 14px;
-    margin-left: 24px;
+    font-size: 0.875rem;
+    margin-left: 1.5rem;
   }
 }
 
@@ -45,7 +45,7 @@ form {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 16px;
+  gap: 1rem;
 
   .animationContainer {
     width: 50%;
@@ -92,7 +92,7 @@ form {
   min-height: 1.2rem;
   font-size: 0.85rem;
   color: var(--color-error);
-  margin-top: 4px;
+  margin-top: 0.25rem;
   line-height: 1.2rem;
 
   opacity: 0;
@@ -108,7 +108,7 @@ form {
   color: var(--color-error);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .mobile {
     display: block;
   }
