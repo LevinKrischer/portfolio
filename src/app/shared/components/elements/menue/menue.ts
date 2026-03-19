@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { RouterLink } from "@angular/router";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-menue',
@@ -8,9 +8,9 @@ import { RouterLink } from "@angular/router";
   templateUrl: './menue.html',
   styleUrl: './menue.scss',
 })
+
 export class Menue {
   isGerman: boolean = false;
-
   constructor(private translate: TranslateService) {
     translate.addLangs(['en', 'de']);
     const savedLang = localStorage.getItem('userLanguage') || 'en';
@@ -19,7 +19,11 @@ export class Menue {
     this.isGerman = savedLang === 'de';
   }
 
-  onToggleLanguage(event: Event) {
+  /**
+   * Switches the active language and stores the selection locally.
+   * @param event Triggered browser or UI event instance.
+   */
+   onToggleLanguage(event: Event) {
     const input = event.target as HTMLInputElement;
     this.isGerman = input.checked;
     const newLang = this.isGerman ? 'de' : 'en';
@@ -27,4 +31,3 @@ export class Menue {
     localStorage.setItem('userLanguage', newLang);
   }
 }
-

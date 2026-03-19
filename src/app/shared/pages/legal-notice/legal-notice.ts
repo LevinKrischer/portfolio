@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Navbar } from "../../components/elements/navbar/navbar";
-import { Footer } from "../../components/elements/footer/footer";
-import { MenueMobile } from "../../components/elements/menue-mobile/menue-mobile";
+import { Navbar } from '../../components/elements/navbar/navbar';
+import { Footer } from '../../components/elements/footer/footer';
+import { MenueMobile } from '../../components/elements/menue-mobile/menue-mobile';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -10,6 +10,5 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './legal-notice.html',
   styleUrl: './legal-notice.scss',
 })
-export class LegalNotice {
 
-}
+export class LegalNotice {}

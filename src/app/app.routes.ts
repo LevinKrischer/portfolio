@@ -9,30 +9,30 @@ import { PrivacyPolicy } from './shared/pages/privacy-policy/privacy-policy';
 export const routes: Routes = [
   {
     path: '',
-    component: MainPage
+    component: MainPage,
   },
   {
     path: 'legal-notice',
-    component: LegalNotice
+    component: LegalNotice,
   },
   {
     path: 'privacy-policy',
-    component: PrivacyPolicy
+    component: PrivacyPolicy,
   },
   {
     path: 'join-project',
-    component: JoinProject
+    component: JoinProject,
   },
   {
     path: 'dabubble-project',
-    component: DaBubbleProject
+    component: DaBubbleProject,
   },
   {
     path: 'el-pollo-loco-project',
-    component: ElPolloLocoProject
+    component: ElPolloLocoProject,
   },
   {
     path: 'el-pollo-loco-project',
-    component: ElPolloLocoProject
-  }
+    component: ElPolloLocoProject,
+  },
 ];

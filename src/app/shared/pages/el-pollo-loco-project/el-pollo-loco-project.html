@@ -1,7 +1,9 @@
 <section class="content">
   <section class="contentInner projectContent">
-    <app-navbar></app-navbar>
-    <app-menue-mobile></app-menue-mobile>
+    <app-navbar>
+    </app-navbar>
+    <app-menue-mobile>
+    </app-menue-mobile>
     <section class="contentAbove">
       <a class="backLink noMobile" routerLink="/" fragment="projects">
         <img src="./assets/icons/arrow-back-orange.png">
@@ -43,10 +45,14 @@
         <img class="projectBreadcrumb" src="./assets/imgs/layout/el-pollo-loco-project-breadcrumb_950px.png">
         <div class="linkBtns">
           <button class="btnStandardWhite">
-            <a href="https://github.com/LevinKrischer/el-pollo-loco" target="_blank"><span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BUTTONS.GITHUB' | translate }}</span></a>
+            <a href="https://github.com/LevinKrischer/el-pollo-loco" target="_blank">
+              <span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BUTTONS.GITHUB' | translate }}</span>
+            </a>
           </button>
           <button class="btnStandardWhite">
-            <a href="https://levinkrischer.de/el-pollo-loco/" target="_blank"><span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BUTTONS.LIVE' | translate }}</span></a>
+            <a href="https://levinkrischer.de/el-pollo-loco/" target="_blank">
+              <span class="blend">{{ 'PROJECTS_DETAIL.POLLO.BUTTONS.LIVE' | translate }}</span>
+            </a>
           </button>
         </div>
         <div class="siteNavigation">

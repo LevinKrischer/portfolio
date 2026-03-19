@@ -2,20 +2,20 @@
   <div class="fieldWrapper">
     <label for="name">{{ 'CONTACT_FORM.LABEL_NAME' | translate }}</label>
     <input id="name" type="text" formControlName="name" (focus)="clearError('name')" (blur)="validateField('name')"
-      [ngClass]="{ 'error': isInvalid('name'), 'defaultError': showDefaultError('name') }" />
+    [ngClass]="{ 'error': isInvalid('name'), 'defaultError': showDefaultError('name') }" />
     <span class="fieldError" [class.visible]="isInvalid('name')">{{ errorTexts['name'] | translate }}</span>
   </div>
   <div class="fieldWrapper">
     <label for="email">{{ 'CONTACT_FORM.LABEL_EMAIL' | translate }}</label>
     <input id="email" type="email" formControlName="email" (focus)="clearError('email')" (blur)="validateField('email')"
-      [ngClass]="{ 'error': isInvalid('email'), 'defaultError': showDefaultError('email') }" />
+    [ngClass]="{ 'error': isInvalid('email'), 'defaultError': showDefaultError('email') }" />
     <span class="fieldError" [class.visible]="isInvalid('email')">{{ errorTexts['email'] | translate }}</span>
   </div>
   <div class="fieldWrapper">
     <label for="message">{{ 'CONTACT_FORM.LABEL_MESSAGE' | translate }}</label>
     <input id="message" type="text" formControlName="message" (focus)="clearError('message')"
-      (blur)="validateField('message')"
-      [ngClass]="{ 'error': isInvalid('message'), 'defaultError': showDefaultError('message') }" />
+    (blur)="validateField('message')"
+    [ngClass]="{ 'error': isInvalid('message'), 'defaultError': showDefaultError('message') }" />
     <span class="fieldError" [class.visible]="isInvalid('message')">{{ errorTexts['message'] | translate }}</span>
   </div>
   <div class="consentBox">
@@ -33,17 +33,17 @@
     </div>
     <div class="submitWrapper" (click)="onDisabledSubmitAttempt()">
       <button class="btnStandard" type="submit" [disabled]="loading || !contactForm.valid" [class.success]="success"
-        [class.error]="error">
-        @if (loading) {
-        {{ 'CONTACT_FORM.SENDING' | translate }}
-        } @else if (success) {
-        {{ 'CONTACT_FORM.SUCCESS_SHORT' | translate }}
-        } @else if (error) {
-        {{ 'CONTACT_FORM.ERROR_SHORT' | translate }}
-        } @else {
-        {{ 'CONTACT_FORM.SUBMIT' | translate }}
-        }
-      </button>
-    </div>
+      [class.error]="error">
+      @if (loading) {
+      {{ 'CONTACT_FORM.SENDING' | translate }}
+      } @else if (success) {
+      {{ 'CONTACT_FORM.SUCCESS_SHORT' | translate }}
+      } @else if (error) {
+      {{ 'CONTACT_FORM.ERROR_SHORT' | translate }}
+      } @else {
+      {{ 'CONTACT_FORM.SUBMIT' | translate }}
+      }
+    </button>
   </div>
+</div>
 </form>

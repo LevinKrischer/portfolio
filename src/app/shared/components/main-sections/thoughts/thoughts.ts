@@ -7,6 +7,5 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './thoughts.html',
   styleUrl: './thoughts.scss',
 })
-export class Thoughts {
 
-}
+export class Thoughts {}

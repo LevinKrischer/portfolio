@@ -14,26 +14,16 @@ import { Subscription } from 'rxjs';
 export class MenueMobile implements OnDestroy {
   isGerman: boolean = false;
   private routerSub?: Subscription;
-
   constructor(
     private mobileMenu: MobileMenuService,
     private translate: TranslateService,
     private router: Router,
-    private elementRef: ElementRef
+    private elementRef: ElementRef,
   ) {
-    translate.addLangs(['en', 'de']);
-    const savedLang = localStorage.getItem('userLanguage') || 'en';
-    translate.setDefaultLang(savedLang);
-    translate.use(savedLang);
-    this.isGerman = savedLang === 'de';
-    this.routerSub = this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        this.closeMenu();
-      }
-    });
-    window.addEventListener('hashchange', this.onHashChange);
+    this.initializeLanguage();
+    this.subscribeToRouterEvents();
+    this.registerHashChangeHandler();
   }
-
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {
     if (!this.isOpen) return;
@@ -43,21 +33,57 @@ export class MenueMobile implements OnDestroy {
     }
     const clickedInside = this.elementRef.nativeElement.contains(clickedElement);
     if (clickedInside) return;
-
     this.closeMenu();
   }
+
+  /** Handles hash change events to close the menu if it's open. */
   private onHashChange = () => {
     if (this.isOpen) {
       this.closeMenu();
     }
   };
 
-  ngOnDestroy() {
+  /**
+   * Initializes language settings based on persisted user preference.
+   */
+  private initializeLanguage() {
+    const savedLang = localStorage.getItem('userLanguage') || 'en';
+    this.translate.addLangs(['en', 'de']);
+    this.translate.setDefaultLang(savedLang);
+    this.translate.use(savedLang);
+    this.isGerman = savedLang === 'de';
+  }
+
+  /**
+   * Subscribes to router events and closes the menu on navigation.
+   */
+  private subscribeToRouterEvents() {
+    this.routerSub = this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.closeMenu();
+      }
+    });
+  }
+
+  /**
+   * Registers a listener for hash navigation changes.
+   */
+   private registerHashChangeHandler() {
+    window.addEventListener('hashchange', this.onHashChange);
+  }
+
+  /**
+   * Cleans up subscriptions and event listeners.
+   */
+   ngOnDestroy() {
     this.routerSub?.unsubscribe();
     window.removeEventListener('hashchange', this.onHashChange);
   }
 
-  toggleMobileMenu() {
+  /**
+   * Toggles the mobile menu visibility.
+   */
+   toggleMobileMenu() {
     if (this.isOpen) {
       this.closeMenu();
     } else {
@@ -65,7 +91,11 @@ export class MenueMobile implements OnDestroy {
     }
   }
 
-  onToggleLanguage(event: Event) {
+  /**
+   * Switches the active language and stores the selection locally.
+   * @param event Triggered browser or UI event instance.
+   */
+   onToggleLanguage(event: Event) {
     const input = event.target as HTMLInputElement;
     this.isGerman = input.checked;
     const newLang = this.isGerman ? 'de' : 'en';
@@ -73,11 +103,18 @@ export class MenueMobile implements OnDestroy {
     localStorage.setItem('userLanguage', newLang);
   }
 
-  get isOpen() {
+  /**
+   * Returns whether the mobile menu is currently open.
+   * @returns Computed method result.
+   */
+   get isOpen() {
     return this.mobileMenu.isOpen();
   }
 
-  closeMenu() {
+  /**
+   * Closes the mobile menu.
+   */
+   closeMenu() {
     this.mobileMenu.close();
   }
 }

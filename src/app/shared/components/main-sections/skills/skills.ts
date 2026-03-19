@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PeelOff } from "../../elements/peel-off/peel-off";
+import { PeelOff } from '../../elements/peel-off/peel-off';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -8,6 +8,5 @@ import { TranslateModule } from '@ngx-translate/core';
   templateUrl: './skills.html',
   styleUrl: './skills.scss',
 })
-export class Skills {
 
-}
+export class Skills {}

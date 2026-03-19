@@ -4,15 +4,18 @@ import { Component, EventEmitter, Output, Input } from '@angular/core';
   selector: 'app-button',
   templateUrl: './button.html',
   styleUrls: ['./button.scss'],
-  standalone: true
+  standalone: true,
 })
 export class Button {
   @Output() clicked = new EventEmitter<void>();
   @Input() disabled = false;
-  onClick() {
+
+  /**
+   * Emits the click event when the button is enabled.
+   */
+   onClick() {
     if (!this.disabled) {
       this.clicked.emit();
     }
   }
 }
-

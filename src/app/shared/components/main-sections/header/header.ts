@@ -1,10 +1,19 @@
-import { Component, ElementRef, ViewChild, AfterViewInit, NgZone, OnDestroy, ChangeDetectorRef } from '@angular/core';
-import { Navbar } from "../../elements/navbar/navbar";
+import {
+  Component,
+  ElementRef,
+  ViewChild,
+  AfterViewInit,
+  NgZone,
+  OnDestroy,
+  ChangeDetectorRef,
+} from '@angular/core';
+
+import { Navbar } from '../../elements/navbar/navbar';
 import { LetterComponent } from '../../elements/letter/letter';
-import { Button } from "../../elements/button/button";
-import { SocialLinks } from "../../elements/social-links/social-links";
+import { Button } from '../../elements/button/button';
+import { SocialLinks } from '../../elements/social-links/social-links';
 import { TranslateModule } from '@ngx-translate/core';
-import { RouterLink } from "@angular/router";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,37 +21,43 @@ import { RouterLink } from "@angular/router";
   templateUrl: './header.html',
   styleUrl: './header.scss',
 })
-export class Header implements AfterViewInit, OnDestroy {
 
+export class Header implements AfterViewInit, OnDestroy {
   @ViewChild('headlineRoot', { static: true }) headlineRoot!: ElementRef;
   scale = 1;
   private resizeObserver!: ResizeObserver;
   private windowListener!: () => void;
   private rafId: number | null = null;
+  constructor(
+    private zone: NgZone,
+    private cdr: ChangeDetectorRef,
+  ) {}
 
-  constructor(private zone: NgZone, private cdr: ChangeDetectorRef) {
-  }
-
-  ngAfterViewInit() {
+  /**
+   * Initializes observers and listeners after the view has been created.
+   */
+   ngAfterViewInit() {
     this.resizeObserver = new ResizeObserver(() => {
       this.scheduleScaleUpdate();
     });
     this.resizeObserver.observe(this.headlineRoot.nativeElement);
-
     this.windowListener = () => this.scheduleScaleUpdate();
     window.addEventListener('resize', this.windowListener);
-
     this.scheduleScaleUpdate();
   }
-
-  ngOnDestroy() {
+  /**
+   * Cleans up subscriptions and event listeners.
+   */
+   ngOnDestroy() {
     this.resizeObserver.disconnect();
     window.removeEventListener('resize', this.windowListener);
   }
 
-  private scheduleScaleUpdate() {
+  /**
+   * Schedules the next scale recalculation via requestAnimationFrame.
+   */
+   private scheduleScaleUpdate() {
     if (this.rafId !== null) return;
-
     this.rafId = requestAnimationFrame(() => {
       this.zone.run(() => {
         this.updateScale();
@@ -51,9 +66,11 @@ export class Header implements AfterViewInit, OnDestroy {
     });
   }
 
-  private updateScale() {
+  /**
+   * Computes the scale factor based on the current viewport width.
+   */
+   private updateScale() {
     const dvw = window.innerWidth;
-
     if (dvw < 421) {
       this.scale = 0.4;
     } else if (dvw < 769) {
@@ -63,7 +80,6 @@ export class Header implements AfterViewInit, OnDestroy {
     } else {
       this.scale = 1;
     }
-
     this.cdr.markForCheck();
   }
 }

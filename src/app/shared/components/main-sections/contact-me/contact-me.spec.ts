@@ -5,18 +5,14 @@ import { ContactMe } from './contact-me';
 describe('ContactMe', () => {
   let component: ContactMe;
   let fixture: ComponentFixture<ContactMe>;
-
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ContactMe]
-    })
-    .compileComponents();
-
+      imports: [ContactMe],
+    }).compileComponents();
     fixture = TestBed.createComponent(ContactMe);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
-
   it('should create', () => {
     expect(component).toBeTruthy();
   });

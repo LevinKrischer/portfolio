@@ -1,18 +1,27 @@
 import { Injectable, signal } from '@angular/core';
-
 @Injectable({ providedIn: 'root' })
+
 export class MobileMenuService {
   isOpen = signal(false);
 
-  toggle() {
-    this.isOpen.update(v => !v);
+  /**
+   * Toggles the mobile menu state.
+   */
+   toggle() {
+    this.isOpen.update((v) => !v);
   }
 
-  open() {
+  /**
+   * Opens the mobile menu state.
+   */
+   open() {
     this.isOpen.set(true);
   }
 
-  close() {
+  /**
+   * Closes the mobile menu state.
+   */
+   close() {
     this.isOpen.set(false);
   }
 }

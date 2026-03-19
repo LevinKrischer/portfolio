@@ -6,18 +6,24 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
   templateUrl: './peel-off.html',
   styleUrl: './peel-off.scss',
 })
-export class PeelOff {
 
+export class PeelOff {
   @ViewChild('peelClick') peelClick!: ElementRef;
   @ViewChild('peelLayer') peelLayer!: ElementRef;
   @ViewChild('peelLayerMobile') peelLayerMobile!: ElementRef;
 
-  hidePeel() {
+  /**
+   * Starts the peel-off hide animation flow.
+   */
+   hidePeel() {
     this.peelClick.nativeElement.classList.add('toBeHidden');
     this.setHidden();
   }
 
-  setHidden() {
+  /**
+   * Marks peel-off elements as hidden after the animation delay.
+   */
+   setHidden() {
     setTimeout(() => {
       this.peelClick.nativeElement.classList.add('hidden');
       this.peelLayer.nativeElement.classList.add('hidden');

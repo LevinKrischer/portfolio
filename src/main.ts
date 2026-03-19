@@ -14,15 +14,13 @@ bootstrapApplication(App, {
   providers: [
     ...(appConfig.providers || []),
     provideHttpClient(),
-
     {
       provide: LOCALE_ID,
       useFactory: () => {
         const saved = localStorage.getItem('userLanguage');
         if (saved === 'de') return 'de';
         return 'en';
-      }
-    }
-  ]
-})
-  .catch(err => console.error(err));
+      },
+    },
+  ],
+}).catch((err) => console.error(err));

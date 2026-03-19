@@ -6,6 +6,5 @@ import { Component } from '@angular/core';
   templateUrl: './social-links.html',
   styleUrl: './social-links.scss',
 })
-export class SocialLinks {
 
-}
+export class SocialLinks {}

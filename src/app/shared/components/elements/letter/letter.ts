@@ -8,11 +8,10 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   templateUrl: './letter.html',
   styleUrls: ['./letter.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 
 export class LetterComponent {
-
   private _char = signal<string>('');
   private _scale = signal<number>(1);
   private config = LETTERS;
@@ -28,10 +27,13 @@ export class LetterComponent {
   @Input() set scale(value: number) {
     this._scale.set(value);
   }
-
   private _hover = signal<boolean>(false);
 
-  onHover(isHover: boolean) {
+  /**
+   * Updates the current hover state of the letter component.
+   * @param isHover Indicates whether the element is currently hovered.
+   */
+   onHover(isHover: boolean) {
     this._hover.set(isHover);
   }
 
@@ -44,16 +46,13 @@ export class LetterComponent {
     const showUpper = initialUpper ? !hover : hover;
     return showUpper ? data.upper : data.lower;
   });
-
-
+  
   currentOffset = computed(() => {
     const c = this._char();
     const hover = this._hover();
     const initialUpper = this.isInitialUpper();
-
     // p hat Sonderoffset
     if (c !== 'p') return 0;
-
     const showUpper = initialUpper ? !hover : hover;
     return showUpper ? 0 : 12;
   });

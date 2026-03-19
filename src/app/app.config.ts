@@ -6,24 +6,37 @@ import { Observable } from 'rxjs';
 import { routes } from './app.routes';
 
 export class MyTranslateLoader implements TranslateLoader {
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  getTranslation(lang: string): Observable<any> {
+  /**
+   * Loads the translation file for the requested language.
+   * @param lang Language code to activate.
+   * @returns Computed method result.
+   */
+   getTranslation(lang: string): Observable<any> {
     return this.http.get(`./assets/i18n/${lang}.json`);
   }
 }
 
-export function httpLoaderFactory(http: HttpClient) {
+/**
+ * Creates the translation loader used in the app configuration.
+ * @param http HttpClient instance used to load external resources.
+ */
+ export function httpLoaderFactory(http: HttpClient) {
   return new MyTranslateLoader(http);
 }
 
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
-    provideRouter(routes, withHashLocation(), withInMemoryScrolling({
-      scrollPositionRestoration: 'enabled',
-      anchorScrolling: 'enabled',
-    })),
+    provideRouter(
+      routes,
+      withHashLocation(),
+      withInMemoryScrolling({
+        scrollPositionRestoration: 'enabled',
+        anchorScrolling: 'enabled',
+      }),
+    ),
     provideHttpClient(),
     provideTranslateService({
       loader: {
@@ -31,7 +44,7 @@ export const appConfig: ApplicationConfig = {
         useFactory: httpLoaderFactory,
         deps: [HttpClient],
       },
-      fallbackLang: 'de'
+      fallbackLang: 'de',
     }),
   ],
 };

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Menue } from '../menue/menue';
 import { MobileMenuService } from '../../../services/mobile-menue.service/mobile-menue.service';
-import { RouterLink } from "@angular/router";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -9,11 +9,14 @@ import { RouterLink } from "@angular/router";
   templateUrl: './navbar.html',
   styleUrl: './navbar.scss',
 })
+
 export class Navbar {
+  constructor(private mobileMenu: MobileMenuService) {}
 
-  constructor(private mobileMenu: MobileMenuService) { }
-
-  toggleMobileMenu() {
+  /**
+   * Toggles the mobile menu visibility.
+   */
+   toggleMobileMenu() {
     this.mobileMenu.toggle();
   }
 }

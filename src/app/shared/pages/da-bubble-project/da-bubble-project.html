@@ -1,7 +1,9 @@
 <section class="content">
   <section class="contentInner projectContent">
-    <app-navbar></app-navbar>
-    <app-menue-mobile></app-menue-mobile>
+    <app-navbar>
+    </app-navbar>
+    <app-menue-mobile>
+    </app-menue-mobile>
     <section class="contentAbove">
       <a class="backLink noMobile" routerLink="/" fragment="projects">
         <img src="./assets/icons/arrow-back-orange.png">
@@ -52,10 +54,14 @@
         <img class="projectBreadcrumb" src="./assets/imgs/layout/da-bubble-project-breadcrumb_950px.png">
         <div class="linkBtns">
           <button class="btnStandardWhite" disabled>
-            <a><span class="blend">{{ 'PROJECTS_DETAIL.DABUBBLE.BUTTONS.GITHUB' | translate }}</span></a>
+            <a>
+              <span class="blend">{{ 'PROJECTS_DETAIL.DABUBBLE.BUTTONS.GITHUB' | translate }}</span>
+            </a>
           </button>
           <button class="btnStandardWhite" disabled>
-            <a><span class="blend">{{ 'PROJECTS_DETAIL.DABUBBLE.BUTTONS.LIVE' | translate }}</span></a>
+            <a>
+              <span class="blend">{{ 'PROJECTS_DETAIL.DABUBBLE.BUTTONS.LIVE' | translate }}</span>
+            </a>
           </button>
         </div>
         <div class="siteNavigation">

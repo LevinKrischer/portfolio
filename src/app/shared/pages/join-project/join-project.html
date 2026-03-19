@@ -1,7 +1,9 @@
 <section class="content">
   <section class="contentInner projectContent">
-    <app-navbar></app-navbar>
-    <app-menue-mobile></app-menue-mobile>
+    <app-navbar>
+    </app-navbar>
+    <app-menue-mobile>
+    </app-menue-mobile>
     <section class="contentAbove">
       <a class="backLink noMobile" routerLink="/" fragment="projects">
         <img src="./assets/icons/arrow-back-orange.png" alt="">
@@ -52,10 +54,14 @@
         <img class="projectBreadcrumb" src="./assets/imgs/layout/join-project-breadcrumb_950px.png">
         <div class="linkBtns" disabled>
           <button class="btnStandardWhite">
-            <a href="https://github.com/LevinKrischer/join" target="_blank"><span class="blend">{{ 'PROJECTS_DETAIL.JOIN.BUTTONS.GITHUB' | translate }}</span></a>
+            <a href="https://github.com/LevinKrischer/join" target="_blank">
+              <span class="blend">{{ 'PROJECTS_DETAIL.JOIN.BUTTONS.GITHUB' | translate }}</span>
+            </a>
           </button>
           <button class="btnStandardWhite" disabled>
-            <a href="https://levinkrischer.de/join" target="_blank"><span class="blend">{{ 'PROJECTS_DETAIL.JOIN.BUTTONS.LIVE' | translate }}</span></a>
+            <a href="https://levinkrischer.de/join" target="_blank">
+              <span class="blend">{{ 'PROJECTS_DETAIL.JOIN.BUTTONS.LIVE' | translate }}</span>
+            </a>
           </button>
         </div>
         <div class="siteNavigation">

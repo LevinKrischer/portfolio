@@ -5,7 +5,7 @@ import { Projects } from '../../components/main-sections/projects/projects';
 import { Skills } from '../../components/main-sections/skills/skills';
 import { AboutMe } from '../../components/main-sections/about-me/about-me';
 import { Header } from '../../components/main-sections/header/header';
-import { MenueMobile } from "../../components/elements/menue-mobile/menue-mobile";
+import { MenueMobile } from '../../components/elements/menue-mobile/menue-mobile';
 
 @Component({
   selector: 'app-main-page',
@@ -13,6 +13,5 @@ import { MenueMobile } from "../../components/elements/menue-mobile/menue-mobile
   templateUrl: './main-page.html',
   styleUrl: './main-page.scss',
 })
-export class MainPage {
 
-}
+export class MainPage {}

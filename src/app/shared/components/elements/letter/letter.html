@@ -1,8 +1,7 @@
 <div class="letter" [attr.data-scale]="scale$()" [style.width.px]="currentWidth() * scale$()"
-  [style.transform]="'translateY(' + currentOffset() + 'px)'" (mouseenter)="onHover(true)"
-  (mouseleave)="onHover(false)">
-
-  @if (currentSrc()) {
-    <img [src]="currentSrc()" [alt]="char$()" />
-  }
+[style.transform]="'translateY(' + currentOffset() + 'px)'" (mouseenter)="onHover(true)"
+(mouseleave)="onHover(false)">
+@if (currentSrc()) {
+<img [src]="currentSrc()" [alt]="char$()" />
+}
 </div>

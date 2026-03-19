@@ -10,6 +10,5 @@ import { MenueMobile } from '../../components/elements/menue-mobile/menue-mobile
   templateUrl: './privacy-policy.html',
   styleUrl: './privacy-policy.scss',
 })
-export class PrivacyPolicy {
 
-}
+export class PrivacyPolicy {}

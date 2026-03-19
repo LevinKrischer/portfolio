@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { RouterLink } from "@angular/router";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -8,5 +8,5 @@ import { RouterLink } from "@angular/router";
   templateUrl: './footer.html',
   styleUrl: './footer.scss',
 })
-export class Footer {
-}
+
+export class Footer {}

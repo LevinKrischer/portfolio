@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { Navbar } from "../../components/elements/navbar/navbar";
+import { Navbar } from '../../components/elements/navbar/navbar';
 import { MenueMobile } from '../../components/elements/menue-mobile/menue-mobile';
-import { RouterLink } from "@angular/router";
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-el-pollo-loco-project',
@@ -11,6 +11,4 @@ import { RouterLink } from "@angular/router";
   styleUrl: './el-pollo-loco-project.scss',
 })
 
-export class ElPolloLocoProject {
-
-}
+export class ElPolloLocoProject {}
