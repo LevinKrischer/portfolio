@@ -32,8 +32,7 @@
 }
 
 .headline {
-  min-width: 48%;
-  max-width: 48%;
+  width: 100%;
 
   .animationContainerWidth {
     animation: showHideFromLeft 6s ease infinite;
@@ -52,18 +51,27 @@
 
 .projectImgContainer {
   width: 100%;
+  aspect-ratio: 560 / 338;
   border-radius: 20px;
   overflow: hidden;
   position: relative;
 
   .projectImg {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 20px;
     scale: 1;
     transition: all 0.3s ease-in-out;
   }
 
   .projectImgJoin {
+    position: absolute;
+    top: 0;
+    left: 0;
     opacity: 0;
   }
 
@@ -89,6 +97,13 @@
     top: 0;
     right: 0;
     width: 45%;
+  }
+
+  .updated-stomp {
+    position: absolute;
+      top: 0;
+      right: 0;
+      width: 30%;
   }
 
   .projectImgOverlay {

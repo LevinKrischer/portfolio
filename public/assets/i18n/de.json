@@ -16,7 +16,7 @@
   "PROJECTS": {
     "SECTION_LABEL": "MEIN HANDWERK",
     "HEADLINE": "Projekte",
-    "INTRO": "Die folgenden Projekte zeigen unterschiedliche Ansätze zur Entwicklung responsiver, nutzerfreundlicher Anwendungen mit klarer Struktur und effizientem Code. Alle Beispiele lassen sich direkt im Browser erkunden und interaktiv ausprobieren.",
+    "INTRO": "Die folgenden Projekte geben einen präzisen Einblick in meine Arbeitsweise: strukturierte, modular gedachte Interfaces, klare technische Entscheidungen und ein konsequenter Fokus auf mobile-first‑Responsiveness. Jedes Beispiel zeigt einen anderen Aspekt meines Ansatzes – von sauberer Komponentenarchitektur über effiziente State‑Logik bis hin zu didaktisch nachvollziehbarer Dokumentation. Alle Projekte lassen sich direkt im Browser erkunden und interaktiv ausprobieren, sodass sowohl Umsetzung als auch Nutzererlebnis unmittelbar erfahrbar werden.",
     "DETAILS_BUTTON": "Details",
     "JOIN": {
       "TITLE": "Join",

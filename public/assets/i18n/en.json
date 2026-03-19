@@ -16,7 +16,7 @@
   "PROJECTS": {
     "SECTION_LABEL": "MY CRAFT",
     "HEADLINE": "Projects",
-    "INTRO": "The following projects showcase different approaches to building responsive, user‑friendly applications with clear structure and efficient code. All examples can be explored directly in the browser and tried out interactively.",
+    "INTRO": "The following projects offer a clear look into how I approach modern interface development: structured, modular design, deliberate technical decisions, and a consistent mobile‑first mindset. Each example highlights a different facet of my workflow—from clean component architecture to efficient state logic and transparent, didactic documentation. All projects can be explored directly in the browser and interacted with in real time, making both implementation and user experience immediately tangible.",
     "DETAILS_BUTTON": "Details",
     "JOIN": {
       "TITLE": "Join",
