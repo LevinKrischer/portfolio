@@ -46,15 +46,14 @@
 
 .thoughtsShowcase {
   display: flex;
-  gap: 32px;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
 }
 
 .thoughtsCard {
   width: 37%;
   transition: opacity 0.3s ease-in-out;
-    background-image: url('/../../../../../assets/imgs/layout/thought-card.png');
+  background-image: url('/../../../../../assets/imgs/layout/thought-card.png');
   background-size: 100% 100%;
   background-position: center;
   border-radius: 24px;
@@ -63,7 +62,6 @@
   .thoughtsName,
   .thoughtsPosition {
     transition: color 0.3s ease-in-out;
-    cursor: pointer;
   }
 
   &::after {
@@ -147,34 +145,36 @@
 }
 
 .contactLink {
-  display: flex;
-  gap: 8px;
-  align-items: center;
 
-  .linkIcon {
-    width: 18px;
-    height: 18px;
-    filter: invert(100);
-    transition: filter 0.3s ease-in-out;
-  }
+  a {
 
-  .linkName {
+    display: flex;
+    gap: 8px;
+    align-items: center;
     transition: color 0.3s ease-in-out;
-    color: var(--color-secondary);
-  }
-
-  &:hover {
-    cursor: pointer;
 
     .linkIcon {
-      filter: invert(0);
+      width: 18px;
+      height: 18px;
+      filter: invert(100);
+      transition: filter 0.3s ease-in-out;
     }
 
-    .linkName {
+    &:hover {
+      cursor: pointer;
       color: var(--color-primary);
+
+      .linkIcon {
+        filter: invert(0);
+      }
+
+      & a {
+        color: var(--color-primary);
+      }
     }
   }
 }
+
 
 .animationContainerWidth {
   animation: showHideFromLeft 6s ease infinite;
