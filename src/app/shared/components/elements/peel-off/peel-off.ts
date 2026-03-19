@@ -24,5 +24,4 @@ export class PeelOff {
       this.peelLayerMobile.nativeElement.classList.add('hidden');
     }, 450);
   }
-
 }

@@ -29,13 +29,11 @@ export class ContactForm {
 
   fb = inject(FormBuilder);
   translate = inject(TranslateService);
-
   showConsentError = false;
-
   loading = false;
   success = false;
   error = false;
-
+  
   defaultValues: Record<string, string> = {
     name: '',
     email: '',

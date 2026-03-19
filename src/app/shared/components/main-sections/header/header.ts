@@ -15,9 +15,7 @@ import { RouterLink } from "@angular/router";
 export class Header implements AfterViewInit, OnDestroy {
 
   @ViewChild('headlineRoot', { static: true }) headlineRoot!: ElementRef;
-
   scale = 1;
-
   private resizeObserver!: ResizeObserver;
   private windowListener!: () => void;
   private rafId: number | null = null;

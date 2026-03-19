@@ -10,6 +10,7 @@ import { RouterLink } from "@angular/router";
   templateUrl: './el-pollo-loco-project.html',
   styleUrl: './el-pollo-loco-project.scss',
 })
+
 export class ElPolloLocoProject {
 
 }

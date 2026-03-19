@@ -22,39 +22,30 @@ export class MenueMobile implements OnDestroy {
     private elementRef: ElementRef
   ) {
     translate.addLangs(['en', 'de']);
-
     const savedLang = localStorage.getItem('userLanguage') || 'en';
-
     translate.setDefaultLang(savedLang);
     translate.use(savedLang);
-
     this.isGerman = savedLang === 'de';
-
     this.routerSub = this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.closeMenu();
       }
     });
-
     window.addEventListener('hashchange', this.onHashChange);
   }
 
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {
     if (!this.isOpen) return;
-
     const clickedElement = event.target as HTMLElement;
-
     if (clickedElement.closest('.mobileNavigation')) {
       return;
     }
-
     const clickedInside = this.elementRef.nativeElement.contains(clickedElement);
     if (clickedInside) return;
 
     this.closeMenu();
   }
-
   private onHashChange = () => {
     if (this.isOpen) {
       this.closeMenu();
@@ -77,9 +68,7 @@ export class MenueMobile implements OnDestroy {
   onToggleLanguage(event: Event) {
     const input = event.target as HTMLInputElement;
     this.isGerman = input.checked;
-
     const newLang = this.isGerman ? 'de' : 'en';
-
     this.translate.use(newLang);
     localStorage.setItem('userLanguage', newLang);
   }

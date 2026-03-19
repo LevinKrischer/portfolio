@@ -11,7 +11,6 @@ describe('Navbar', () => {
       imports: [Navbar]
     })
     .compileComponents();
-
     fixture = TestBed.createComponent(Navbar);
     component = fixture.componentInstance;
     await fixture.whenStable();
