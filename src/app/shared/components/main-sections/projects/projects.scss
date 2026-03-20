@@ -202,6 +202,12 @@
   }
 }
 
+@media (max-width: 57rem) {
+  .featuredSticker {
+    max-width: 7rem;
+  }
+}
+
 @media (max-width: 48rem) {
 
   .contentTop,
@@ -244,19 +250,34 @@
   .mobile {
     display: block;
   }
+
+  .featuredSticker {
+    max-width: 10rem;
+  }
+
 }
 
 @media (max-width: 30rem) {
-  .projectsContent {
-    padding: 2rem 1rem;
+
+  .content {
+    margin-top: -4rem;
   }
 
   .projectImgOverlay {
-    padding: 1.25rem;
+    padding: 1rem!important;
+  }
+
+  .projectsContent {
+    padding: 2rem 1rem;
   }
 
   .contentTop,
   .contentBottom {
     gap: 3rem;
+  }
+
+  .featuredSticker {
+    max-width: 6rem;
+    top: 0;
   }
 }

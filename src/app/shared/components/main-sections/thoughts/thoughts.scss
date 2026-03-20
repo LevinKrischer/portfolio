@@ -295,3 +295,18 @@
     gap: 5rem;
   }
 }
+
+@media (max-width: 22rem) {
+  .thoughtsContent {
+    overflow: hidden;
+  }
+
+  .animationContainerWidth {
+    max-width: 5rem;
+    overflow: hidden;
+
+    img {
+      max-width: 5rem;
+    }
+  }
+}

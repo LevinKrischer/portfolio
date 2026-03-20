@@ -21,7 +21,7 @@ export function emailWithDefaultValidator(defaultValue: string) {
     const value = control.value?.trim() ?? '';
     if (!value) return { required: true };
     if (value === defaultValue) return { defaultValue: true };
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
     if (!emailRegex.test(value)) return { email: true };
     return null;
   };
