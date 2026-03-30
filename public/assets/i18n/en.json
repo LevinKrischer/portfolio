@@ -63,10 +63,13 @@
       "JS": "JavaScript",
       "TS": "TypeScript",
       "ANGULAR": "Angular",
+      "ASTRO": "Astro",
+      "SUPABASE": "Supabase",
       "FIREBASE": "Firebase",
       "GIT": "Git",
       "REST_API": "REST API",
       "SCRUM": "Scrum",
+      "BOOTSTRAP": "Bootstrap",
       "MATERIAL": "Material Design"
     }
   },
