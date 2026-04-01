@@ -5,6 +5,7 @@ import { ElPolloLocoProject } from './shared/pages/el-pollo-loco-project/el-poll
 import { LegalNotice } from './shared/pages/legal-notice/legal-notice';
 import { DaBubbleProject } from './shared/pages/da-bubble-project/da-bubble-project';
 import { PrivacyPolicy } from './shared/pages/privacy-policy/privacy-policy';
+import { CrmProject } from './shared/pages/crm-project/crm-project';
 
 export const routes: Routes = [
   {
@@ -35,4 +36,8 @@ export const routes: Routes = [
     path: 'el-pollo-loco-project',
     component: ElPolloLocoProject,
   },
+  {
+    path: 'crm-project',
+    component: CrmProject,
+  }
 ];

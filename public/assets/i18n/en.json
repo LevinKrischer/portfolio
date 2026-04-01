@@ -70,7 +70,8 @@
       "REST_API": "REST API",
       "SCRUM": "Scrum",
       "BOOTSTRAP": "Bootstrap",
-      "MATERIAL": "Material Design"
+      "MATERIAL": "Material Design",
+      "REACT": "React"
     }
   },
   "HEADER": {
@@ -140,14 +141,15 @@
       },
       "DURATION": {
         "LABEL": "Duration:",
-        "VALUE": "5 weeks"
+        "VALUE": "3 weeks"
       },
       "TECH": {
         "HTML": "HTML5",
         "CSS": "CSS3",
         "SUPABASE": "Supabase",
         "ANGULAR": "Angular",
-        "TS": "TypeScript"
+        "TS": "TypeScript",
+        "BOOTSTRAP": "Bootstrap"
       },
       "BUTTONS": {
         "GITHUB": "Github",
@@ -162,7 +164,7 @@
       "BACK": "back",
       "DESCRIPTION": {
         "LABEL": "Description",
-        "TEXT": "A jump‑and‑run game built with object‑oriented principles. The character collects coins and Tabasco bottles to stand up to the crazy hen. Animations, collision detection, and interactions are fully implemented in JavaScript."
+        "TEXT": "A simple jump‑and‑run game built with object‑oriented principles. The character collects coins and Tabasco bottles to stand up to the crazy hen. Animations, collision detection, and interactions are fully implemented in JavaScript."
       },
       "IMPLEMENTATION": {
         "LABEL": "Implementation Details",
@@ -175,7 +177,7 @@
       "TECH": {
         "HTML": "HTML5",
         "CSS": "CSS3",
-        "JS": "JavaScript (vanilla)"
+        "JS": "JavaScript"
       },
       "BUTTONS": {
         "GITHUB": "Github",
@@ -197,19 +199,51 @@
         "TEXT": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis expedita odit sint hic animi laudantium distinctio veritatis iusto obcaecati, neque asperiores? Eaque blanditiis suscipit aliquam veritatis nisi mollitia saepe accusamus."
       },
       "DURATION": {
-        "LABEL": "Duration:",
-        "VALUE": "4 weeks"
+        "LABEL": "Planned duration:",
+        "VALUE": "2 weeks (first working version)"
       },
       "TECH": {
         "HTML": "HTML5",
         "CSS": "CSS3",
         "SUPABASE": "Supabase",
         "ANGULAR": "Angular",
-        "TS": "TypeScript"
+        "TS": "TypeScript",
+        "TAILWIND": "Tailwind CSS"
       },
       "BUTTONS": {
         "GITHUB": "Github",
         "LIVE": "Live Demo"
+      },
+      "NAV": {
+        "NEXT": "Next project"
+      }
+    },
+    "CRM": {
+      "TITLE": "SimpleCRM",
+      "BACK": "back",
+      "DESCRIPTION": {
+        "LABEL": "Description",
+        "TEXT": "Customer Relationship Management System (CRM) with a focus on overview, user-friendliness, and efficiency. The application allows the management of customer contacts, interactions, and sales opportunities in a clearly structured interface. The goal is to optimize customer relationships and support the sales process. The special feature is the user role management, which allows different permissions and views for different user groups."
+      },
+      "IMPLEMENTATION": {
+        "LABEL": "Implementation Details",
+        "TEXT": "The development of this project requires careful planning of the data structure and user roles to create a flexible and scalable application. The integration with Supabase enables real-time data management, while Angular and TypeScript provide a modular and maintainable codebase. The implementation of different user roles and permissions was particularly challenging, but it was successfully addressed through a clear architecture and regular testing."
+      },
+      "DURATION": {
+        "LABEL": "Planned Duration:",
+        "VALUE": "2 weeks (for the first test version)"
+      },
+      "TECH": {
+        "HTML": "HTML5",
+        "CSS": "CSS3",
+        "SUPABASE": "Supabase",
+        "ANGULAR": "Angular",
+        "TS": "TypeScript",
+        "REACT": "React"
+      },
+      "BUTTONS": {
+        "GITHUB": "Github",
+        "LIVE": "Live Test"
       },
       "NAV": {
         "NEXT": "Next project"

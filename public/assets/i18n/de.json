@@ -6,7 +6,7 @@
     "OPEN_FOR_EDUCATION": "Offen für Weiterbildungen",
     "OPEN_FOR_REMOTE": "Offen für Remote-Arbeit",
     "TEXT": {
-      "INTRO": "Hallo, ich bin Levin.",
+      "INTRO": "Hallo, ich bin Levin Krischer.",
       "P1": "An der Schnittstelle von Frontend-Entwicklung, Design und Didaktik entsteht für mich der spannendste Raum: dort, wo Struktur auf Ästhetik trifft und Systeme verständlich werden. Genau diese Verbindung treibt mich an, Lösungen zu entwickeln, die klar, modular und nachhaltig sind.",
       "P2": "Herausforderungen sehe ich als Lernmomente. Jede neue Aufgabe schärft meinen Blick für Architektur, Performance und Nutzererlebnis. Präzision, Verständlichkeit und ein bewusster Umgang mit Komplexität prägen meine Arbeit.",
       "P3": "Gute Produkte entstehen im Austausch — und genau dort arbeite ich am liebsten. Lass uns gemeinsam etwas bauen, das wirklich Wirkung zeigt!"
@@ -70,7 +70,8 @@
       "REST_API": "REST‑API",
       "SCRUM": "Scrum",
       "BOOTSTRAP": "Bootstrap",
-      "MATERIAL": "Material Design"
+      "MATERIAL": "Material Design",
+      "REACT": "React"
     }
   },
   "HEADER": {
@@ -140,14 +141,15 @@
       },
       "DURATION": {
         "LABEL": "Dauer:",
-        "VALUE": "5 Wochen"
+        "VALUE": "3 Wochen"
       },
       "TECH": {
         "HTML": "HTML5",
         "CSS": "CSS3",
         "SUPABASE": "Supabase",
         "ANGULAR": "Angular",
-        "TS": "TypeScript"
+        "TS": "TypeScript",
+        "BOOTSTRAP": "Bootstrap"
       },
       "BUTTONS": {
         "GITHUB": "Github",
@@ -162,7 +164,7 @@
       "BACK": "zurück",
       "DESCRIPTION": {
         "LABEL": "Beschreibung",
-        "TEXT": "Jump‑and‑Run‑Spiel auf objektorientierter Basis. Die Spielfigur sammelt Münzen und Tabasco‑Flaschen, um sich gegen die verrückte Henne zu behaupten. Animationen, Kollisionserkennung und Interaktionen wurden vollständig in JavaScript umgesetzt."
+        "TEXT": "Ein einfaches Jump‑and‑Run‑Spiel auf objektorientierter Basis. Die Spielfigur sammelt Münzen und Tabasco‑Flaschen, um sich gegen die verrückte Henne zu behaupten. Animationen, Kollisionserkennung und Interaktionen wurden vollständig in JavaScript umgesetzt."
       },
       "IMPLEMENTATION": {
         "LABEL": "Implementation Details",
@@ -175,7 +177,7 @@
       "TECH": {
         "HTML": "HTML5",
         "CSS": "CSS3",
-        "JS": "JavaScript (vanilla)"
+        "JS": "JavaScript"
       },
       "BUTTONS": {
         "GITHUB": "Github",
@@ -197,15 +199,47 @@
         "TEXT": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis expedita odit sint hic animi laudantium distinctio veritatis iusto obcaecati, neque asperiores? Eaque blanditiis suscipit aliquam veritatis nisi mollitia saepe accusamus."
       },
       "DURATION": {
-        "LABEL": "Dauer:",
-        "VALUE": "4 Wochen"
+        "LABEL": "Geplante Dauer:",
+        "VALUE": "2 Wochen (für die erste Version)"
       },
       "TECH": {
         "HTML": "HTML5",
         "CSS": "CSS3",
         "SUPABASE": "Supabase",
         "ANGULAR": "Angular",
-        "TS": "TypeScript"
+        "TS": "TypeScript",
+        "TAILWIND": "Tailwind CSS"
+      },
+      "BUTTONS": {
+        "GITHUB": "Github",
+        "LIVE": "Live Test"
+      },
+      "NAV": {
+        "NEXT": "Nächstes Projekt"
+      }
+    },
+    "CRM": {
+      "TITLE": "SimpleCRM",
+      "BACK": "zurück",
+      "DESCRIPTION": {
+        "LABEL": "Beschreibung",
+        "TEXT": "Costumer Relationship Management System (CRM) mit Fokus auf Übersicht, Nutzerfreundlichkeit, Effizienz und einer klaren Nutzer-Rollen-Verwaltung. Die Anwendung ermöglicht die Verwaltung von Kundenkontakten, Interaktionen und Verkaufschancen in einem klar strukturierten Interface. Ziel ist es, die Kundenbeziehungen zu optimieren und den Vertriebsprozess zu unterstützen."
+      },
+      "IMPLEMENTATION": {
+        "LABEL": "Implementation Details",
+        "TEXT": "Die Entwicklung dieses Projekts erfordert eine sorgfältige Planung der Datenstruktur und der Nutzerrollen, um eine flexible und skalierbare Anwendung zu schaffen. Die Anbindung an Supabase ermöglicht eine Echtzeit‑Datenverwaltung, während Angular und TypeScript für eine modulare und wartbare Codebasis sorgen. Besonders herausfordernd war die Umsetzung der unterschiedlichen Nutzerrollen und Berechtigungen, was jedoch durch eine klare Architektur und regelmäßige Tests gut gelöst werden konnte."
+      },
+      "DURATION": {
+        "LABEL": "Geplante Dauer:",
+        "VALUE": "2 Wochen (für die erste Testversion)"
+      },
+      "TECH": {
+        "HTML": "HTML5",
+        "CSS": "CSS3",
+        "SUPABASE": "Supabase",
+        "ANGULAR": "Angular",
+        "TS": "TypeScript",
+        "REACT": "React"
       },
       "BUTTONS": {
         "GITHUB": "Github",
