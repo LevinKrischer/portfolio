@@ -22,6 +22,10 @@
       "TITLE": "Join",
       "DESCRIPTION": "A task manager inspired by the Kanban system. Tasks can be created, organized, and managed via drag‑and‑drop. Users and categories can be assigned flexibly. With Supabase integration, real‑time team collaboration becomes possible."
     },
+    "FLOWDESK": {
+      "TITLE": "Flowdesk (formerly 'Join')",
+      "DESCRIPTION": "Flowdesk offers not only a simple Kanban board but also search and filter functions, a more detailed dashboard, and a new intuitive user interface (UI). It still uses Supabase for real‑time team collaboration."
+    },
     "POLLO": {
       "TITLE": "El pollo loco",
       "DESCRIPTION": "A jump‑and‑run game built with object‑oriented principles. The character collects coins and Tabasco bottles to stand up to the crazy hen. Animations, collision detection, and interactions are fully implemented in JavaScript."
@@ -142,6 +146,37 @@
       "DURATION": {
         "LABEL": "Duration:",
         "VALUE": "3 weeks"
+      },
+      "TECH": {
+        "HTML": "HTML5",
+        "CSS": "CSS3",
+        "SUPABASE": "Supabase",
+        "ANGULAR": "Angular",
+        "TS": "TypeScript",
+        "BOOTSTRAP": "Bootstrap"
+      },
+      "BUTTONS": {
+        "GITHUB": "Github",
+        "LIVE": "Live Demo"
+      },
+      "NAV": {
+        "NEXT": "Next project"
+      }
+    },
+    "FLOWDESK": {
+      "TITLE": "Flowdesk",
+      "BACK": "back",
+      "DESCRIPTION": {
+        "LABEL": "Description",
+        "TEXT": "Taskflow (formerly 'Join') has grown significantly and offers not only a simple Kanban board but also search and filter functions, a detailed dashboard, and a more intuitive user interface (UI). The application allows tasks to be organized, prioritized, and managed efficiently within a team. With Supabase integration, real-time team collaboration is possible."
+      },
+      "IMPLEMENTATION": {
+        "LABEL": "Implementation Details",
+        "TEXT": "The foundation is the team project 'Join', which I already present in my portfolio. Building on this, I have expanded the application with additional features and redesigned the UI to create an even more intuitive user experience. The most challenging part was integrating the new features without overloading the existing codebase or affecting performance. Through careful planning and iterative development, I was able to successfully overcome these challenges. It was exciting to see how the application evolved from a simple task manager to a comprehensive tool for teamwork and project management."
+      },
+      "DURATION": {
+        "LABEL": "Duration:",
+        "VALUE": "2 weeks"
       },
       "TECH": {
         "HTML": "HTML5",

@@ -18,7 +18,6 @@
           <div class="projectImgContainer">
             <img src="./assets/imgs/layout/laptop.png" alt="" class="projectImgJoin">
             <img src="./assets/imgs/layout/laptop.png" alt="" class="projectImgFloat">
-            <img src="./assets/imgs/layout/featured-sticker.png" alt="" class="featuredSticker">
             <img src="./assets/icons/updated-stomp.png" alt="" class="updated-stomp">
             <div class="projectImgOverlay">
               <button class="btnStandardWhite">
@@ -65,6 +64,60 @@
           </button>
         </div>
       </div>
+      <div class="projectShowcase" id="flowdesk-project">
+        <a routerLink="/flowdesk-project">
+          <div class="projectImgContainer">
+            <img src="./assets/imgs/layout/flowdesk-project-breadcrumb-mockups-950px.png" alt="" class="projectImg">
+            <img src="./assets/imgs/layout/featured-sticker.png" alt="" class="featuredSticker">
+            <img src="./assets/icons/new-version-stomp.png" alt="" class="updated-stomp">
+            <div class="projectImgOverlay">
+              <button class="btnStandardWhite">
+                <span class="f-size-20">
+                  <a routerLink="/flowdesk-project">{{ 'PROJECTS.DETAILS_BUTTON' | translate }}</a>
+                </span>
+              </button>
+            </div>
+          </div>
+        </a>
+        <p class="f-size-24 font-bold">{{ 'PROJECTS.FLOWDESK.TITLE' | translate }}</p>
+        <p>{{ 'PROJECTS.FLOWDESK.DESCRIPTION' | translate }}</p>
+        <section class="usedTechSection">
+          <div class="usedTech">
+            <img src="./assets/icons/1-html.png">
+            <p>{{ 'PROJECTS_DETAIL.FLOWDESK.TECH.HTML' | translate }}</p>
+          </div>
+          <div class="usedTech">
+            <img src="./assets/icons/2-css.png">
+            <p>{{ 'PROJECTS_DETAIL.FLOWDESK.TECH.CSS' | translate }}</p>
+          </div>
+          <div class="usedTech">
+            <img src="./assets/icons/5-angular.png">
+            <p>{{ 'PROJECTS_DETAIL.FLOWDESK.TECH.ANGULAR' | translate }}</p>
+          </div>
+          <div class="usedTech">
+            <img src="./assets/icons/13-supabase.png">
+            <p>{{ 'PROJECTS_DETAIL.FLOWDESK.TECH.SUPABASE' | translate }}</p>
+          </div>
+          <div class="usedTech">
+            <img src="./assets/icons/4-ts.png">
+            <p>{{ 'PROJECTS_DETAIL.FLOWDESK.TECH.TS' | translate }}</p>
+          </div>
+          <div class="usedTech">
+            <img src="./assets/icons/15-bootstrap.png">
+            <p>{{ 'PROJECTS_DETAIL.FLOWDESK.TECH.BOOTSTRAP' | translate }}</p>
+          </div>
+        </section>
+        <div class="buttonContainer mobile">
+          <button class="btnStandard">
+            <span class="f-size-20">
+              <a routerLink="/flowdesk-project">{{ 'PROJECTS.DETAILS_BUTTON' | translate }}</a>
+            </span>
+          </button>
+        </div>
+      </div>
+
+    </section>
+    <section class="contentBottom">
       <div class="projectShowcase" id="el-pollo-loco-project">
         <a routerLink="/el-pollo-loco-project">
           <div class="projectImgContainer">
@@ -99,101 +152,6 @@
           <div class="usedTech">
             <img src="./assets/icons/3-js.png">
             <p>{{ 'PROJECTS_DETAIL.POLLO.TECH.JS' | translate }}</p>
-          </div>
-        </section>
-      </div>
-    </section>
-    <section class="contentBottom">
-      <div class="projectShowcase" id="simple-crm-project">
-        <div class="projectImgContainer">
-          <img src="./assets/imgs/layout/crm-breadcrumb.png" alt="" class="projectImg">
-          <img src="./assets/icons/wip-stomp.png" alt="" class="wip">
-          <div class="projectImgOverlay">
-            <button class="btnStandardWhite">
-              <span class="f-size-20">
-                <a routerLink="/crm-project">{{ 'PROJECTS.DETAILS_BUTTON' | translate }}</a>
-              </span>
-            </button>
-          </div>
-        </div>
-        <p class="f-size-24 font-bold">{{ 'PROJECTS_DETAIL.CRM.TITLE' | translate }}</p>
-        <p>{{ 'PROJECTS_DETAIL.CRM.DESCRIPTION.TEXT' | translate }}</p>
-        <div class="buttonContainer mobile">
-          <button class="btnStandard">
-            <span class="f-size-20">
-              <a routerLink="/crm-project">{{ 'PROJECTS_DETAIL.CRM.BUTTONS.GITHUB' | translate }}</a>
-            </span>
-          </button>
-        </div>
-        <section class="usedTechSection">
-          <div class="usedTech">
-            <img src="./assets/icons/1-html.png">
-            <p>{{ 'PROJECTS_DETAIL.CRM.TECH.HTML' | translate }}</p>
-          </div>
-          <div class="usedTech">
-            <img src="./assets/icons/2-css.png">
-            <p>{{ 'PROJECTS_DETAIL.CRM.TECH.CSS' | translate }}</p>
-          </div>
-          <div class="usedTech">
-            <img src="./assets/icons/17-react.png">
-            <p>{{ 'PROJECTS_DETAIL.CRM.TECH.REACT' | translate }}</p>
-          </div>
-          <div class="usedTech">
-            <img src="./assets/icons/13-supabase.png">
-            <p>{{ 'PROJECTS_DETAIL.CRM.TECH.SUPABASE' | translate }}</p>
-          </div>
-          <div class="usedTech">
-            <img src="./assets/icons/4-ts.png">
-            <p>{{ 'PROJECTS_DETAIL.CRM.TECH.TS' | translate }}</p>
-          </div>
-
-        </section>
-      </div>
-      <div class="projectShowcase" id="da-bubble-project">
-        <div class="projectImgContainer">
-          <img src="./assets/imgs/layout/da-bubble-project-breadcrumb_950px.png" alt="" class="projectImg">
-          <img src="./assets/icons/comming-soon-stomp.png" alt="" class="wip">
-          <div class="projectImgOverlay">
-            <button class="btnStandardWhite">
-              <span class="f-size-20">
-                <a routerLink="/dabubble-project">{{ 'PROJECTS.DETAILS_BUTTON' | translate }}</a>
-              </span>
-            </button>
-          </div>
-        </div>
-        <p class="f-size-24 font-bold">{{ 'PROJECTS.DABUBBLE.TITLE' | translate }}</p>
-        <p>{{ 'PROJECTS.DABUBBLE.DESCRIPTION' | translate }}</p>
-        <div class="buttonContainer mobile">
-          <button class="btnStandard">
-            <span class="f-size-20">
-              <a routerLink="/dabubble-project">{{ 'PROJECTS.DETAILS_BUTTON' | translate }}</a>
-            </span>
-          </button>
-        </div>
-        <section class="usedTechSection">
-          <div class="usedTech">
-            <img src="./assets/icons/1-html.png">
-            <p>{{ 'PROJECTS_DETAIL.DABUBBLE.TECH.HTML' | translate }}</p>
-          </div>
-          <div class="usedTech">
-            <img src="./assets/icons/2-css.png">
-            <p>{{ 'PROJECTS_DETAIL.DABUBBLE.TECH.CSS' | translate }}</p>
-          </div>
-          <div class="usedTech">
-            <img src="./assets/icons/5-angular.png">
-            <p>{{ 'PROJECTS_DETAIL.DABUBBLE.TECH.ANGULAR' | translate }}</p>
-          </div>
-          <div class="usedTech">
-            <img src="./assets/icons/13-supabase.png">
-            <p>{{ 'PROJECTS_DETAIL.DABUBBLE.TECH.SUPABASE' | translate }}</p>
-          </div>
-          <div class="usedTech">
-            <img src="./assets/icons/4-ts.png">
-            <p>{{ 'PROJECTS_DETAIL.DABUBBLE.TECH.TS' | translate }}</p>
-          </div>
-          <div class="usedTech">
-            <img src="./assets/icons/16-tailwind.png">
-            <p>{{ 'PROJECTS_DETAIL.DABUBBLE.TECH.TAILWIND' | translate }}</p>
           </div>
         </section>
       </div>

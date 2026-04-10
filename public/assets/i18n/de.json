@@ -22,6 +22,10 @@
       "TITLE": "Join",
       "DESCRIPTION": "Task‑Manager, inspiriert vom Kanban‑System. Aufgaben können per Drag‑and‑Drop erstellt, organisiert und verwaltet werden. Nutzer und Kategorien lassen sich flexibel zuweisen. Durch die Anbindung an Supabase‑Datenbanken ist eine Nutzung im Team in Echtzeit möglich."
     },
+    "FLOWDESK": {
+      "TITLE": "Flowdesk",
+      "DESCRIPTION": "Taskflow (ehemals 'Join') ist deutlich gewachsen und bietet neben einem einfachen Kanban-Board auch Such- und Filterfunktionen, ein detailliertes Dashboard und ein intuitiveres User Interface (UI). Die Anwendung ermöglicht es, Aufgaben effizient zu organisieren, zu priorisieren und im Team zu verwalten. Durch die Anbindung an Supabase‑Datenbanken ist eine Nutzung im Team in Echtzeit möglich."
+    },
     "POLLO": {
       "TITLE": "El pollo loco",
       "DESCRIPTION": "Jump‑and‑Run‑Spiel auf objektorientierter Basis. Die Spielfigur sammelt Münzen und Tabasco‑Flaschen, um sich gegen die verrückte Henne zu behaupten. Animationen, Kollisionserkennung und Interaktionen wurden vollständig in JavaScript umgesetzt."
@@ -142,6 +146,37 @@
       "DURATION": {
         "LABEL": "Dauer:",
         "VALUE": "3 Wochen"
+      },
+      "TECH": {
+        "HTML": "HTML5",
+        "CSS": "CSS3",
+        "SUPABASE": "Supabase",
+        "ANGULAR": "Angular",
+        "TS": "TypeScript",
+        "BOOTSTRAP": "Bootstrap"
+      },
+      "BUTTONS": {
+        "GITHUB": "Github",
+        "LIVE": "Live Test"
+      },
+      "NAV": {
+        "NEXT": "Nächstes Projekt"
+      }
+    },
+    "FLOWDESK": {
+      "TITLE": "Flowdesk",
+      "BACK": "zurück",
+      "DESCRIPTION": {
+        "LABEL": "Beschreibung",
+        "TEXT": "Taskflow (ehemals 'Join') ist deutlich gewachsen und bietet neben einem einfachen Kanban-Board auch Such- und Filterfunktionen, ein detailliertes Dashboard und ein intuitiveres User Interface (UI). Die Anwendung ermöglicht es, Aufgaben effizient zu organisieren, zu priorisieren und im Team zu verwalten. Durch die Anbindung an Supabase‑Datenbanken ist eine Nutzung im Team in Echtzeit möglich."
+      },
+      "IMPLEMENTATION": {
+        "LABEL": "Implementation Details",
+        "TEXT": "Die Basis stellt das Team-Projekt 'Join' dar, das ich bereits in meinem Portfolio vorstelle. Aufbauend darauf habe ich die Anwendung um zusätzliche Funktionen erweitert und das UI überarbeitet, um eine noch intuitivere Nutzererfahrung zu schaffen. Besonders herausfordernd war die Integration der neuen Features, ohne die bestehende Codebasis zu überladen oder die Performance zu beeinträchtigen. Durch sorgfältige Planung und iterative Entwicklung konnte ich diese Herausforderungen erfolgreich meistern. Es war spannend zu sehen, wie sich die Anwendung von einem einfachen Task-Manager zu einem umfassenden Tool für Teamarbeit und Projektmanagement entwickelt hat."
+      },
+      "DURATION": {
+        "LABEL": "Dauer:",
+        "VALUE": "2 Wochen"
       },
       "TECH": {
         "HTML": "HTML5",

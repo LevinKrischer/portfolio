@@ -6,6 +6,7 @@ import { LegalNotice } from './shared/pages/legal-notice/legal-notice';
 import { DaBubbleProject } from './shared/pages/da-bubble-project/da-bubble-project';
 import { PrivacyPolicy } from './shared/pages/privacy-policy/privacy-policy';
 import { CrmProject } from './shared/pages/crm-project/crm-project';
+import { FlowdeskProject } from './shared/pages/flowdesk-project/flowdesk-project';
 
 export const routes: Routes = [
   {
@@ -33,8 +34,8 @@ export const routes: Routes = [
     component: ElPolloLocoProject,
   },
   {
-    path: 'el-pollo-loco-project',
-    component: ElPolloLocoProject,
+    path: 'flowdesk-project',
+    component: FlowdeskProject,
   },
   {
     path: 'crm-project',

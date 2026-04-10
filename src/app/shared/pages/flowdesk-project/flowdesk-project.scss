@@ -1,0 +1,271 @@
+.content {
+  min-height: 100dvh;
+  background-color: #1d1d1d;
+}
+
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 6.25rem);
+  max-width: 90rem;
+  min-height: 100dvh;
+  background-size: auto 100%;
+  background-position: left;
+  background-image: url('../../../../../public/assets/imgs/bg/project-bg.png');
+  background-repeat: no-repeat;
+}
+
+.contentMain {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  height: calc(100% - 6.25rem);
+  padding: 2rem 4rem 4rem 4rem;
+  width: 100%;
+  max-width: 90rem;
+}
+
+.contentLeft {
+  width: 45%;
+}
+
+.contentRight {
+  width: 45%;
+  color: var(--color-primary);
+
+  .projectBreadcrumb {
+    width: 100%;
+  }
+
+  .wip {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    z-index: 2;
+  }
+}
+
+.animationContainerWidth {
+  animation: showHideFromLeft 6s ease infinite;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+  overflow: hidden;
+
+  .animatedImageWidth {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@keyframes showHideFromLeft {
+  0% {
+    width: 0;
+  }
+
+  10% {
+    width: 100%;
+  }
+
+  80% {
+    width: 100%;
+  }
+
+  90% {
+    width: 0;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+.projectDesc {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.usedTechSection {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+
+  .usedTech {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+
+    img {
+      width: 1.25rem;
+    }
+  }
+}
+
+.linkBtns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.backLink {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  max-width: 12.5rem;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+  max-width: 90rem;
+  padding: 3rem 0 1rem 2rem;
+  margin: 0 auto;
+
+  &:hover img {
+    transform: translateX(-0.5rem);
+    transition: transform 0.2s ease;
+  }
+
+  &.mobile {
+    margin: 0;
+  }
+}
+
+.nextLink {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+  max-width: 12.5rem;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+
+  &:hover img {
+    transform: translateX(0.5rem);
+    transition: transform 0.2s ease;
+  }
+}
+
+h2,
+.blend,
+p {
+  mix-blend-mode: difference;
+  color: var(--color-primary);
+}
+
+.mobile {
+  display: none;
+}
+
+.siteNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 131.25rem) {
+  .projectContent {
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 1%;
+    }
+
+    &::after {
+      right: 0;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(29, 29, 29, 1) 100%);
+    }
+
+    &::before {
+      left: 0;
+      background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(29, 29, 29, 1) 100%);
+    }
+  }
+}
+
+@media (max-width: 68.75rem) {
+  .projectContent {
+    background-image: url('../../../../../public/assets/imgs/bg/project-bg-1100-90deg.png');
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .btnStandardWhite {
+    border: var(--color-secondary) solid 1px;
+    box-shadow: 4px 4px var(--color-secondary);
+    color: var(--color-secondary);
+  }
+
+  .content {
+    background-position: top;
+  }
+
+  .contentMain {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .contentLeft,
+  .contentRight {
+    width: 100%;
+  }
+
+  .nextLink {
+    margin: 0;
+  }
+
+  .backLink {
+    padding: 0;
+  }
+
+  .mobile {
+    display: flex;
+  }
+
+  .noMobile {
+    display: none;
+  }
+
+  .btnStandardWhite {
+    border: var(--color-primary) solid 1px;
+    box-shadow: 4px 4px var(--color-primary);
+    color: var(--color-primary);
+  }
+}
+
+@media (max-width: 48rem) {
+  .projectContent {
+    background-size: auto 80%;
+  }
+
+
+  .contentMain {
+    padding: 2rem;
+  }
+
+  .contentLeft,
+  .contentRight {
+    padding: 0;
+  }
+}
+
+@media (max-width: 30rem) {
+  .contentMain {
+    padding: 2rem 1rem;
+  }
+
+  .contentLeft,
+  .contentRight {
+    padding: 0;
+  }
+}
