@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Levin Krischer
+N:Krischer;Levin;;;
+EMAIL;TYPE=work:levin@levinkrischer.de
+TEL;TYPE=cell:+491636808422
+ADR;TYPE=home:;;Burgwedel;;30938;Germany
+URL;WORK:https://www.levinkrischer.de/
+URL;TYPE=GitHub:https://github.com/LevinKrischer
+URL;TYPE=LinkedIn:https://www.linkedin.com/in/levinkrischer/
+NOTE:Weitere Links:
+ GitHub: https://github.com/LevinKrischer | LinkedIn: https://www.linkedin.com/in/levinkrischer/ | Frontend Developer | Techs: HTML, (S)CSS, Javascript, Typescript, Angular 20+, Bootstrap/Tailwind CSS, Supabase, REST-API, SCRUM | open to learn: react, vue | in training: AstroJs
+END:VCARD

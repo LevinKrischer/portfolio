@@ -86,7 +86,9 @@
   "CONTACT": {
     "SECTION_LABEL": "CONTACT",
     "HEADLINE": "Ready for a new project together?",
-    "TEXT": "Openness to new projects and professional collaboration is at the core of my work. I am particularly interested in roles that require structured frontend development, clean architecture, and a reliable commitment to quality. Through technical expertise and continuous improvement, I contribute sustainably to modern teams and projects.\n\nFor project inquiries, professional exchange, or concrete ideas, the contact form provides a direct way to get in touch. Responses are timely and focused."
+    "TEXT": "Openness to new projects and professional collaboration is at the core of my work. I am particularly interested in roles that require structured frontend development, clean architecture, and a reliable commitment to quality. Through technical expertise and continuous improvement, I contribute sustainably to modern teams and projects.\n\nFor project inquiries, professional exchange, or concrete ideas, the contact form provides a direct way to get in touch. Responses are timely and focused.",
+    "DOWNLOAD_VCF": "Download vCard",
+    "DOWNLOAD_CV": "Download CV (PDF)"
   },
   "CONTACT_FORM": {
     "LABEL_NAME": "Your name",

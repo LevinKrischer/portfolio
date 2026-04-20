@@ -8,9 +8,22 @@
           <h2>{{ 'CONTACT.HEADLINE' | translate }}</h2>
         </div>
         <p class="f-size-20">{{ 'CONTACT.TEXT' | translate }}</p>
+        <div class="downloadButtons">
+          <app-button>
+            <a href="./assets/downloads/contact-levin-krischer.vcf" download>
+              {{ 'CONTACT.DOWNLOAD_VCF' | translate }}
+            </a>
+          </app-button>
+          <app-button>
+            <a href="./assets/downloads/cv_levinkrischer-04-2026.pdf" download>
+              {{ 'CONTACT.DOWNLOAD_CV' | translate }}
+            </a>
+          </app-button>
+        </div>
         <div class="animationContainer noMobile">
           <img class="animatedImage" src="./assets/imgs/decorations/line-with-arrow-right.svg" alt="">
         </div>
+
       </section>
       <section class="contentRight">
         <img class="devMedal noMobile" src="./assets/imgs/layout/contact-lk-fed.png" alt="">

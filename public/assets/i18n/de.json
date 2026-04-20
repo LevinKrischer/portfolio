@@ -86,7 +86,9 @@
   "CONTACT": {
     "SECTION_LABEL": "KONTAKT",
     "HEADLINE": "Bereit für gemeinsame Projekte?",
-    "TEXT": "Offenheit für neue Projekte und professionelle Zusammenarbeit steht im Mittelpunkt. Besonders relevant sind Rollen, in denen strukturierte Frontend‑Entwicklung, saubere Architektur und ein verlässlicher Qualitätsanspruch gefragt sind. Durch technische Expertise und kontinuierliche Weiterentwicklung entsteht ein nachhaltiger Beitrag zu modernen Teams und Projekten.\n\nFür Projektanfragen, fachlichen Austausch oder konkrete Ideen bietet das Kontaktformular eine direkte Möglichkeit, in Verbindung zu treten. Rückmeldungen erfolgen zeitnah und zielgerichtet."
+    "TEXT": "Offenheit für neue Projekte und professionelle Zusammenarbeit steht im Mittelpunkt. Besonders relevant sind Rollen, in denen strukturierte Frontend‑Entwicklung, saubere Architektur und ein verlässlicher Qualitätsanspruch gefragt sind. Durch technische Expertise und kontinuierliche Weiterentwicklung entsteht ein nachhaltiger Beitrag zu modernen Teams und Projekten.\n\nFür Projektanfragen, fachlichen Austausch oder konkrete Ideen bietet das Kontaktformular eine direkte Möglichkeit, in Verbindung zu treten. Rückmeldungen erfolgen zeitnah und zielgerichtet.",
+    "DOWNLOAD_VCF": "vCard herunterladen",
+    "DOWNLOAD_CV": "CV herunterladen (PDF)"
   },
   "CONTACT_FORM": {
     "LABEL_NAME": "Dein Name",

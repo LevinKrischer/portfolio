@@ -33,7 +33,7 @@ export const appConfig: ApplicationConfig = {
       routes,
       withHashLocation(),
       withInMemoryScrolling({
-        scrollPositionRestoration: 'enabled',
+        scrollPositionRestoration: 'disabled',
         anchorScrolling: 'enabled',
       }),
     ),
